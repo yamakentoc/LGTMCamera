@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		15E8FBBE21D61B3500B18C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */; };
-		15E8FBC021D61B3500B18C32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBBF21D61B3500B18C32 /* ViewController.swift */; };
-		15E8FBC321D61B3500B18C32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E8FBC121D61B3500B18C32 /* Main.storyboard */; };
+		15E8FBC021D61B3500B18C32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBBF21D61B3500B18C32 /* HomeViewController.swift */; };
+		15E8FBC321D61B3500B18C32 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E8FBC121D61B3500B18C32 /* HomeViewController.storyboard */; };
 		15E8FBC521D61B3600B18C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15E8FBC421D61B3600B18C32 /* Assets.xcassets */; };
 		15E8FBC821D61B3600B18C32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E8FBC621D61B3600B18C32 /* LaunchScreen.storyboard */; };
 		15E8FBD321D61B3600B18C32 /* LGTMCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBD221D61B3600B18C32 /* LGTMCameraTests.swift */; };
 		15E8FBDE21D61B3600B18C32 /* LGTMCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBDD21D61B3600B18C32 /* LGTMCameraUITests.swift */; };
 		15E8FBEE21D6249100B18C32 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBED21D6249100B18C32 /* R.generated.swift */; };
+		15E8FBF121D64BB400B18C32 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBF021D64BB400B18C32 /* HomeViewPresenter.swift */; };
 		87BD8C7577D9C8EF53A5C938 /* Pods_LGTMCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBAA0F97265FDD4389AD2C7 /* Pods_LGTMCamera.framework */; };
 		87C0EFAA4BDE234B550F01FD /* Pods_LGTMCameraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70417C67F989AEBB18736F8E /* Pods_LGTMCameraTests.framework */; };
 		D7E6FAE39A02FF20B09CC253 /* Pods_LGTMCameraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F6A3A2C0689023B650EDBC /* Pods_LGTMCameraUITests.framework */; };
@@ -40,8 +41,8 @@
 /* Begin PBXFileReference section */
 		15E8FBBA21D61B3500B18C32 /* LGTMCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGTMCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		15E8FBBF21D61B3500B18C32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		15E8FBC221D61B3500B18C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15E8FBBF21D61B3500B18C32 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		15E8FBC221D61B3500B18C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeViewController.storyboard; sourceTree = "<group>"; };
 		15E8FBC421D61B3600B18C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15E8FBC721D61B3600B18C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15E8FBC921D61B3600B18C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		15E8FBDD21D61B3600B18C32 /* LGTMCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGTMCameraUITests.swift; sourceTree = "<group>"; };
 		15E8FBDF21D61B3600B18C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15E8FBED21D6249100B18C32 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		15E8FBF021D64BB400B18C32 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
 		2BBAA0F97265FDD4389AD2C7 /* Pods_LGTMCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGTMCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5572E4C401E019D0685531 /* Pods-LGTMCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGTMCameraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGTMCameraUITests/Pods-LGTMCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		65270CE2F77D358A26116F87 /* Pods-LGTMCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGTMCameraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGTMCameraTests/Pods-LGTMCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,8 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */,
-				15E8FBBF21D61B3500B18C32 /* ViewController.swift */,
-				15E8FBC121D61B3500B18C32 /* Main.storyboard */,
+				15E8FBEF21D64B0500B18C32 /* Home */,
 				15E8FBED21D6249100B18C32 /* R.generated.swift */,
 				15E8FBC421D61B3600B18C32 /* Assets.xcassets */,
 				15E8FBC621D61B3600B18C32 /* LaunchScreen.storyboard */,
@@ -156,6 +157,16 @@
 				15E8FBDF21D61B3600B18C32 /* Info.plist */,
 			);
 			path = LGTMCameraUITests;
+			sourceTree = "<group>";
+		};
+		15E8FBEF21D64B0500B18C32 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				15E8FBBF21D61B3500B18C32 /* HomeViewController.swift */,
+				15E8FBF021D64BB400B18C32 /* HomeViewPresenter.swift */,
+				15E8FBC121D61B3500B18C32 /* HomeViewController.storyboard */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		4B375F13F72712F1418A71A4 /* Frameworks */ = {
@@ -280,7 +291,7 @@
 			files = (
 				15E8FBC821D61B3600B18C32 /* LaunchScreen.storyboard in Resources */,
 				15E8FBC521D61B3600B18C32 /* Assets.xcassets in Resources */,
-				15E8FBC321D61B3500B18C32 /* Main.storyboard in Resources */,
+				15E8FBC321D61B3500B18C32 /* HomeViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,8 +443,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15E8FBC021D61B3500B18C32 /* ViewController.swift in Sources */,
+				15E8FBC021D61B3500B18C32 /* HomeViewController.swift in Sources */,
 				15E8FBBE21D61B3500B18C32 /* AppDelegate.swift in Sources */,
+				15E8FBF121D64BB400B18C32 /* HomeViewPresenter.swift in Sources */,
 				15E8FBEE21D6249100B18C32 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,12 +482,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		15E8FBC121D61B3500B18C32 /* Main.storyboard */ = {
+		15E8FBC121D61B3500B18C32 /* HomeViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				15E8FBC221D61B3500B18C32 /* Base */,
 			);
-			name = Main.storyboard;
+			name = HomeViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		15E8FBC621D61B3600B18C32 /* LaunchScreen.storyboard */ = {
