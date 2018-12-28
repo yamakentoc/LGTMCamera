@@ -10,7 +10,7 @@ excluded:
 - Podfile
 - Podfile.lock
 - LGTMCamera/AppDelegate.swift
-#- R.generated.swift
+- R.generated.swift
 
 # 1行あたりの文字数制限
 line_length: 300

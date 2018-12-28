@@ -14,6 +14,7 @@
 		15E8FBC821D61B3600B18C32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E8FBC621D61B3600B18C32 /* LaunchScreen.storyboard */; };
 		15E8FBD321D61B3600B18C32 /* LGTMCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBD221D61B3600B18C32 /* LGTMCameraTests.swift */; };
 		15E8FBDE21D61B3600B18C32 /* LGTMCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBDD21D61B3600B18C32 /* LGTMCameraUITests.swift */; };
+		15E8FBEE21D6249100B18C32 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBED21D6249100B18C32 /* R.generated.swift */; };
 		87BD8C7577D9C8EF53A5C938 /* Pods_LGTMCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBAA0F97265FDD4389AD2C7 /* Pods_LGTMCamera.framework */; };
 		87C0EFAA4BDE234B550F01FD /* Pods_LGTMCameraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70417C67F989AEBB18736F8E /* Pods_LGTMCameraTests.framework */; };
 		D7E6FAE39A02FF20B09CC253 /* Pods_LGTMCameraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F6A3A2C0689023B650EDBC /* Pods_LGTMCameraUITests.framework */; };
@@ -50,6 +51,7 @@
 		15E8FBD921D61B3600B18C32 /* LGTMCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LGTMCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E8FBDD21D61B3600B18C32 /* LGTMCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGTMCameraUITests.swift; sourceTree = "<group>"; };
 		15E8FBDF21D61B3600B18C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E8FBED21D6249100B18C32 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		2BBAA0F97265FDD4389AD2C7 /* Pods_LGTMCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGTMCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5572E4C401E019D0685531 /* Pods-LGTMCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGTMCameraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGTMCameraUITests/Pods-LGTMCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		65270CE2F77D358A26116F87 /* Pods-LGTMCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGTMCameraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGTMCameraTests/Pods-LGTMCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */,
 				15E8FBBF21D61B3500B18C32 /* ViewController.swift */,
 				15E8FBC121D61B3500B18C32 /* Main.storyboard */,
+				15E8FBED21D6249100B18C32 /* R.generated.swift */,
 				15E8FBC421D61B3600B18C32 /* Assets.xcassets */,
 				15E8FBC621D61B3600B18C32 /* LaunchScreen.storyboard */,
 				15E8FBC921D61B3600B18C32 /* Info.plist */,
@@ -177,6 +180,8 @@
 				15E8FBB721D61B3500B18C32 /* Frameworks */,
 				15E8FBB821D61B3500B18C32 /* Resources */,
 				15E8FBEB21D6221C00B18C32 /* SwiftLint Script */,
+				1492959F5909B45479383568 /* [CP] Embed Pods Frameworks */,
+				15E8FBEC21D623FD00B18C32 /* R.swift Script */,
 			);
 			buildRules = (
 			);
@@ -296,6 +301,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1492959F5909B45479383568 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LGTMCamera/Pods-LGTMCamera-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LGTMCamera/Pods-LGTMCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		15E8FBEB21D6221C00B18C32 /* SwiftLint Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,6 +340,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		15E8FBEC21D623FD00B18C32 /* R.swift Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "R.swift Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"\n";
 		};
 		2816B3FC113FE952621F6F8A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -389,6 +434,7 @@
 			files = (
 				15E8FBC021D61B3500B18C32 /* ViewController.swift in Sources */,
 				15E8FBBE21D61B3500B18C32 /* AppDelegate.swift in Sources */,
+				15E8FBEE21D6249100B18C32 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,16 +1,24 @@
 PODS:
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
   - SwiftLint (0.27.0)
 
 DEPENDENCIES:
+  - R.swift
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - R.swift
+    - R.swift.Library
     - SwiftLint
 
 SPEC CHECKSUMS:
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: a9bf9a13040244bf202f94ed0bf88fb93ac15cdc
+PODFILE CHECKSUM: cb29d69a16e169b6d9f845895539d08b83ce3e90
 
 COCOAPODS: 1.5.3
