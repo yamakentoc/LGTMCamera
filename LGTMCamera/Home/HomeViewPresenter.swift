@@ -13,9 +13,11 @@ protocol HomeViewPresenterProtocol: class {
 }
 
 class HomeViewPresenter: NSObject {
+    
     private let view: HomeViewPresenterProtocol
     
     init(view: HomeViewPresenterProtocol) {
         self.view = view
     }
+    
 }

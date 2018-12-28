@@ -17,12 +17,38 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TLp-Qb-jXO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrk-bm-x6e">
+                                <rect key="frame" x="155" y="594" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="3in-ut-UZi"/>
+                                    <constraint firstAttribute="width" constant="65" id="b0j-CD-Qu0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lrk-bm-x6e" secondAttribute="bottom" constant="8" id="4aF-mq-rO8"/>
+                            <constraint firstItem="lrk-bm-x6e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9EG-3B-HTF"/>
+                            <constraint firstItem="TLp-Qb-jXO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DlT-N5-leg"/>
+                            <constraint firstItem="TLp-Qb-jXO" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="QoO-bC-XH4"/>
+                            <constraint firstItem="TLp-Qb-jXO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hzX-v4-BTT"/>
+                            <constraint firstItem="TLp-Qb-jXO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tkg-Gc-vZl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="previewImageView" destination="TLp-Qb-jXO" id="x6a-ke-oWC"/>
+                        <outlet property="snapButton" destination="lrk-bm-x6e" id="SIf-5x-5g1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
     </scenes>
 </document>
