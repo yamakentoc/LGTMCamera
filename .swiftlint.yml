@@ -1,0 +1,19 @@
+# 実行から除外するルール
+disabled_rules:
+- trailing_whitespace  # コードの記載のない改行を許可したい
+- force_cast
+- large_tuple
+
+# テストコード、Pod等のライブラリは対象外
+excluded:
+- Pods/
+- Podfile
+- Podfile.lock
+- LGTMCamera/AppDelegate.swift
+#- R.generated.swift
+
+# 1行あたりの文字数制限
+line_length: 300
+#変数名が１文字以上なら許可に変更
+identifier_name:
+  min_length: 1

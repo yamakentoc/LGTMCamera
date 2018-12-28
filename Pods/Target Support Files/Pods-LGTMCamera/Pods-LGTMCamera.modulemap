@@ -1,0 +1,6 @@
+framework module Pods_LGTMCamera {
+  umbrella header "Pods-LGTMCamera-umbrella.h"
+
+  export *
+  module * { export * }
+}
