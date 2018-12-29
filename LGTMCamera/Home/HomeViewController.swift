@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var previewImageView: UIImageView!
     @IBOutlet weak var snapButton: UIButton!
     
@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
     
     @IBAction func touchUpSnapButton(_ sender: UIButton) {//連写終了
         isPushing = false
-        print("終わり")
+        print(takenPhotos.count)
     }
     
 }
@@ -42,8 +42,7 @@ extension HomeViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
         //セッションのインスタンス生成
         let captureSession = AVCaptureSession()
         //入力(背面カメラ)
-        let videoDevice = AVCaptureDevice.default(AVCaptureDevice.DeviceType.builtInWideAngleCamera,
-                                                  for: AVMediaType.video, position: .back)
+        let videoDevice = AVCaptureDevice.default(for: AVMediaType.video)
         videoDevice?.activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: 30)
         guard let videoInput = try? AVCaptureDeviceInput.init(device: videoDevice!) else { return }
         captureSession.addInput(videoInput)
@@ -74,9 +73,10 @@ extension HomeViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
             guard let image = presenter.imageFromSampleBuffer(sampleBuffer: sampleBuffer) else { return }
             takenPhotos.append(image)
         }
+        captureCounter += 1
     }
 }
 
 extension HomeViewController: HomeViewPresenterProtocol {
-
+    
 }
