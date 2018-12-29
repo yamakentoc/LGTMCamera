@@ -24,6 +24,17 @@ class HomeViewController: UIViewController {
         presenter = HomeViewPresenter(view: self)
         initVideo()
     }
+    
+    @IBAction func touchDownSnapButton(_ sender: UIButton) {//連写中
+        isPushing = true
+        takenPhotos = []
+    }
+    
+    @IBAction func touchUpSnapButton(_ sender: UIButton) {//連写終了
+        isPushing = false
+        print("終わり")
+    }
+    
 }
 
 extension HomeViewController: AVCaptureVideoDataOutputSampleBufferDelegate {

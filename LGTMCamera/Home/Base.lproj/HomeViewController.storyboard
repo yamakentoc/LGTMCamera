@@ -28,6 +28,10 @@
                                     <constraint firstAttribute="width" constant="65" id="b0j-CD-Qu0"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchDownSnapButton:" destination="BYZ-38-t0r" eventType="touchDown" id="nFd-sj-Gcn"/>
+                                    <action selector="touchUpSnapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7XI-Yj-ytp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
