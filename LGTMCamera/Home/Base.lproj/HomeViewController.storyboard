@@ -22,11 +22,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrk-bm-x6e">
-                                <rect key="frame" x="140.5" y="565.5" width="94" height="93.5"/>
+                                <rect key="frame" x="157.5" y="599" width="60" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="lrk-bm-x6e" secondAttribute="height" multiplier="1:1" id="DjV-8a-mTe"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="touchDownSnapButton:" destination="BYZ-38-t0r" eventType="touchDown" id="nFd-sj-Gcn"/>
                                     <action selector="touchUpSnapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7XI-Yj-ytp"/>
@@ -40,7 +40,7 @@
                             <constraint firstItem="TLp-Qb-jXO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DlT-N5-leg"/>
                             <constraint firstItem="TLp-Qb-jXO" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="QoO-bC-XH4"/>
                             <constraint firstItem="TLp-Qb-jXO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hzX-v4-BTT"/>
-                            <constraint firstItem="lrk-bm-x6e" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" id="rSy-K2-ZY2"/>
+                            <constraint firstItem="lrk-bm-x6e" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.16" id="rSy-K2-ZY2"/>
                             <constraint firstItem="TLp-Qb-jXO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tkg-Gc-vZl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

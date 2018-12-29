@@ -12,7 +12,12 @@ import AVFoundation
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var previewImageView: UIImageView!
-    @IBOutlet weak var snapButton: UIButton!
+    @IBOutlet weak var snapButton: UIButton! {
+        didSet {
+            snapButton.layer.masksToBounds = true
+            snapButton.layer.cornerRadius = snapButton.bounds.width / 2
+        }
+    }
     
     var presenter: HomeViewPresenter!
     var takenPhotos: [UIImage] = []
@@ -43,12 +48,14 @@ class HomeViewController: UIViewController {
     func initBlurEffect() {
         let blurEffect = UIBlurEffect(style: .light)
         let visualEffectView = UIVisualEffectView(effect: blurEffect)
-        visualEffectView.frame = self.snapButton.frame
+        //visualEffectView.frame = self.snapButton.frame
+        let size = self.view.bounds.width * 0.22
+        visualEffectView.frame.size = CGSize(width: size, height: size)
         visualEffectView.center = self.snapButton.center
         visualEffectView.layer.masksToBounds = true
         visualEffectView.layer.cornerRadius = visualEffectView.bounds.width / 2
         self.view.addSubview(visualEffectView)
-        self.view.bringSubviewToFront(snapButton)
+        self.view.bringSubviewToFront(self.snapButton)
     }
     
 }
