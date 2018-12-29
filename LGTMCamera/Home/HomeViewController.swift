@@ -15,6 +15,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var snapButton: UIButton!
     
     var presenter: HomeViewPresenter!
+    var takenPhotos: [UIImage] = []
+    var isPushing = false //連写中
+    var captureCounter = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +59,10 @@ extension HomeViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        
+        if captureCounter % 3 == 0, isPushing { // 1/10秒だけ処理する
+            guard let image = presenter.imageFromSampleBuffer(sampleBuffer: sampleBuffer) else { return }
+            takenPhotos.append(image)
+        }
     }
 }
 
