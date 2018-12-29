@@ -25,6 +25,11 @@ class HomeViewController: UIViewController {
         initVideo()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        initBlurEffect()
+    }
+    
     @IBAction func touchDownSnapButton(_ sender: UIButton) {//連写中
         isPushing = true
         takenPhotos = []
@@ -33,6 +38,17 @@ class HomeViewController: UIViewController {
     @IBAction func touchUpSnapButton(_ sender: UIButton) {//連写終了
         isPushing = false
         print(takenPhotos.count)
+    }
+    
+    func initBlurEffect() {
+        let blurEffect = UIBlurEffect(style: .light)
+        let visualEffectView = UIVisualEffectView(effect: blurEffect)
+        visualEffectView.frame = self.snapButton.frame
+        visualEffectView.center = self.snapButton.center
+        visualEffectView.layer.masksToBounds = true
+        visualEffectView.layer.cornerRadius = visualEffectView.bounds.width / 2
+        self.view.addSubview(visualEffectView)
+        self.view.bringSubviewToFront(snapButton)
     }
     
 }
