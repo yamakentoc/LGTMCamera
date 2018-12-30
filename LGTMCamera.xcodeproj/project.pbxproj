@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15CE430F21D8BAA50086C36F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CE430E21D8BAA50086C36F /* UIColor.swift */; };
 		15E8FBBE21D61B3500B18C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */; };
 		15E8FBC021D61B3500B18C32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBBF21D61B3500B18C32 /* HomeViewController.swift */; };
 		15E8FBC321D61B3500B18C32 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E8FBC121D61B3500B18C32 /* HomeViewController.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15CE430E21D8BAA50086C36F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		15E8FBBA21D61B3500B18C32 /* LGTMCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGTMCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15E8FBBF21D61B3500B18C32 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		15CE430D21D8BA950086C36F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15CE430E21D8BAA50086C36F /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		15E8FBB121D61B3500B18C32 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */,
+				15CE430D21D8BA950086C36F /* Extensions */,
 				15E8FBEF21D64B0500B18C32 /* Home */,
 				15E8FBED21D6249100B18C32 /* R.generated.swift */,
 				15E8FBC421D61B3600B18C32 /* Assets.xcassets */,
@@ -447,6 +458,7 @@
 				15E8FBBE21D61B3500B18C32 /* AppDelegate.swift in Sources */,
 				15E8FBF121D64BB400B18C32 /* HomeViewPresenter.swift in Sources */,
 				15E8FBEE21D6249100B18C32 /* R.generated.swift in Sources */,
+				15CE430F21D8BAA50086C36F /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
