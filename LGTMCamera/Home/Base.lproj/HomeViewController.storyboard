@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BjJ-Sf-z32">
-                                <rect key="frame" x="146.5" y="588" width="82.5" height="82.5"/>
+                                <rect key="frame" x="146.5" y="576" width="82.5" height="82.5"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pHF-bT-OUR">
                                     <rect key="frame" x="0.0" y="0.0" width="82.5" height="82.5"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +33,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrk-bm-x6e">
-                                <rect key="frame" x="157.5" y="599" width="60" height="60"/>
+                                <rect key="frame" x="157.5" y="587" width="60" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="lrk-bm-x6e" secondAttribute="height" multiplier="1:1" id="DjV-8a-mTe"/>
@@ -46,7 +46,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lrk-bm-x6e" secondAttribute="bottom" constant="8" id="4aF-mq-rO8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lrk-bm-x6e" secondAttribute="bottom" constant="20" id="4aF-mq-rO8"/>
                             <constraint firstItem="lrk-bm-x6e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9EG-3B-HTF"/>
                             <constraint firstItem="TLp-Qb-jXO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DlT-N5-leg"/>
                             <constraint firstItem="BjJ-Sf-z32" firstAttribute="width" secondItem="TLp-Qb-jXO" secondAttribute="width" multiplier="0.22" id="NKU-fE-gEL"/>
@@ -61,8 +61,8 @@
                     </view>
                     <connections>
                         <outlet property="previewImageView" destination="TLp-Qb-jXO" id="x6a-ke-oWC"/>
+                        <outlet property="snapBackView" destination="BjJ-Sf-z32" id="men-bm-j8o"/>
                         <outlet property="snapButton" destination="lrk-bm-x6e" id="SIf-5x-5g1"/>
-                        <outlet property="visualEffectView" destination="BjJ-Sf-z32" id="men-bm-j8o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
