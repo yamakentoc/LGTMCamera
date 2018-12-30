@@ -40,11 +40,16 @@ class HomeViewController: UIViewController {
     @IBAction func touchDownSnapButton(_ sender: UIButton) {//連写中
         isPushing = true
         takenPhotos = []
+        drawCircle(targetView: visualEffectView)
     }
     
     @IBAction func touchUpSnapButton(_ sender: UIButton) {//連写終了
         isPushing = false
         print(takenPhotos.count)
+        let layer = visualEffectView.layer
+        let pauseTime = layer.convertTime(CACurrentMediaTime(), from: nil)
+        layer.speed = 0.0
+        layer.timeOffset = pauseTime
     }
     
     //撮影中に表示されるprogressCircle
@@ -58,8 +63,7 @@ class HomeViewController: UIViewController {
         circle.strokeColor = UIColor.red.cgColor
         circle.lineWidth = lineWidth//線の幅
         targetView.layer.addSublayer(circle)
-        // duration0.0のアニメーションにて初期描画(線が書かれていない状態)にしておく
-        //drawCircleAnimation(fromValue: 0.0, toValue: 1.0, duration: 2.0, repeatCount: 1.0, flag: false)
+        drawCircleAnimation(fromValue: 0.0, toValue: 1.0, duration: 2.0, repeatCount: 1.0, flag: false)
     }
     
     func drawCircleAnimation(fromValue: CGFloat, toValue: CGFloat, duration: TimeInterval, repeatCount: Float, flag: Bool) {
