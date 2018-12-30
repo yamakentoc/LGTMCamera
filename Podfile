@@ -8,6 +8,7 @@ target 'LGTMCamera' do
   # Pods for LGTMCamera
   pod 'SwiftLint'
   pod 'R.swift'
+  pod 'GradientCircularProgress', :git => 'https://github.com/keygx/GradientCircularProgress'
 
   target 'LGTMCameraTests' do
     inherit! :search_paths

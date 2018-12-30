@@ -3,157 +3,210 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		022A9AD44AB5F6C2159AA13A27B3AC8B /* ColorPaletteItemResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE45C2BEDAEA680063E011B6902A1DD /* ColorPaletteItemResource+UIKit.swift */; };
-		063A38A661DC55BDD021AC99FA7BF0C8 /* UIImage+ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAC5FA27D3EF80A4DAA9C312CB18AF6 /* UIImage+ImageResource.swift */; };
-		06C4D27C92D51DD8C79C64F4BD0CEC64 /* Pods-LGTMCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F736241A549D4B1813D70A0A9E5FFB6F /* Pods-LGTMCamera-dummy.m */; };
-		09A91FC7409960A840B9E9B02B247690 /* Data+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09ACA01DAA682FF80F96CC9C7EA8A5 /* Data+FileResource.swift */; };
-		0C4D78AB6B78BA992479FCE5CD7DACEE /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B198C4A71B3B6AE14874026A75C0AA /* ImageResource.swift */; };
 		1EE866BCD0475B7875091965D169869C /* Pods-LGTMCameraUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2319B74A6D80E3F37E60C5051092504E /* Pods-LGTMCameraUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24D47A5B190E0E735027988FC24F6A98 /* UIViewController+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5619386A49119037FD31F489378E5A48 /* UIViewController+NibResource.swift */; };
-		275CEBBF8162D269AA4D30C4AEEFC3DE /* UIStoryboard+StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981B42C920BEDC72386A52C7F24990C2 /* UIStoryboard+StoryboardResource.swift */; };
+		21CD6189DDE041D308E45CF2D751435D /* R.swift.Library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72E1CD95A4216D8762E7B81116EBB270 /* R.swift.Library-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2228DE3C955CDEDEA264374660971BD3 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30467622A288E714DADC2F7E58B760D /* UIViewController+StoryboardSegueIdentifierProtocol.swift */; };
+		252AEA7FF751B3164518E57AD950FC0B /* GradientCircularProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE0C50129DF1A32B2A0B096B18DD687 /* GradientCircularProgress-dummy.m */; };
+		27775D73D6ACEBD8441284B544F97854 /* Pods-LGTMCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F905C241EB562DC5B007DAFC0F991BF /* Pods-LGTMCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28320EF520505D5EE35758A547AA1D43 /* StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79A00FBE2B5E4A6B54FD26C048081F5 /* StoryboardSegueIdentifierProtocol.swift */; };
 		2A552B39ECDE47AB962EB12BCBFBE9EB /* Pods-LGTMCameraTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB7CA502B0E7E79D51A1EE6ABB7ECF5 /* Pods-LGTMCameraTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B08AB7B1D6D8AC811BF52C84CD1FB6A /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C3FAD6BA2B27EC94A7BA2A1AC31A68 /* UICollectionView+ReuseIdentifierProtocol.swift */; };
 		2BE431AB1B63A57A7D7A31BDB33AAE93 /* Pods-LGTMCameraUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F39BC7D9E32638CDA948F47641F981 /* Pods-LGTMCameraUITests-dummy.m */; };
-		3BB26CF37FE374DFEA3B5120141E39C4 /* UIColor+ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57914255321F11F140DE905513158250 /* UIColor+ColorResource.swift */; };
-		3D3D18AE9758E91A0695047DB5C199FB /* UIFont+FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D396BF094D0C8667F4C2694BD5EDE /* UIFont+FontResource.swift */; };
-		4058AE34F7D4898D8B4C0445A82E2E34 /* StoryboardResourceWithInitialController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FCA85E7B1A26E6A920F0B1DDB0939C /* StoryboardResourceWithInitialController+UIKit.swift */; };
+		350826DA750C4E7182D50C7225BB692F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		3ACC17872D169D2E18935FB25D38FB15 /* Pods-LGTMCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F736241A549D4B1813D70A0A9E5FFB6F /* Pods-LGTMCamera-dummy.m */; };
+		3D00382A195163DC7C80D4F04F2F768F /* Bundle+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF88F80101E67C5035E07116C9894A /* Bundle+FileResource.swift */; };
+		3FBC1D2F55E9D1A6BF44EBF4E22DB15D /* UIImage+ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2320912E4DD72D4B00A8FBB41CA18B /* UIImage+ImageResource.swift */; };
+		41C3FD6F3AFBA53325CB5EA057B09E88 /* ColorPaletteItemResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E4C3B0522EB89E9946D446FD2F6B94 /* ColorPaletteItemResource+UIKit.swift */; };
 		47554EC32AF19AD8ACFB5CDE97863E2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		4AF6FF982EE5FD4C2E1D5A704C787A56 /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D09422FD935C77CEAA81227F1C5E1B1 /* StoryboardResource.swift */; };
-		4B7EA8C644AFB75615D5F40BBB665E9A /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8089AFAC464FE55DC25AF5427DB31DF /* NibResource.swift */; };
-		4DC1042BCE2D95F3703E7BD801EC0147 /* StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE7D6068261F2150B359A660445664B /* StoryboardSegueIdentifierProtocol.swift */; };
-		549D7FD190C93A14987FD824C0C7CF05 /* UINib+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F3651A1B235761D47BF7811DBCFA7 /* UINib+NibResource.swift */; };
-		54DD40ED44230706D0375948883A67B0 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A172E2F681F4AB998554F8502D0E5F3 /* Identifier.swift */; };
-		65F861C4CE1D6C877FDC278BC78EE0AD /* Pods-LGTMCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F905C241EB562DC5B007DAFC0F991BF /* Pods-LGTMCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F5D4098A400C72157EC0A23FF09459A /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D8FD29AE72C64B68934148B97DE8C /* FontResource.swift */; };
-		9C144D650E1389452520063783A15F37 /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207BC4E72C03D702BC551E9A0A8FE14 /* UIStoryboard+StoryboardViewControllerResource.swift */; };
-		9EDB5C25CEF0ADBE5D4A28546A4DE95A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		4A0E88E0F7AB327F6109BA6199EBEF37 /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A183028E2739E5027CE61D02207A4A /* StoryboardResource.swift */; };
+		5848F36C873E4C33995D54B8267A4D9E /* ProgressAtRatioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D4625C8136C00C918B850CF513A9A1 /* ProgressAtRatioView.swift */; };
+		59F1418C0F2D2F7C594B5E3D8C13B7BC /* ColorPaletteItemResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F36F84670C878E2EBF6C5584AB9A2C7 /* ColorPaletteItemResource.swift */; };
+		5C0B5A2C80C32A9EE934FD939D5C5393 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2326D666E07279C97D80B2E7B1C8B9 /* ReuseIdentifierProtocol.swift */; };
+		5C26B3FDBAA97E48F22C9C3FC6950BCE /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CC8320DEC4550AAB8AA8EC7560FBAD /* UIStoryboard+StoryboardViewControllerResource.swift */; };
+		5D412E2FA593D6F453CB5E4A76E48783 /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326565249D0D5C522E45941168059D04 /* FontResource.swift */; };
+		5DFB7ECAD59CF4E653143AFC3D77BECE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		6760B5A28D76586223E04A187DD38BF8 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB54BC89CC99A17F14B77AAD5FC62C /* ProgressView.swift */; };
+		6962C68E9E20E0C0B784E324302AD34C /* StoryboardResourceWithInitialController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F11F58B61D8745578089C331AF1D1D /* StoryboardResourceWithInitialController+UIKit.swift */; };
+		6BBDEFC97B5EE6BD4D5301FE8DCE2EC9 /* GradientCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FCB54736AC55F3AB297979BB3209F6 /* GradientCircularProgress.swift */; };
+		6E97214E9F00323A9B1463336FB6BF8C /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E8B209490ED68816DB4609358D0CC /* FileResource.swift */; };
+		72611B73858AB2982FDE102A47CDF234 /* GreenLightStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB99A3306C6997090C3ADE7CD813581 /* GreenLightStyle.swift */; };
+		7299492AEAB5109FDB632E856DD88F44 /* GradientCircularProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 413B83AB895F345D5263C059804F3B30 /* GradientCircularProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73F6A6BF50C7DDD657DF6D14746BAE02 /* BlueIndicatorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2C7D3A20CED18208F5130F9DAF28D /* BlueIndicatorStyle.swift */; };
+		755152D99E5E22D6C7AE411386F3342B /* GradientArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D6D4CE05EB0F95843FE2E6B6FD58 /* GradientArcView.swift */; };
+		7BF02A4F924B480DC22DF1834BB900D1 /* GradientCircularProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = DF47A2F264AA7C7C341947FB4935394D /* GradientCircularProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8790C7334FC53CED4711152B50CC955A /* UITableView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7049DF16893B333277442793F1EFFF2 /* UITableView+ReuseIdentifierProtocol.swift */; };
+		8AC7D8F5E64225D8EA7A8392A43ADCA4 /* StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1653BEB2A7F97888850981DD8D5E1F01 /* StoryboardViewControllerResource.swift */; };
+		8C819CD6B7C4E929AEF7627EB9CD9D1F /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781110C343ADC66D2370C4A2FFA539C /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */; };
+		9AF504E4283ABE4D373F08BAE04D6D12 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3667C08EC585A5F5BC43FAB940C5AEA /* ImageResource.swift */; };
+		9CD0B45094232BCFE9ED48DA7B19019A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		9CE48AEE965257F24DCF8C210FA03F93 /* R.swift.Library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 234A7ED47FD93E644CF203A28D066A49 /* R.swift.Library-dummy.m */; };
 		9F7F75B31A21B508D67004B83F538AD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		9F97A7BF9FF2EB521B9A9B47CE2E0177 /* ColorPaletteItemResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5A33EF4E61728110676968E667BB1B /* ColorPaletteItemResource.swift */; };
-		9FCF095BF4E9D68986CB010EF501706F /* Bundle+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C86D97CEF9559A8DB2D47953EC0E28 /* Bundle+FileResource.swift */; };
+		A368D6418A34A9EF882AE648FEAD301B /* UIColor+ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C31297B303768B3E476E5EED297BCE1 /* UIColor+ColorResource.swift */; };
 		AA40F74A44B3418EC36E5792FFB20114 /* Pods-LGTMCameraTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AD2951ED3406F3F3FD39ADC30E35EA /* Pods-LGTMCameraTests-dummy.m */; };
-		AE604555E1FB903CCA76E1A519AAD60C /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BFD83E7A62CB928C7AEFE2D67C7FFB /* Validatable.swift */; };
-		B2E50C70716728E813AE1068CD080324 /* StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE510C2C5A244325677A5AB5D4533900 /* StoryboardViewControllerResource.swift */; };
-		B3CCC13AAF40246EF55BC78365FB0823 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CA3BB6D5E9E5A3A1EC1FAB2F44F88 /* ReuseIdentifierProtocol.swift */; };
-		C733B83C92A640F59466345B24FF8D9B /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C9C9F5541F1087DBA2D0C88E7A451C /* UICollectionView+ReuseIdentifierProtocol.swift */; };
-		CAB3DD8D458D4E3896DC8DDC797F0F11 /* UITableView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188655DBF1F850531B58912E9BE1677C /* UITableView+ReuseIdentifierProtocol.swift */; };
-		D2D473AA08341A0CF91AAAD055927C25 /* R.swift.Library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8707773F45F41201544C7705F7137599 /* R.swift.Library-dummy.m */; };
-		D88E3EFBC43E73DE4FFE7A301E60DA95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		D93CDDC72E7A1C368BB80CB5FE653D89 /* R.swift.Library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B20093EE81E4037B0F6E9CAE13D3BD /* R.swift.Library-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9B774DBB8D416584E1AF40F741DE702 /* NibResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A279D0059505740269142341978BC /* NibResource+UIKit.swift */; };
-		DFE1FE05418BDB3B426AA2E30309AD0C /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FA2976ABDF80E0C24D09A52B7AE49 /* FileResource.swift */; };
-		E1EDFC83712DB53124F729E549B2A821 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0FD446F1512B415E477227A89A5E9A /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */; };
-		EAE3FBEE69FF2969D849D38640111A10 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788E180E8DEB531808D90818EDA15DF8 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */; };
-		EEEDC2DABCD21AA82F9185112C633392 /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856282A8742C9D3A9C08B593D63138A /* ColorResource.swift */; };
-		FBA863BF7FF41FD2E7BFB94B1A70D774 /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6447DAC5C3C363C53BDAC28E8FF70 /* StringResource.swift */; };
+		B371AA1F96488D31AA876135B7A6BB81 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134A2FF23105021B25210301E77BCC0B /* Property.swift */; };
+		B62213BDBDC62DE32D583761FF596710 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D14CDF478FBF58A71456C75FD993274 /* CircularProgressView.swift */; };
+		B648D23B23F5498C50C85364F6CA67B1 /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FB0D1956D9452BE9470347AFF9346A /* NibResource.swift */; };
+		B7CD0844652E8351F1A73D502E10AA2E /* BlueDarkStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030FB0725A8A73B4BA184E88D2115265 /* BlueDarkStyle.swift */; };
+		C687973B8063774439A110CE9AE67134 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F85B1189430397F5B2D47E28BE27D4 /* Style.swift */; };
+		C70F8A5CE637D7A8F0632930F7C5A1A2 /* Data+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2016CFC453D39C78C91116C1B9B45AB /* Data+FileResource.swift */; };
+		D3F31F753B59DD84B1BD25D0E1C71D14 /* OrangeClearStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E456A8CF9679459273084288503DA6C /* OrangeClearStyle.swift */; };
+		D7C6938A6EE2596361866DC269955DE7 /* UIViewController+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048769DFBB059BEEFF80161388E3064F /* UIViewController+NibResource.swift */; };
+		D8F012D839280989FCBDBF128DA993BA /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD8644CA86BC3BDA491440FAE2BB3CE /* ProgressViewController.swift */; };
+		D94647E5D96EFBEE36851893F5789474 /* UIStoryboard+StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0812AEBFF4331AD9DA907936464380D4 /* UIStoryboard+StoryboardResource.swift */; };
+		DCA0142F2D3951E73AC9885347031790 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA3D596655A107E21B71AF9377C927 /* Identifier.swift */; };
+		DE54A07A4B012801ABFD39C509937A5C /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A1F5513E25DA9A8B12A6F85DCFA30D /* StringResource.swift */; };
+		DF77D4737EBAB4BBE004898DA6B0884E /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E44D1EA4FD9D91A405020300F7FA0B9 /* ColorResource.swift */; };
+		E458FF1D75C96099B0702435FA16D7D8 /* NibResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BE5594891C1FB04ACC7AE162085AE /* NibResource+UIKit.swift */; };
+		E4FB154D69DD80EE0E7BA7266F3AA968 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A99C89E04C3BB815C591FAFEC442272 /* Validatable.swift */; };
+		E6CEF17FA7DF3AFCB8EF6E93D2CBBE9F /* BaseWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B198F3390CD68D99959B439696C688DF /* BaseWindow.swift */; };
+		ED38CD6F03D9A117F33D11D2EB036D6A /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4C3F96FB7FCC2C68C094CF72DEADE /* Background.swift */; };
+		F56DEDDFA5EB30F26716A900A2EDEA33 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D16E6E17D3ABD05E6C623D372E0EE9B /* ColorUtil.swift */; };
+		F823B86A80B570A3AF877FA1298EB598 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E3B6F7234F269DA8499735D30AD56A /* ArcView.swift */; };
+		FB32142E7CBDAB371C6DF55B13518025 /* UIFont+FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296FB46DD7A77473E034F2467E7F1E4 /* UIFont+FontResource.swift */; };
+		FB3E45F2232257F15C1268136F48545F /* UINib+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57B27E632F4ABA82FDD42640F0E94D0 /* UINib+NibResource.swift */; };
+		FCBAF6F94AB022A1F33DF571B17928B2 /* GradientArcWithClearColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901BB01C3A83DE72DD17B4037FB3DE66 /* GradientArcWithClearColorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		36CDCCAFB277B6F86E2F593BEE535187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF1268C27EE6C8A75467407D2651C6E6;
+			remoteInfo = R.swift.Library;
+		};
 		A06F66E043163C93225E8A988353A890 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 31C7B9F52A69665DA67691A859295270;
+			remoteGlobalIDString = D6ACBA6BDC22403155F7B69E0AE564CF;
 			remoteInfo = "Pods-LGTMCamera";
 		};
 		AD4A1E55171A602D7D2229AC70D66747 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 31C7B9F52A69665DA67691A859295270;
+			remoteGlobalIDString = D6ACBA6BDC22403155F7B69E0AE564CF;
 			remoteInfo = "Pods-LGTMCamera";
 		};
-		B8F98952BD3DCCA02BD52F7B630EFCDD /* PBXContainerItemProxy */ = {
+		D039E45E763D02880B98E444097938B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 150028ECCFFE6B1B0D90F7293B943E2D;
-			remoteInfo = R.swift.Library;
+			remoteGlobalIDString = 8340D0A581B8909BF5F7C87614BABC33;
+			remoteInfo = GradientCircularProgress;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		030FB0725A8A73B4BA184E88D2115265 /* BlueDarkStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlueDarkStyle.swift; path = source/Styles/BlueDarkStyle.swift; sourceTree = "<group>"; };
+		048769DFBB059BEEFF80161388E3064F /* UIViewController+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+NibResource.swift"; path = "Library/UIKit/UIViewController+NibResource.swift"; sourceTree = "<group>"; };
+		0812AEBFF4331AD9DA907936464380D4 /* UIStoryboard+StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardResource.swift"; sourceTree = "<group>"; };
+		08FCB54736AC55F3AB297979BB3209F6 /* GradientCircularProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientCircularProgress.swift; path = source/GradientCircularProgress.swift; sourceTree = "<group>"; };
+		0C31297B303768B3E476E5EED297BCE1 /* UIColor+ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorResource.swift"; path = "Library/UIKit/UIColor+ColorResource.swift"; sourceTree = "<group>"; };
+		10E3B6F7234F269DA8499735D30AD56A /* ArcView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArcView.swift; path = source/Progress/Elements/ArcView.swift; sourceTree = "<group>"; };
 		116AF55981BBA260245AFC2BEC3D9804 /* Pods-LGTMCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGTMCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		188655DBF1F850531B58912E9BE1677C /* UITableView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UITableView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
-		18B20093EE81E4037B0F6E9CAE13D3BD /* R.swift.Library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-umbrella.h"; sourceTree = "<group>"; };
-		19B198C4A71B3B6AE14874026A75C0AA /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Library/Core/ImageResource.swift; sourceTree = "<group>"; };
+		11CC8320DEC4550AAB8AA8EC7560FBAD /* UIStoryboard+StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardViewControllerResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardViewControllerResource.swift"; sourceTree = "<group>"; };
+		134A2FF23105021B25210301E77BCC0B /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = source/Progress/Property.swift; sourceTree = "<group>"; };
+		1653BEB2A7F97888850981DD8D5E1F01 /* StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardViewControllerResource.swift; path = Library/Core/StoryboardViewControllerResource.swift; sourceTree = "<group>"; };
+		20F11F58B61D8745578089C331AF1D1D /* StoryboardResourceWithInitialController+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardResourceWithInitialController+UIKit.swift"; path = "Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift"; sourceTree = "<group>"; };
 		2319B74A6D80E3F37E60C5051092504E /* Pods-LGTMCameraUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LGTMCameraUITests-umbrella.h"; sourceTree = "<group>"; };
-		2A8CA3BB6D5E9E5A3A1EC1FAB2F44F88 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifierProtocol.swift; path = Library/Core/ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
+		234A7ED47FD93E644CF203A28D066A49 /* R.swift.Library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift.Library-dummy.m"; sourceTree = "<group>"; };
 		2ABABE9088713F81337BDC879A664EF1 /* Pods-LGTMCamera-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LGTMCamera-acknowledgements.plist"; sourceTree = "<group>"; };
 		2B19BC32A9D9450D5483D2EBA38E4FB2 /* Pods-LGTMCameraTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGTMCameraTests-frameworks.sh"; sourceTree = "<group>"; };
-		2E8FA2976ABDF80E0C24D09A52B7AE49 /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Library/Core/FileResource.swift; sourceTree = "<group>"; };
+		2E44D1EA4FD9D91A405020300F7FA0B9 /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Library/Core/ColorResource.swift; sourceTree = "<group>"; };
+		2E7FD85FE05D76C299F76E44C465869C /* R.swift.Library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.xcconfig; sourceTree = "<group>"; };
+		2F3733098E4FD7BFFD4EB17CE0D842A6 /* Pods_LGTMCameraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGTMCameraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3151BA6A08D64349375E204BE3A3215C /* Pods-LGTMCameraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGTMCameraTests.release.xcconfig"; sourceTree = "<group>"; };
-		428F3651A1B235761D47BF7811DBCFA7 /* UINib+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINib+NibResource.swift"; path = "Library/UIKit/UINib+NibResource.swift"; sourceTree = "<group>"; };
-		4A7D8FD29AE72C64B68934148B97DE8C /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Library/Core/FontResource.swift; sourceTree = "<group>"; };
+		326565249D0D5C522E45941168059D04 /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Library/Core/FontResource.swift; sourceTree = "<group>"; };
+		35A1F5513E25DA9A8B12A6F85DCFA30D /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Library/Core/StringResource.swift; sourceTree = "<group>"; };
+		3C2F7F03F1BFC5C54452DC83490068ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D16E6E17D3ABD05E6C623D372E0EE9B /* ColorUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorUtil.swift; path = source/Utils/ColorUtil.swift; sourceTree = "<group>"; };
+		413B83AB895F345D5263C059804F3B30 /* GradientCircularProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientCircularProgress-umbrella.h"; sourceTree = "<group>"; };
 		4CB7CA502B0E7E79D51A1EE6ABB7ECF5 /* Pods-LGTMCameraTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LGTMCameraTests-umbrella.h"; sourceTree = "<group>"; };
-		5207BC4E72C03D702BC551E9A0A8FE14 /* UIStoryboard+StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardViewControllerResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardViewControllerResource.swift"; sourceTree = "<group>"; };
-		529D396BF094D0C8667F4C2694BD5EDE /* UIFont+FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+FontResource.swift"; path = "Library/UIKit/UIFont+FontResource.swift"; sourceTree = "<group>"; };
-		5619386A49119037FD31F489378E5A48 /* UIViewController+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+NibResource.swift"; path = "Library/UIKit/UIViewController+NibResource.swift"; sourceTree = "<group>"; };
-		57914255321F11F140DE905513158250 /* UIColor+ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorResource.swift"; path = "Library/UIKit/UIColor+ColorResource.swift"; sourceTree = "<group>"; };
-		58BFD83E7A62CB928C7AEFE2D67C7FFB /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Library/Core/Validatable.swift; sourceTree = "<group>"; };
+		4FD0458723964926782212BD75EB28FE /* R.swift.Library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.Library.modulemap; sourceTree = "<group>"; };
+		53C3FAD6BA2B27EC94A7BA2A1AC31A68 /* UICollectionView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		54BB54BC89CC99A17F14B77AAD5FC62C /* ProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressView.swift; path = source/Progress/ProgressView.swift; sourceTree = "<group>"; };
+		593B7630F00474566102F64A76FB935C /* R.swift.Library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-prefix.pch"; sourceTree = "<group>"; };
+		5961EE1591AD9E1336F77515B4B12F2F /* GradientCircularProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GradientCircularProgress.modulemap; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A99C89E04C3BB815C591FAFEC442272 /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Library/Core/Validatable.swift; sourceTree = "<group>"; };
 		5B36C58350E23E0AB17AAFAA5C5112EC /* Pods-LGTMCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGTMCamera.debug.xcconfig"; sourceTree = "<group>"; };
-		5B8A9780941B1F17E7FDD225755823B6 /* R.swift.Library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.Library.modulemap; sourceTree = "<group>"; };
+		5D14CDF478FBF58A71456C75FD993274 /* CircularProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircularProgressView.swift; path = source/Progress/Core/CircularProgressView.swift; sourceTree = "<group>"; };
 		5F905C241EB562DC5B007DAFC0F991BF /* Pods-LGTMCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LGTMCamera-umbrella.h"; sourceTree = "<group>"; };
 		61AD2951ED3406F3F3FD39ADC30E35EA /* Pods-LGTMCameraTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LGTMCameraTests-dummy.m"; sourceTree = "<group>"; };
-		6400FC128584691EFCBD08BA138FC8A2 /* Pods_LGTMCameraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LGTMCameraUITests.framework; path = "Pods-LGTMCameraUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6781110C343ADC66D2370C4A2FFA539C /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; path = "Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; sourceTree = "<group>"; };
 		69AEF8382A69AB10ABD74E8AD74AC4CF /* Pods-LGTMCameraUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LGTMCameraUITests.modulemap"; sourceTree = "<group>"; };
-		6D09422FD935C77CEAA81227F1C5E1B1 /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Library/Core/StoryboardResource.swift; sourceTree = "<group>"; };
-		6DE45C2BEDAEA680063E011B6902A1DD /* ColorPaletteItemResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ColorPaletteItemResource+UIKit.swift"; path = "Library/UIKit/ColorPaletteItemResource+UIKit.swift"; sourceTree = "<group>"; };
-		6E0FD446F1512B415E477227A89A5E9A /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; path = "Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; sourceTree = "<group>"; };
-		788E180E8DEB531808D90818EDA15DF8 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StoryboardSegueIdentifierProtocol.swift"; path = "Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift"; sourceTree = "<group>"; };
-		7A172E2F681F4AB998554F8502D0E5F3 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Library/Core/Identifier.swift; sourceTree = "<group>"; };
+		6E39CF5629D575C51077795DBCE0DF7D /* Pods_LGTMCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGTMCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E456A8CF9679459273084288503DA6C /* OrangeClearStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrangeClearStyle.swift; path = source/Styles/OrangeClearStyle.swift; sourceTree = "<group>"; };
+		72E1CD95A4216D8762E7B81116EBB270 /* R.swift.Library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-umbrella.h"; sourceTree = "<group>"; };
+		7ACF3214225A4FA08DAB37073EBDBA76 /* GradientCircularProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GradientCircularProgress.xcconfig; sourceTree = "<group>"; };
+		7B1BE5594891C1FB04ACC7AE162085AE /* NibResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibResource+UIKit.swift"; path = "Library/UIKit/NibResource+UIKit.swift"; sourceTree = "<group>"; };
 		7CBEBF2B3073853E686E7D5B8606F64A /* Pods-LGTMCameraTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LGTMCameraTests.modulemap"; sourceTree = "<group>"; };
-		810B12BADF944FAC60FF9676CE2B1D26 /* Rswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Rswift.framework; path = R.swift.Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83FEF7131C8C80F72A4236DC62CD81B7 /* Pods_LGTMCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LGTMCamera.framework; path = "Pods-LGTMCamera.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8707773F45F41201544C7705F7137599 /* R.swift.Library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift.Library-dummy.m"; sourceTree = "<group>"; };
-		8856282A8742C9D3A9C08B593D63138A /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Library/Core/ColorResource.swift; sourceTree = "<group>"; };
-		88A1DAA643DD19D281222EA275EF90EF /* Pods_LGTMCameraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LGTMCameraTests.framework; path = "Pods-LGTMCameraTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB99A3306C6997090C3ADE7CD813581 /* GreenLightStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GreenLightStyle.swift; path = source/Styles/GreenLightStyle.swift; sourceTree = "<group>"; };
+		8296FB46DD7A77473E034F2467E7F1E4 /* UIFont+FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+FontResource.swift"; path = "Library/UIKit/UIFont+FontResource.swift"; sourceTree = "<group>"; };
+		82B05A61EA31961633A401A266B67F13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EBA3E4EB93BB67BDC949DE005C3FFF1 /* Rswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rswift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F36F84670C878E2EBF6C5584AB9A2C7 /* ColorPaletteItemResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPaletteItemResource.swift; path = Library/Core/ColorPaletteItemResource.swift; sourceTree = "<group>"; };
+		901BB01C3A83DE72DD17B4037FB3DE66 /* GradientArcWithClearColorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientArcWithClearColorView.swift; path = source/Progress/Elements/GradientArcWithClearColorView.swift; sourceTree = "<group>"; };
 		92D4D62FFE9A772F09BAE54E96CFB9FA /* Pods-LGTMCamera-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGTMCamera-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95A6447DAC5C3C363C53BDAC28E8FF70 /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Library/Core/StringResource.swift; sourceTree = "<group>"; };
-		981B42C920BEDC72386A52C7F24990C2 /* UIStoryboard+StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardResource.swift"; sourceTree = "<group>"; };
-		A2C86D97CEF9559A8DB2D47953EC0E28 /* Bundle+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+FileResource.swift"; path = "Library/Foundation/Bundle+FileResource.swift"; sourceTree = "<group>"; };
-		AB7DF5200A6E825278AC876529C581FE /* R.swift.Library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FE0C50129DF1A32B2A0B096B18DD687 /* GradientCircularProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GradientCircularProgress-dummy.m"; sourceTree = "<group>"; };
+		ABD8644CA86BC3BDA491440FAE2BB3CE /* ProgressViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressViewController.swift; path = source/Progress/ProgressViewController.swift; sourceTree = "<group>"; };
 		ACEA0B325ADE3BB9C29DB03AC201CAC1 /* Pods-LGTMCameraUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGTMCameraUITests-resources.sh"; sourceTree = "<group>"; };
-		AD09ACA01DAA682FF80F96CC9C7EA8A5 /* Data+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+FileResource.swift"; path = "Library/Foundation/Data+FileResource.swift"; sourceTree = "<group>"; };
+		AD44D6D4CE05EB0F95843FE2E6B6FD58 /* GradientArcView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientArcView.swift; path = source/Progress/Elements/GradientArcView.swift; sourceTree = "<group>"; };
+		B01E8B209490ED68816DB4609358D0CC /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Library/Core/FileResource.swift; sourceTree = "<group>"; };
+		B198F3390CD68D99959B439696C688DF /* BaseWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseWindow.swift; path = source/Progress/Elements/BaseWindow.swift; sourceTree = "<group>"; };
 		B3DD3A8FEE0A79D0D16ECF26A75E3AE0 /* Pods-LGTMCameraTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGTMCameraTests-resources.sh"; sourceTree = "<group>"; };
+		B7FB0D1956D9452BE9470347AFF9346A /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Library/Core/NibResource.swift; sourceTree = "<group>"; };
+		B9D4625C8136C00C918B850CF513A9A1 /* ProgressAtRatioView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressAtRatioView.swift; path = source/Progress/Core/ProgressAtRatioView.swift; sourceTree = "<group>"; };
 		BB6A6CE171B3405DF515334049D90BFC /* Pods-LGTMCamera-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LGTMCamera-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BC4C783E3683A5466D69E6F9F71A2C5A /* Pods-LGTMCameraUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LGTMCameraUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BCAC39C24C9AD5B883298622623885A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCE7D6068261F2150B359A660445664B /* StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSegueIdentifierProtocol.swift; path = Library/Core/StoryboardSegueIdentifierProtocol.swift; sourceTree = "<group>"; };
-		BD6A279D0059505740269142341978BC /* NibResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibResource+UIKit.swift"; path = "Library/UIKit/NibResource+UIKit.swift"; sourceTree = "<group>"; };
 		C0F39BC7D9E32638CDA948F47641F981 /* Pods-LGTMCameraUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LGTMCameraUITests-dummy.m"; sourceTree = "<group>"; };
 		C2473749D373E8286259122380E4C8BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8089AFAC464FE55DC25AF5427DB31DF /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Library/Core/NibResource.swift; sourceTree = "<group>"; };
+		C3667C08EC585A5F5BC43FAB940C5AEA /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Library/Core/ImageResource.swift; sourceTree = "<group>"; };
+		C7049DF16893B333277442793F1EFFF2 /* UITableView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UITableView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		C7E4C3B0522EB89E9946D446FD2F6B94 /* ColorPaletteItemResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ColorPaletteItemResource+UIKit.swift"; path = "Library/UIKit/ColorPaletteItemResource+UIKit.swift"; sourceTree = "<group>"; };
+		CA2320912E4DD72D4B00A8FBB41CA18B /* UIImage+ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageResource.swift"; path = "Library/UIKit/UIImage+ImageResource.swift"; sourceTree = "<group>"; };
+		CAB23E7EBA3C4D9194D517115838CA3F /* GradientCircularProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GradientCircularProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2326D666E07279C97D80B2E7B1C8B9 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifierProtocol.swift; path = Library/Core/ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
 		CE4F7B009781DBCCD487B939655091FB /* Pods-LGTMCameraUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LGTMCameraUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D8FCA85E7B1A26E6A920F0B1DDB0939C /* StoryboardResourceWithInitialController+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardResourceWithInitialController+UIKit.swift"; path = "Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift"; sourceTree = "<group>"; };
+		D9A2C7D3A20CED18208F5130F9DAF28D /* BlueIndicatorStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlueIndicatorStyle.swift; path = source/Styles/BlueIndicatorStyle.swift; sourceTree = "<group>"; };
 		DA0E9A43EFAE7FE1847D091D17EB80E8 /* Pods-LGTMCameraUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGTMCameraUITests-frameworks.sh"; sourceTree = "<group>"; };
-		DCC9A7A711DBA6072F98C24C62B6E9C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA4C3F96FB7FCC2C68C094CF72DEADE /* Background.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Background.swift; path = source/Progress/Elements/Background.swift; sourceTree = "<group>"; };
+		DF47A2F264AA7C7C341947FB4935394D /* GradientCircularProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GradientCircularProgress.h; path = source/GradientCircularProgress.h; sourceTree = "<group>"; };
 		E198DF5DCDE26DCDBF4755217BE0ECFF /* Pods-LGTMCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGTMCamera.release.xcconfig"; sourceTree = "<group>"; };
+		E2016CFC453D39C78C91116C1B9B45AB /* Data+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+FileResource.swift"; path = "Library/Foundation/Data+FileResource.swift"; sourceTree = "<group>"; };
 		E29BD69C2DEFBB8F1BCF9E97D8B254F2 /* Pods-LGTMCameraTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LGTMCameraTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		ED5A33EF4E61728110676968E667BB1B /* ColorPaletteItemResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPaletteItemResource.swift; path = Library/Core/ColorPaletteItemResource.swift; sourceTree = "<group>"; };
-		EDAC5FA27D3EF80A4DAA9C312CB18AF6 /* UIImage+ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageResource.swift"; path = "Library/UIKit/UIImage+ImageResource.swift"; sourceTree = "<group>"; };
-		EF3D548B56C2FB31DB8A58AB8BADAF73 /* R.swift.Library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-prefix.pch"; sourceTree = "<group>"; };
-		F1C9C9F5541F1087DBA2D0C88E7A451C /* UICollectionView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		E6A183028E2739E5027CE61D02207A4A /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Library/Core/StoryboardResource.swift; sourceTree = "<group>"; };
+		E8DF88F80101E67C5035E07116C9894A /* Bundle+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+FileResource.swift"; path = "Library/Foundation/Bundle+FileResource.swift"; sourceTree = "<group>"; };
+		F1CA3D596655A107E21B71AF9377C927 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Library/Core/Identifier.swift; sourceTree = "<group>"; };
+		F30467622A288E714DADC2F7E58B760D /* UIViewController+StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StoryboardSegueIdentifierProtocol.swift"; path = "Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		F43C018B916515B484E61F08E4147721 /* Pods_LGTMCameraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGTMCameraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57B27E632F4ABA82FDD42640F0E94D0 /* UINib+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINib+NibResource.swift"; path = "Library/UIKit/UINib+NibResource.swift"; sourceTree = "<group>"; };
 		F736241A549D4B1813D70A0A9E5FFB6F /* Pods-LGTMCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LGTMCamera-dummy.m"; sourceTree = "<group>"; };
 		F76AD99F541B6828F4B853BF1F6D2B94 /* Pods-LGTMCamera-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGTMCamera-frameworks.sh"; sourceTree = "<group>"; };
+		F79A00FBE2B5E4A6B54FD26C048081F5 /* StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSegueIdentifierProtocol.swift; path = Library/Core/StoryboardSegueIdentifierProtocol.swift; sourceTree = "<group>"; };
 		F85982B939FC1AB87EAAD825C051F145 /* Pods-LGTMCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LGTMCamera.modulemap"; sourceTree = "<group>"; };
+		F8F85B1189430397F5B2D47E28BE27D4 /* Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Style.swift; path = source/Styles/Style.swift; sourceTree = "<group>"; };
 		F98B8964F21E6ECA9A402B45D44EB3FF /* Pods-LGTMCameraTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LGTMCameraTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F9D6ED1F7F576C7640DBE935977CDDC1 /* Pods-LGTMCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGTMCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FAA5E95AB799640E1DE7E8CAC06FCD35 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBCBEF6F7FF933FA33D8B00E5268CA51 /* GradientCircularProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientCircularProgress-prefix.pch"; sourceTree = "<group>"; };
 		FE4238F7F673364E7BFE64E43C781EE9 /* Pods-LGTMCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGTMCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FE510C2C5A244325677A5AB5D4533900 /* StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardViewControllerResource.swift; path = Library/Core/StoryboardViewControllerResource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		71DA3D61481418575DB8501FEAA54C41 /* Frameworks */ = {
+		562053173B76FF4C3FF27152959D4F4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D88E3EFBC43E73DE4FFE7A301E60DA95 /* Foundation.framework in Frameworks */,
+				5DFB7ECAD59CF4E653143AFC3D77BECE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,11 +218,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C94E1F8CAC9036EB09C24E956E99D03 /* Frameworks */ = {
+		AA40AFB699DBAEFFDA5E65D35A8F2CCD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EDB5C25CEF0ADBE5D4A28546A4DE95A /* Foundation.framework in Frameworks */,
+				9CD0B45094232BCFE9ED48DA7B19019A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,9 +234,87 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E424FD36C109E945FA828A9AD106C62A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350826DA750C4E7182D50C7225BB692F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08E63ED69D0E926B62FF0847ADD77F49 /* GradientCircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				10E3B6F7234F269DA8499735D30AD56A /* ArcView.swift */,
+				DAA4C3F96FB7FCC2C68C094CF72DEADE /* Background.swift */,
+				B198F3390CD68D99959B439696C688DF /* BaseWindow.swift */,
+				030FB0725A8A73B4BA184E88D2115265 /* BlueDarkStyle.swift */,
+				D9A2C7D3A20CED18208F5130F9DAF28D /* BlueIndicatorStyle.swift */,
+				5D14CDF478FBF58A71456C75FD993274 /* CircularProgressView.swift */,
+				3D16E6E17D3ABD05E6C623D372E0EE9B /* ColorUtil.swift */,
+				AD44D6D4CE05EB0F95843FE2E6B6FD58 /* GradientArcView.swift */,
+				901BB01C3A83DE72DD17B4037FB3DE66 /* GradientArcWithClearColorView.swift */,
+				DF47A2F264AA7C7C341947FB4935394D /* GradientCircularProgress.h */,
+				08FCB54736AC55F3AB297979BB3209F6 /* GradientCircularProgress.swift */,
+				7EB99A3306C6997090C3ADE7CD813581 /* GreenLightStyle.swift */,
+				6E456A8CF9679459273084288503DA6C /* OrangeClearStyle.swift */,
+				B9D4625C8136C00C918B850CF513A9A1 /* ProgressAtRatioView.swift */,
+				54BB54BC89CC99A17F14B77AAD5FC62C /* ProgressView.swift */,
+				ABD8644CA86BC3BDA491440FAE2BB3CE /* ProgressViewController.swift */,
+				134A2FF23105021B25210301E77BCC0B /* Property.swift */,
+				F8F85B1189430397F5B2D47E28BE27D4 /* Style.swift */,
+				A72E1C49AC9C58ABD02CB4A757995E3F /* Support Files */,
+			);
+			path = GradientCircularProgress;
+			sourceTree = "<group>";
+		};
+		4B03C13F0DC0AB697DF689EE31D7F257 /* R.swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = R.swift;
+			sourceTree = "<group>";
+		};
+		59795375665B5D748C0B8FB1DB826B5C /* R.swift.Library */ = {
+			isa = PBXGroup;
+			children = (
+				E8DF88F80101E67C5035E07116C9894A /* Bundle+FileResource.swift */,
+				8F36F84670C878E2EBF6C5584AB9A2C7 /* ColorPaletteItemResource.swift */,
+				C7E4C3B0522EB89E9946D446FD2F6B94 /* ColorPaletteItemResource+UIKit.swift */,
+				2E44D1EA4FD9D91A405020300F7FA0B9 /* ColorResource.swift */,
+				E2016CFC453D39C78C91116C1B9B45AB /* Data+FileResource.swift */,
+				B01E8B209490ED68816DB4609358D0CC /* FileResource.swift */,
+				326565249D0D5C522E45941168059D04 /* FontResource.swift */,
+				F1CA3D596655A107E21B71AF9377C927 /* Identifier.swift */,
+				C3667C08EC585A5F5BC43FAB940C5AEA /* ImageResource.swift */,
+				B7FB0D1956D9452BE9470347AFF9346A /* NibResource.swift */,
+				7B1BE5594891C1FB04ACC7AE162085AE /* NibResource+UIKit.swift */,
+				CD2326D666E07279C97D80B2E7B1C8B9 /* ReuseIdentifierProtocol.swift */,
+				E6A183028E2739E5027CE61D02207A4A /* StoryboardResource.swift */,
+				20F11F58B61D8745578089C331AF1D1D /* StoryboardResourceWithInitialController+UIKit.swift */,
+				F79A00FBE2B5E4A6B54FD26C048081F5 /* StoryboardSegueIdentifierProtocol.swift */,
+				1653BEB2A7F97888850981DD8D5E1F01 /* StoryboardViewControllerResource.swift */,
+				35A1F5513E25DA9A8B12A6F85DCFA30D /* StringResource.swift */,
+				6781110C343ADC66D2370C4A2FFA539C /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */,
+				53C3FAD6BA2B27EC94A7BA2A1AC31A68 /* UICollectionView+ReuseIdentifierProtocol.swift */,
+				0C31297B303768B3E476E5EED297BCE1 /* UIColor+ColorResource.swift */,
+				8296FB46DD7A77473E034F2467E7F1E4 /* UIFont+FontResource.swift */,
+				CA2320912E4DD72D4B00A8FBB41CA18B /* UIImage+ImageResource.swift */,
+				F57B27E632F4ABA82FDD42640F0E94D0 /* UINib+NibResource.swift */,
+				0812AEBFF4331AD9DA907936464380D4 /* UIStoryboard+StoryboardResource.swift */,
+				11CC8320DEC4550AAB8AA8EC7560FBAD /* UIStoryboard+StoryboardViewControllerResource.swift */,
+				C7049DF16893B333277442793F1EFFF2 /* UITableView+ReuseIdentifierProtocol.swift */,
+				048769DFBB059BEEFF80161388E3064F /* UIViewController+NibResource.swift */,
+				F30467622A288E714DADC2F7E58B760D /* UIViewController+StoryboardSegueIdentifierProtocol.swift */,
+				5A99C89E04C3BB815C591FAFEC442272 /* Validatable.swift */,
+				9E678245D966FF554C4A6209CEAA9031 /* Support Files */,
+			);
+			path = R.swift.Library;
+			sourceTree = "<group>";
+		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,18 +323,11 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7D8AD7500C19392E0371DC5DE00B08B6 /* Support Files */ = {
+		75CF886EAAA2B87B25B7C2E21D6E8F34 /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
-				DCC9A7A711DBA6072F98C24C62B6E9C7 /* Info.plist */,
-				5B8A9780941B1F17E7FDD225755823B6 /* R.swift.Library.modulemap */,
-				AB7DF5200A6E825278AC876529C581FE /* R.swift.Library.xcconfig */,
-				8707773F45F41201544C7705F7137599 /* R.swift.Library-dummy.m */,
-				EF3D548B56C2FB31DB8A58AB8BADAF73 /* R.swift.Library-prefix.pch */,
-				18B20093EE81E4037B0F6E9CAE13D3BD /* R.swift.Library-umbrella.h */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/R.swift.Library";
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -211,31 +335,24 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				8530A5E3294DC36F28ED9D2CB432EBF5 /* Pods */,
-				8F327F0D0082981943748F22FAE87C8C /* Products */,
+				AE823B8FC2A7C1C06563C0ADA4A93BD5 /* Pods */,
+				E04C373B423D4F9C2FB7039D2BA98D2F /* Products */,
 				A5C013E747F73010FAD2E100EDEE30EC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8530A5E3294DC36F28ED9D2CB432EBF5 /* Pods */ = {
+		9E678245D966FF554C4A6209CEAA9031 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EF8B08C9A784562933EDC212720826A3 /* R.swift */,
-				CD9720FEE24CEC4844BD42E8BE102FCD /* R.swift.Library */,
-				E0F39804065A5BE6F9DD7CB3BE971D2F /* SwiftLint */,
+				3C2F7F03F1BFC5C54452DC83490068ED /* Info.plist */,
+				4FD0458723964926782212BD75EB28FE /* R.swift.Library.modulemap */,
+				2E7FD85FE05D76C299F76E44C465869C /* R.swift.Library.xcconfig */,
+				234A7ED47FD93E644CF203A28D066A49 /* R.swift.Library-dummy.m */,
+				593B7630F00474566102F64A76FB935C /* R.swift.Library-prefix.pch */,
+				72E1CD95A4216D8762E7B81116EBB270 /* R.swift.Library-umbrella.h */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		8F327F0D0082981943748F22FAE87C8C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				83FEF7131C8C80F72A4236DC62CD81B7 /* Pods_LGTMCamera.framework */,
-				88A1DAA643DD19D281222EA275EF90EF /* Pods_LGTMCameraTests.framework */,
-				6400FC128584691EFCBD08BA138FC8A2 /* Pods_LGTMCameraUITests.framework */,
-				810B12BADF944FAC60FF9676CE2B1D26 /* Rswift.framework */,
-			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/R.swift.Library";
 			sourceTree = "<group>";
 		};
 		A5C013E747F73010FAD2E100EDEE30EC /* Targets Support Files */ = {
@@ -246,6 +363,31 @@
 				C27D7F0D91D5DA3CE7C0C0A77B2B40DD /* Pods-LGTMCameraUITests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A72E1C49AC9C58ABD02CB4A757995E3F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5961EE1591AD9E1336F77515B4B12F2F /* GradientCircularProgress.modulemap */,
+				7ACF3214225A4FA08DAB37073EBDBA76 /* GradientCircularProgress.xcconfig */,
+				9FE0C50129DF1A32B2A0B096B18DD687 /* GradientCircularProgress-dummy.m */,
+				FBCBEF6F7FF933FA33D8B00E5268CA51 /* GradientCircularProgress-prefix.pch */,
+				413B83AB895F345D5263C059804F3B30 /* GradientCircularProgress-umbrella.h */,
+				82B05A61EA31961633A401A266B67F13 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GradientCircularProgress";
+			sourceTree = "<group>";
+		};
+		AE823B8FC2A7C1C06563C0ADA4A93BD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08E63ED69D0E926B62FF0847ADD77F49 /* GradientCircularProgress */,
+				4B03C13F0DC0AB697DF689EE31D7F257 /* R.swift */,
+				59795375665B5D748C0B8FB1DB826B5C /* R.swift.Library */,
+				75CF886EAAA2B87B25B7C2E21D6E8F34 /* SwiftLint */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -274,44 +416,6 @@
 			path = "Target Support Files/Pods-LGTMCameraUITests";
 			sourceTree = "<group>";
 		};
-		CD9720FEE24CEC4844BD42E8BE102FCD /* R.swift.Library */ = {
-			isa = PBXGroup;
-			children = (
-				A2C86D97CEF9559A8DB2D47953EC0E28 /* Bundle+FileResource.swift */,
-				ED5A33EF4E61728110676968E667BB1B /* ColorPaletteItemResource.swift */,
-				6DE45C2BEDAEA680063E011B6902A1DD /* ColorPaletteItemResource+UIKit.swift */,
-				8856282A8742C9D3A9C08B593D63138A /* ColorResource.swift */,
-				AD09ACA01DAA682FF80F96CC9C7EA8A5 /* Data+FileResource.swift */,
-				2E8FA2976ABDF80E0C24D09A52B7AE49 /* FileResource.swift */,
-				4A7D8FD29AE72C64B68934148B97DE8C /* FontResource.swift */,
-				7A172E2F681F4AB998554F8502D0E5F3 /* Identifier.swift */,
-				19B198C4A71B3B6AE14874026A75C0AA /* ImageResource.swift */,
-				C8089AFAC464FE55DC25AF5427DB31DF /* NibResource.swift */,
-				BD6A279D0059505740269142341978BC /* NibResource+UIKit.swift */,
-				2A8CA3BB6D5E9E5A3A1EC1FAB2F44F88 /* ReuseIdentifierProtocol.swift */,
-				6D09422FD935C77CEAA81227F1C5E1B1 /* StoryboardResource.swift */,
-				D8FCA85E7B1A26E6A920F0B1DDB0939C /* StoryboardResourceWithInitialController+UIKit.swift */,
-				BCE7D6068261F2150B359A660445664B /* StoryboardSegueIdentifierProtocol.swift */,
-				FE510C2C5A244325677A5AB5D4533900 /* StoryboardViewControllerResource.swift */,
-				95A6447DAC5C3C363C53BDAC28E8FF70 /* StringResource.swift */,
-				6E0FD446F1512B415E477227A89A5E9A /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */,
-				F1C9C9F5541F1087DBA2D0C88E7A451C /* UICollectionView+ReuseIdentifierProtocol.swift */,
-				57914255321F11F140DE905513158250 /* UIColor+ColorResource.swift */,
-				529D396BF094D0C8667F4C2694BD5EDE /* UIFont+FontResource.swift */,
-				EDAC5FA27D3EF80A4DAA9C312CB18AF6 /* UIImage+ImageResource.swift */,
-				428F3651A1B235761D47BF7811DBCFA7 /* UINib+NibResource.swift */,
-				981B42C920BEDC72386A52C7F24990C2 /* UIStoryboard+StoryboardResource.swift */,
-				5207BC4E72C03D702BC551E9A0A8FE14 /* UIStoryboard+StoryboardViewControllerResource.swift */,
-				188655DBF1F850531B58912E9BE1677C /* UITableView+ReuseIdentifierProtocol.swift */,
-				5619386A49119037FD31F489378E5A48 /* UIViewController+NibResource.swift */,
-				788E180E8DEB531808D90818EDA15DF8 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */,
-				58BFD83E7A62CB928C7AEFE2D67C7FFB /* Validatable.swift */,
-				7D8AD7500C19392E0371DC5DE00B08B6 /* Support Files */,
-			);
-			name = R.swift.Library;
-			path = R.swift.Library;
-			sourceTree = "<group>";
-		};
 		E0414F347EFE587CEECDD9534E021257 /* Pods-LGTMCamera */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,20 +434,16 @@
 			path = "Target Support Files/Pods-LGTMCamera";
 			sourceTree = "<group>";
 		};
-		E0F39804065A5BE6F9DD7CB3BE971D2F /* SwiftLint */ = {
+		E04C373B423D4F9C2FB7039D2BA98D2F /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				CAB23E7EBA3C4D9194D517115838CA3F /* GradientCircularProgress.framework */,
+				6E39CF5629D575C51077795DBCE0DF7D /* Pods_LGTMCamera.framework */,
+				F43C018B916515B484E61F08E4147721 /* Pods_LGTMCameraTests.framework */,
+				2F3733098E4FD7BFFD4EB17CE0D842A6 /* Pods_LGTMCameraUITests.framework */,
+				8EBA3E4EB93BB67BDC949DE005C3FFF1 /* Rswift.framework */,
 			);
-			name = SwiftLint;
-			path = SwiftLint;
-			sourceTree = "<group>";
-		};
-		EF8B08C9A784562933EDC212720826A3 /* R.swift */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = R.swift;
-			path = R.swift;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F8C9AAC83237B1D937CB468BBF08F032 /* Pods-LGTMCameraTests */ = {
@@ -367,19 +467,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		336F6EA81190D3AEABE4945E258E958E /* Headers */ = {
+		0810700F877C7E4A8D31EB71F07B4A93 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65F861C4CE1D6C877FDC278BC78EE0AD /* Pods-LGTMCamera-umbrella.h in Headers */,
+				21CD6189DDE041D308E45CF2D751435D /* R.swift.Library-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49DAD4FD9E314707FD6B1BEE0DF65F63 /* Headers */ = {
+		531BBB447F817A2122AC35968A1A4E1B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D93CDDC72E7A1C368BB80CB5FE653D89 /* R.swift.Library-umbrella.h in Headers */,
+				7299492AEAB5109FDB632E856DD88F44 /* GradientCircularProgress-umbrella.h in Headers */,
+				7BF02A4F924B480DC22DF1834BB900D1 /* GradientCircularProgress.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,44 +500,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB5FBE7F54AFD3D5AD054466DB9CB733 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27775D73D6ACEBD8441284B544F97854 /* Pods-LGTMCamera-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		150028ECCFFE6B1B0D90F7293B943E2D /* R.swift.Library */ = {
+		8340D0A581B8909BF5F7C87614BABC33 /* GradientCircularProgress */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93EF9F52CC8CC714925317C5AE25CF5F /* Build configuration list for PBXNativeTarget "R.swift.Library" */;
+			buildConfigurationList = 5D9BD974D1F7E37CB6C9D825B8E30967 /* Build configuration list for PBXNativeTarget "GradientCircularProgress" */;
 			buildPhases = (
-				49DAD4FD9E314707FD6B1BEE0DF65F63 /* Headers */,
-				9EB359A4F78E05E58C49AB0A57146E01 /* Sources */,
-				9C94E1F8CAC9036EB09C24E956E99D03 /* Frameworks */,
-				C931DE24F50569B5D7D615464B1FE223 /* Resources */,
+				531BBB447F817A2122AC35968A1A4E1B /* Headers */,
+				95235F008B33F6BE96C77675CB8F4CF4 /* Sources */,
+				AA40AFB699DBAEFFDA5E65D35A8F2CCD /* Frameworks */,
+				23B33F65C15838C6033137254CBD265D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = R.swift.Library;
-			productName = R.swift.Library;
-			productReference = 810B12BADF944FAC60FF9676CE2B1D26 /* Rswift.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		31C7B9F52A69665DA67691A859295270 /* Pods-LGTMCamera */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F9DC0536147F66DF67E71C649CCDBF38 /* Build configuration list for PBXNativeTarget "Pods-LGTMCamera" */;
-			buildPhases = (
-				336F6EA81190D3AEABE4945E258E958E /* Headers */,
-				FD23EB02FF11BE3816D262DF7B7B52C5 /* Sources */,
-				71DA3D61481418575DB8501FEAA54C41 /* Frameworks */,
-				8A036A183ADDDC90A7A0368A6167DC3B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E49A4B2317C24083A8D289D8FB993206 /* PBXTargetDependency */,
-			);
-			name = "Pods-LGTMCamera";
-			productName = "Pods-LGTMCamera";
-			productReference = 83FEF7131C8C80F72A4236DC62CD81B7 /* Pods_LGTMCamera.framework */;
+			name = GradientCircularProgress;
+			productName = GradientCircularProgress;
+			productReference = CAB23E7EBA3C4D9194D517115838CA3F /* GradientCircularProgress.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AB29646D5094E64915F45D104B21CAFF /* Pods-LGTMCameraUITests */ = {
@@ -455,7 +545,27 @@
 			);
 			name = "Pods-LGTMCameraUITests";
 			productName = "Pods-LGTMCameraUITests";
-			productReference = 6400FC128584691EFCBD08BA138FC8A2 /* Pods_LGTMCameraUITests.framework */;
+			productReference = 2F3733098E4FD7BFFD4EB17CE0D842A6 /* Pods_LGTMCameraUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6ACBA6BDC22403155F7B69E0AE564CF /* Pods-LGTMCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57911B3B9116C94DCCB4841E4D7E7BE /* Build configuration list for PBXNativeTarget "Pods-LGTMCamera" */;
+			buildPhases = (
+				FB5FBE7F54AFD3D5AD054466DB9CB733 /* Headers */,
+				8B19444C7F2BD4F511ADF31E8342287D /* Sources */,
+				562053173B76FF4C3FF27152959D4F4D /* Frameworks */,
+				FCED77C7C9D3BC7D2242AC11D66A5C8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31E25D652297A0F8BC78C9E0708AAD12 /* PBXTargetDependency */,
+				3FAB3CF32872647FCF356E1121AAFD41 /* PBXTargetDependency */,
+			);
+			name = "Pods-LGTMCamera";
+			productName = "Pods-LGTMCamera";
+			productReference = 6E39CF5629D575C51077795DBCE0DF7D /* Pods_LGTMCamera.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DE1B183A61D5C748634DA60F5AD75E2F /* Pods-LGTMCameraTests */ = {
@@ -474,7 +584,25 @@
 			);
 			name = "Pods-LGTMCameraTests";
 			productName = "Pods-LGTMCameraTests";
-			productReference = 88A1DAA643DD19D281222EA275EF90EF /* Pods_LGTMCameraTests.framework */;
+			productReference = F43C018B916515B484E61F08E4147721 /* Pods_LGTMCameraTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF1268C27EE6C8A75467407D2651C6E6 /* R.swift.Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C846B0A50B7DAA4206A673758B460A78 /* Build configuration list for PBXNativeTarget "R.swift.Library" */;
+			buildPhases = (
+				0810700F877C7E4A8D31EB71F07B4A93 /* Headers */,
+				6BCF4E9438077AABD37F8766F853F3BC /* Sources */,
+				E424FD36C109E945FA828A9AD106C62A /* Frameworks */,
+				F08AE07E8135A60B51E3031F48112D3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = R.swift.Library;
+			productName = R.swift.Library;
+			productReference = 8EBA3E4EB93BB67BDC949DE005C3FFF1 /* Rswift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -485,6 +613,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					8340D0A581B8909BF5F7C87614BABC33 = {
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -494,27 +627,28 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 8F327F0D0082981943748F22FAE87C8C /* Products */;
+			productRefGroup = E04C373B423D4F9C2FB7039D2BA98D2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				31C7B9F52A69665DA67691A859295270 /* Pods-LGTMCamera */,
+				8340D0A581B8909BF5F7C87614BABC33 /* GradientCircularProgress */,
+				D6ACBA6BDC22403155F7B69E0AE564CF /* Pods-LGTMCamera */,
 				DE1B183A61D5C748634DA60F5AD75E2F /* Pods-LGTMCameraTests */,
 				AB29646D5094E64915F45D104B21CAFF /* Pods-LGTMCameraUITests */,
-				150028ECCFFE6B1B0D90F7293B943E2D /* R.swift.Library */,
+				EF1268C27EE6C8A75467407D2651C6E6 /* R.swift.Library */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3D9553801CA5EE23E174BAB37D14CBE9 /* Resources */ = {
+		23B33F65C15838C6033137254CBD265D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A036A183ADDDC90A7A0368A6167DC3B /* Resources */ = {
+		3D9553801CA5EE23E174BAB37D14CBE9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -528,7 +662,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C931DE24F50569B5D7D615464B1FE223 /* Resources */ = {
+		F08AE07E8135A60B51E3031F48112D3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCED77C7C9D3BC7D2242AC11D66A5C8F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -546,6 +687,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BCF4E9438077AABD37F8766F853F3BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D00382A195163DC7C80D4F04F2F768F /* Bundle+FileResource.swift in Sources */,
+				41C3FD6F3AFBA53325CB5EA057B09E88 /* ColorPaletteItemResource+UIKit.swift in Sources */,
+				59F1418C0F2D2F7C594B5E3D8C13B7BC /* ColorPaletteItemResource.swift in Sources */,
+				DF77D4737EBAB4BBE004898DA6B0884E /* ColorResource.swift in Sources */,
+				C70F8A5CE637D7A8F0632930F7C5A1A2 /* Data+FileResource.swift in Sources */,
+				6E97214E9F00323A9B1463336FB6BF8C /* FileResource.swift in Sources */,
+				5D412E2FA593D6F453CB5E4A76E48783 /* FontResource.swift in Sources */,
+				DCA0142F2D3951E73AC9885347031790 /* Identifier.swift in Sources */,
+				9AF504E4283ABE4D373F08BAE04D6D12 /* ImageResource.swift in Sources */,
+				E458FF1D75C96099B0702435FA16D7D8 /* NibResource+UIKit.swift in Sources */,
+				B648D23B23F5498C50C85364F6CA67B1 /* NibResource.swift in Sources */,
+				9CE48AEE965257F24DCF8C210FA03F93 /* R.swift.Library-dummy.m in Sources */,
+				5C0B5A2C80C32A9EE934FD939D5C5393 /* ReuseIdentifierProtocol.swift in Sources */,
+				4A0E88E0F7AB327F6109BA6199EBEF37 /* StoryboardResource.swift in Sources */,
+				6962C68E9E20E0C0B784E324302AD34C /* StoryboardResourceWithInitialController+UIKit.swift in Sources */,
+				28320EF520505D5EE35758A547AA1D43 /* StoryboardSegueIdentifierProtocol.swift in Sources */,
+				8AC7D8F5E64225D8EA7A8392A43ADCA4 /* StoryboardViewControllerResource.swift in Sources */,
+				DE54A07A4B012801ABFD39C509937A5C /* StringResource.swift in Sources */,
+				8C819CD6B7C4E929AEF7627EB9CD9D1F /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */,
+				2B08AB7B1D6D8AC811BF52C84CD1FB6A /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */,
+				A368D6418A34A9EF882AE648FEAD301B /* UIColor+ColorResource.swift in Sources */,
+				FB32142E7CBDAB371C6DF55B13518025 /* UIFont+FontResource.swift in Sources */,
+				3FBC1D2F55E9D1A6BF44EBF4E22DB15D /* UIImage+ImageResource.swift in Sources */,
+				FB3E45F2232257F15C1268136F48545F /* UINib+NibResource.swift in Sources */,
+				D94647E5D96EFBEE36851893F5789474 /* UIStoryboard+StoryboardResource.swift in Sources */,
+				5C26B3FDBAA97E48F22C9C3FC6950BCE /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */,
+				8790C7334FC53CED4711152B50CC955A /* UITableView+ReuseIdentifierProtocol.swift in Sources */,
+				D7C6938A6EE2596361866DC269955DE7 /* UIViewController+NibResource.swift in Sources */,
+				2228DE3C955CDEDEA264374660971BD3 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */,
+				E4FB154D69DD80EE0E7BA7266F3AA968 /* Validatable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B9B362A8D4EAD9B531DEB90566ADF63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -554,48 +732,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EB359A4F78E05E58C49AB0A57146E01 /* Sources */ = {
+		8B19444C7F2BD4F511ADF31E8342287D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FCF095BF4E9D68986CB010EF501706F /* Bundle+FileResource.swift in Sources */,
-				022A9AD44AB5F6C2159AA13A27B3AC8B /* ColorPaletteItemResource+UIKit.swift in Sources */,
-				9F97A7BF9FF2EB521B9A9B47CE2E0177 /* ColorPaletteItemResource.swift in Sources */,
-				EEEDC2DABCD21AA82F9185112C633392 /* ColorResource.swift in Sources */,
-				09A91FC7409960A840B9E9B02B247690 /* Data+FileResource.swift in Sources */,
-				DFE1FE05418BDB3B426AA2E30309AD0C /* FileResource.swift in Sources */,
-				8F5D4098A400C72157EC0A23FF09459A /* FontResource.swift in Sources */,
-				54DD40ED44230706D0375948883A67B0 /* Identifier.swift in Sources */,
-				0C4D78AB6B78BA992479FCE5CD7DACEE /* ImageResource.swift in Sources */,
-				D9B774DBB8D416584E1AF40F741DE702 /* NibResource+UIKit.swift in Sources */,
-				4B7EA8C644AFB75615D5F40BBB665E9A /* NibResource.swift in Sources */,
-				D2D473AA08341A0CF91AAAD055927C25 /* R.swift.Library-dummy.m in Sources */,
-				B3CCC13AAF40246EF55BC78365FB0823 /* ReuseIdentifierProtocol.swift in Sources */,
-				4AF6FF982EE5FD4C2E1D5A704C787A56 /* StoryboardResource.swift in Sources */,
-				4058AE34F7D4898D8B4C0445A82E2E34 /* StoryboardResourceWithInitialController+UIKit.swift in Sources */,
-				4DC1042BCE2D95F3703E7BD801EC0147 /* StoryboardSegueIdentifierProtocol.swift in Sources */,
-				B2E50C70716728E813AE1068CD080324 /* StoryboardViewControllerResource.swift in Sources */,
-				FBA863BF7FF41FD2E7BFB94B1A70D774 /* StringResource.swift in Sources */,
-				E1EDFC83712DB53124F729E549B2A821 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */,
-				C733B83C92A640F59466345B24FF8D9B /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */,
-				3BB26CF37FE374DFEA3B5120141E39C4 /* UIColor+ColorResource.swift in Sources */,
-				3D3D18AE9758E91A0695047DB5C199FB /* UIFont+FontResource.swift in Sources */,
-				063A38A661DC55BDD021AC99FA7BF0C8 /* UIImage+ImageResource.swift in Sources */,
-				549D7FD190C93A14987FD824C0C7CF05 /* UINib+NibResource.swift in Sources */,
-				275CEBBF8162D269AA4D30C4AEEFC3DE /* UIStoryboard+StoryboardResource.swift in Sources */,
-				9C144D650E1389452520063783A15F37 /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */,
-				CAB3DD8D458D4E3896DC8DDC797F0F11 /* UITableView+ReuseIdentifierProtocol.swift in Sources */,
-				24D47A5B190E0E735027988FC24F6A98 /* UIViewController+NibResource.swift in Sources */,
-				EAE3FBEE69FF2969D849D38640111A10 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */,
-				AE604555E1FB903CCA76E1A519AAD60C /* Validatable.swift in Sources */,
+				3ACC17872D169D2E18935FB25D38FB15 /* Pods-LGTMCamera-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD23EB02FF11BE3816D262DF7B7B52C5 /* Sources */ = {
+		95235F008B33F6BE96C77675CB8F4CF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06C4D27C92D51DD8C79C64F4BD0CEC64 /* Pods-LGTMCamera-dummy.m in Sources */,
+				F823B86A80B570A3AF877FA1298EB598 /* ArcView.swift in Sources */,
+				ED38CD6F03D9A117F33D11D2EB036D6A /* Background.swift in Sources */,
+				E6CEF17FA7DF3AFCB8EF6E93D2CBBE9F /* BaseWindow.swift in Sources */,
+				B7CD0844652E8351F1A73D502E10AA2E /* BlueDarkStyle.swift in Sources */,
+				73F6A6BF50C7DDD657DF6D14746BAE02 /* BlueIndicatorStyle.swift in Sources */,
+				B62213BDBDC62DE32D583761FF596710 /* CircularProgressView.swift in Sources */,
+				F56DEDDFA5EB30F26716A900A2EDEA33 /* ColorUtil.swift in Sources */,
+				755152D99E5E22D6C7AE411386F3342B /* GradientArcView.swift in Sources */,
+				FCBAF6F94AB022A1F33DF571B17928B2 /* GradientArcWithClearColorView.swift in Sources */,
+				252AEA7FF751B3164518E57AD950FC0B /* GradientCircularProgress-dummy.m in Sources */,
+				6BBDEFC97B5EE6BD4D5301FE8DCE2EC9 /* GradientCircularProgress.swift in Sources */,
+				72611B73858AB2982FDE102A47CDF234 /* GreenLightStyle.swift in Sources */,
+				D3F31F753B59DD84B1BD25D0E1C71D14 /* OrangeClearStyle.swift in Sources */,
+				5848F36C873E4C33995D54B8267A4D9E /* ProgressAtRatioView.swift in Sources */,
+				6760B5A28D76586223E04A187DD38BF8 /* ProgressView.swift in Sources */,
+				D8F012D839280989FCBDBF128DA993BA /* ProgressViewController.swift in Sources */,
+				B371AA1F96488D31AA876135B7A6BB81 /* Property.swift in Sources */,
+				C687973B8063774439A110CE9AE67134 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,101 +771,31 @@
 		0C56330D31550BCF6EB4B84AC920A33F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-LGTMCamera";
-			target = 31C7B9F52A69665DA67691A859295270 /* Pods-LGTMCamera */;
+			target = D6ACBA6BDC22403155F7B69E0AE564CF /* Pods-LGTMCamera */;
 			targetProxy = A06F66E043163C93225E8A988353A890 /* PBXContainerItemProxy */;
+		};
+		31E25D652297A0F8BC78C9E0708AAD12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GradientCircularProgress;
+			target = 8340D0A581B8909BF5F7C87614BABC33 /* GradientCircularProgress */;
+			targetProxy = D039E45E763D02880B98E444097938B3 /* PBXContainerItemProxy */;
+		};
+		3FAB3CF32872647FCF356E1121AAFD41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift.Library;
+			target = EF1268C27EE6C8A75467407D2651C6E6 /* R.swift.Library */;
+			targetProxy = 36CDCCAFB277B6F86E2F593BEE535187 /* PBXContainerItemProxy */;
 		};
 		DFB1F07FE014D15BAF7288142F796C21 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-LGTMCamera";
-			target = 31C7B9F52A69665DA67691A859295270 /* Pods-LGTMCamera */;
+			target = D6ACBA6BDC22403155F7B69E0AE564CF /* Pods-LGTMCamera */;
 			targetProxy = AD4A1E55171A602D7D2229AC70D66747 /* PBXContainerItemProxy */;
-		};
-		E49A4B2317C24083A8D289D8FB993206 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = R.swift.Library;
-			target = 150028ECCFFE6B1B0D90F7293B943E2D /* R.swift.Library */;
-			targetProxy = B8F98952BD3DCCA02BD52F7B630EFCDD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0AD3CF1F83C8DAF605C1286AFD6CE227 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 116AF55981BBA260245AFC2BEC3D9804 /* Pods-LGTMCameraUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LGTMCameraUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LGTMCameraUITests/Pods-LGTMCameraUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3CC192F61FAC71E2C3A6B3B6E339F6D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB7DF5200A6E825278AC876529C581FE /* R.swift.Library.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/R.swift.Library/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
-				PRODUCT_MODULE_NAME = Rswift;
-				PRODUCT_NAME = Rswift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		506006087173EB3F6892A203CE7981CC /* Debug */ = {
+		070A8A7AD35DEFA985E222696DBDF120 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B36C58350E23E0AB17AAFAA5C5112EC /* Pods-LGTMCamera.debug.xcconfig */;
 			buildSettings = {
@@ -716,12 +812,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LGTMCamera/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LGTMCamera/Pods-LGTMCamera.modulemap";
 				OTHER_LDFLAGS = "";
@@ -739,7 +831,109 @@
 			};
 			name = Debug;
 		};
-		65B4EDE9FBBD6AE72A6143C9DA4DFDA9 /* Release */ = {
+		20C11F2DCBD5633D645737DC97CDEAAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7FD85FE05D76C299F76E44C465869C /* R.swift.Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/R.swift.Library/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
+				PRODUCT_MODULE_NAME = Rswift;
+				PRODUCT_NAME = Rswift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52906BFD62D0706AF3A3D8777EA04AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116AF55981BBA260245AFC2BEC3D9804 /* Pods-LGTMCameraUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LGTMCameraUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LGTMCameraUITests/Pods-LGTMCameraUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5553F62AC625F92AD9E8E7B8FE838E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3151BA6A08D64349375E204BE3A3215C /* Pods-LGTMCameraTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LGTMCameraTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LGTMCameraTests/Pods-LGTMCameraTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5DBE8C79BD74E8F7BAEAE0212D0DC901 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E198DF5DCDE26DCDBF4755217BE0ECFF /* Pods-LGTMCamera.release.xcconfig */;
 			buildSettings = {
@@ -756,12 +950,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LGTMCamera/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LGTMCamera/Pods-LGTMCamera.modulemap";
 				OTHER_LDFLAGS = "";
@@ -771,8 +961,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -780,10 +969,12 @@
 			};
 			name = Release;
 		};
-		76389EB9D1BFA2307C7D853633024598 /* Debug */ = {
+		6998345D6AA849EDADFC5619C3D1F155 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB7DF5200A6E825278AC876529C581FE /* R.swift.Library.xcconfig */;
+			baseConfigurationReference = F9D6ED1F7F576C7640DBE935977CDDC1 /* Pods-LGTMCameraUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -793,30 +984,27 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/R.swift.Library/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-LGTMCameraUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
-				PRODUCT_MODULE_NAME = Rswift;
-				PRODUCT_NAME = Rswift;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LGTMCameraUITests/Pods-LGTMCameraUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		8322AE3FB6DF16A80BCBA121575DBB8A /* Debug */ = {
+		8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -869,7 +1057,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -880,7 +1068,74 @@
 			};
 			name = Debug;
 		};
-		8DC861F53B471F106BC8ACC4475EFA12 /* Release */ = {
+		A112DA082558CD96D70780F287D63BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7FD85FE05D76C299F76E44C465869C /* R.swift.Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/R.swift.Library/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
+				PRODUCT_MODULE_NAME = Rswift;
+				PRODUCT_NAME = Rswift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABA2307FE47FD8F0DE31B099666962FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ACF3214225A4FA08DAB37073EBDBA76 /* GradientCircularProgress.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GradientCircularProgress/GradientCircularProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GradientCircularProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GradientCircularProgress/GradientCircularProgress.modulemap";
+				PRODUCT_MODULE_NAME = GradientCircularProgress;
+				PRODUCT_NAME = GradientCircularProgress;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -930,7 +1185,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -939,38 +1194,35 @@
 			};
 			name = Release;
 		};
-		B90729AFEEEEEDE85EA3AE64415705C1 /* Release */ = {
+		E02324AB9A6548570B930A3C921A6E32 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9D6ED1F7F576C7640DBE935977CDDC1 /* Pods-LGTMCameraUITests.release.xcconfig */;
+			baseConfigurationReference = 7ACF3214225A4FA08DAB37073EBDBA76 /* GradientCircularProgress.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LGTMCameraUITests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/GradientCircularProgress/GradientCircularProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GradientCircularProgress/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LGTMCameraUITests/Pods-LGTMCameraUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GradientCircularProgress/GradientCircularProgress.modulemap";
+				PRODUCT_MODULE_NAME = GradientCircularProgress;
+				PRODUCT_NAME = GradientCircularProgress;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -978,46 +1230,7 @@
 			};
 			name = Release;
 		};
-		D903381BA0FFC542A5B297C1AAB016D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3151BA6A08D64349375E204BE3A3215C /* Pods-LGTMCameraTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LGTMCameraTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LGTMCameraTests/Pods-LGTMCameraTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E31BA6202CEB288A567AF15BFF540274 /* Debug */ = {
+		F7694B87A9060923F3D6618C3161EB6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE4238F7F673364E7BFE64E43C781EE9 /* Pods-LGTMCameraTests.debug.xcconfig */;
 			buildSettings = {
@@ -1034,12 +1247,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LGTMCameraTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LGTMCameraTests/Pods-LGTMCameraTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1061,8 +1270,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8322AE3FB6DF16A80BCBA121575DBB8A /* Debug */,
-				8DC861F53B471F106BC8ACC4475EFA12 /* Release */,
+				8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */,
+				B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D9BD974D1F7E37CB6C9D825B8E30967 /* Build configuration list for PBXNativeTarget "GradientCircularProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA2307FE47FD8F0DE31B099666962FA /* Debug */,
+				E02324AB9A6548570B930A3C921A6E32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1070,17 +1288,8 @@
 		65D9F3F8E2B55B7EB2D3D16AA98FA839 /* Build configuration list for PBXNativeTarget "Pods-LGTMCameraTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E31BA6202CEB288A567AF15BFF540274 /* Debug */,
-				D903381BA0FFC542A5B297C1AAB016D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		93EF9F52CC8CC714925317C5AE25CF5F /* Build configuration list for PBXNativeTarget "R.swift.Library" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				76389EB9D1BFA2307C7D853633024598 /* Debug */,
-				3CC192F61FAC71E2C3A6B3B6E339F6D6 /* Release */,
+				F7694B87A9060923F3D6618C3161EB6E /* Debug */,
+				5553F62AC625F92AD9E8E7B8FE838E78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1088,17 +1297,26 @@
 		AD45BD76219C6CAA4B86BEE155451EC0 /* Build configuration list for PBXNativeTarget "Pods-LGTMCameraUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AD3CF1F83C8DAF605C1286AFD6CE227 /* Debug */,
-				B90729AFEEEEEDE85EA3AE64415705C1 /* Release */,
+				52906BFD62D0706AF3A3D8777EA04AB7 /* Debug */,
+				6998345D6AA849EDADFC5619C3D1F155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F9DC0536147F66DF67E71C649CCDBF38 /* Build configuration list for PBXNativeTarget "Pods-LGTMCamera" */ = {
+		B57911B3B9116C94DCCB4841E4D7E7BE /* Build configuration list for PBXNativeTarget "Pods-LGTMCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				506006087173EB3F6892A203CE7981CC /* Debug */,
-				65B4EDE9FBBD6AE72A6143C9DA4DFDA9 /* Release */,
+				070A8A7AD35DEFA985E222696DBDF120 /* Debug */,
+				5DBE8C79BD74E8F7BAEAE0212D0DC901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C846B0A50B7DAA4206A673758B460A78 /* Build configuration list for PBXNativeTarget "R.swift.Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A112DA082558CD96D70780F287D63BC6 /* Debug */,
+				20C11F2DCBD5633D645737DC97CDEAAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
