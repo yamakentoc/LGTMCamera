@@ -48,7 +48,6 @@ class HomeViewController: UIViewController {
     func initBlurEffect() {
         let blurEffect = UIBlurEffect(style: .light)
         let visualEffectView = UIVisualEffectView(effect: blurEffect)
-        //visualEffectView.frame = self.snapButton.frame
         let size = self.view.bounds.width * 0.22
         visualEffectView.frame.size = CGSize(width: size, height: size)
         visualEffectView.center = self.snapButton.center
@@ -62,32 +61,23 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
     func initVideo() {
-        //セッションのインスタンス生成
-        let captureSession = AVCaptureSession()
-        //入力(背面カメラ)
-        let videoDevice = AVCaptureDevice.default(for: AVMediaType.video)
+        let captureSession = AVCaptureSession() //セッションのインスタンス生成
+        let videoDevice = AVCaptureDevice.default(for: AVMediaType.video)//入力(背面カメラ)
         videoDevice?.activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: 30)
         guard let videoInput = try? AVCaptureDeviceInput.init(device: videoDevice!) else { return }
         captureSession.addInput(videoInput)
-        //出力(ビデオデータ)
-        let videoDataOutput = AVCaptureVideoDataOutput()
-        //ピクセルフォーマット(32bit BGRA)
-        videoDataOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as AnyHashable: Int(kCVPixelFormatType_32BGRA)] as? [String: Any]
-        //キューのブロック中に新しいフレームが来たら削除する
-        videoDataOutput.alwaysDiscardsLateVideoFrames = true
-        //フレームをキャプチャするためのキューを指定
-        videoDataOutput.setSampleBufferDelegate(self, queue: DispatchQueue.main)
+        let videoDataOutput = AVCaptureVideoDataOutput()//出力(ビデオデータ)
+        videoDataOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as AnyHashable: Int(kCVPixelFormatType_32BGRA)] as? [String: Any]//ピクセルフォーマット(32bit BGRA)
+        videoDataOutput.alwaysDiscardsLateVideoFrames = true//キューのブロック中に新しいフレームが来たら削除する
+        videoDataOutput.setSampleBufferDelegate(self, queue: DispatchQueue.main)//フレームをキャプチャするためのキューを指定
         captureSession.addOutput(videoDataOutput)
-        //クオリティ(1920*1080ピクセル)
-        captureSession.sessionPreset = AVCaptureSession.Preset.hd1920x1080
-        //プレビュー
-        let videoLayer = AVCaptureVideoPreviewLayer.init(session: captureSession)
-        videoLayer.frame = self.view.bounds//previewImageView.bounds
+        captureSession.sessionPreset = AVCaptureSession.Preset.hd1920x1080//クオリティ(1920*1080ピクセル)
+        let videoLayer = AVCaptureVideoPreviewLayer.init(session: captureSession)//プレビュー
+        videoLayer.frame = self.view.bounds
         videoLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         previewImageView.layer.addSublayer(videoLayer)
-        //セッションの開始
         DispatchQueue.global(qos: .userInitiated).async {
-            captureSession.startRunning()
+            captureSession.startRunning()//セッションの開始
         }
     }
     
