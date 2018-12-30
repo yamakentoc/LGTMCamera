@@ -1,12 +1,10 @@
 PODS:
-  - GradientCircularProgress (3.11.0)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
   - SwiftLint (0.27.0)
 
 DEPENDENCIES:
-  - GradientCircularProgress (from `https://github.com/keygx/GradientCircularProgress`)
   - R.swift
   - SwiftLint
 
@@ -16,21 +14,11 @@ SPEC REPOS:
     - R.swift.Library
     - SwiftLint
 
-EXTERNAL SOURCES:
-  GradientCircularProgress:
-    :git: https://github.com/keygx/GradientCircularProgress
-
-CHECKOUT OPTIONS:
-  GradientCircularProgress:
-    :commit: 72696e97effb5c6850e6bfd850e2833ce3ea9286
-    :git: https://github.com/keygx/GradientCircularProgress
-
 SPEC CHECKSUMS:
-  GradientCircularProgress: d517ad2863a62bbe77b0a7c94328b95be0a0ace7
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: 23d164e0d56dd579f7e9ee5c01f8064874c327c3
+PODFILE CHECKSUM: cb29d69a16e169b6d9f845895539d08b83ce3e90
 
 COCOAPODS: 1.5.3

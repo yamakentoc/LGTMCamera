@@ -8,7 +8,6 @@
 
 import UIKit
 import AVFoundation
-import GradientCircularProgress
 
 class HomeViewController: UIViewController {
     
@@ -24,7 +23,6 @@ class HomeViewController: UIViewController {
     var takenPhotos: [UIImage] = []
     var isPushing = false //連写中
     var captureCounter = 0
-    var visualEffectView: UIVisualEffectView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,12 +47,12 @@ class HomeViewController: UIViewController {
     
     func initBlurEffect() {
         let blurEffect = UIBlurEffect(style: .light)
-        self.visualEffectView = UIVisualEffectView(effect: blurEffect)
+        let visualEffectView = UIVisualEffectView(effect: blurEffect)
         let size = self.view.bounds.width * 0.22
-        self.visualEffectView.frame.size = CGSize(width: size, height: size)
-        self.visualEffectView.center = self.snapButton.center
-        self.visualEffectView.layer.masksToBounds = true
-        self.visualEffectView.layer.cornerRadius = visualEffectView.bounds.width / 2
+        visualEffectView.frame.size = CGSize(width: size, height: size)
+        visualEffectView.center = self.snapButton.center
+        visualEffectView.layer.masksToBounds = true
+        visualEffectView.layer.cornerRadius = visualEffectView.bounds.width / 2
         self.view.addSubview(visualEffectView)
         self.view.bringSubviewToFront(self.snapButton)
     }
