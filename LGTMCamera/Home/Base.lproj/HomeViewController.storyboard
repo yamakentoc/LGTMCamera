@@ -21,6 +21,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TLp-Qb-jXO">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BjJ-Sf-z32">
+                                <rect key="frame" x="146.5" y="588" width="82.5" height="82.5"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pHF-bT-OUR">
+                                    <rect key="frame" x="0.0" y="0.0" width="82.5" height="82.5"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BjJ-Sf-z32" secondAttribute="height" multiplier="1:1" id="5OC-hn-fpD"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrk-bm-x6e">
                                 <rect key="frame" x="157.5" y="599" width="60" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -38,9 +49,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lrk-bm-x6e" secondAttribute="bottom" constant="8" id="4aF-mq-rO8"/>
                             <constraint firstItem="lrk-bm-x6e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9EG-3B-HTF"/>
                             <constraint firstItem="TLp-Qb-jXO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DlT-N5-leg"/>
+                            <constraint firstItem="BjJ-Sf-z32" firstAttribute="width" secondItem="TLp-Qb-jXO" secondAttribute="width" multiplier="0.22" id="NKU-fE-gEL"/>
                             <constraint firstItem="TLp-Qb-jXO" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="QoO-bC-XH4"/>
+                            <constraint firstItem="BjJ-Sf-z32" firstAttribute="centerY" secondItem="lrk-bm-x6e" secondAttribute="centerY" id="gHp-C1-4N2"/>
                             <constraint firstItem="TLp-Qb-jXO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hzX-v4-BTT"/>
                             <constraint firstItem="lrk-bm-x6e" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.16" id="rSy-K2-ZY2"/>
+                            <constraint firstItem="BjJ-Sf-z32" firstAttribute="centerX" secondItem="lrk-bm-x6e" secondAttribute="centerX" id="tha-xf-q9J"/>
                             <constraint firstItem="TLp-Qb-jXO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tkg-Gc-vZl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -48,6 +62,7 @@
                     <connections>
                         <outlet property="previewImageView" destination="TLp-Qb-jXO" id="x6a-ke-oWC"/>
                         <outlet property="snapButton" destination="lrk-bm-x6e" id="SIf-5x-5g1"/>
+                        <outlet property="visualEffectView" destination="BjJ-Sf-z32" id="men-bm-j8o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

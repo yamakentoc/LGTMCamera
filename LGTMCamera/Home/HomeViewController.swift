@@ -12,27 +12,29 @@ import AVFoundation
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var previewImageView: UIImageView!
+    @IBOutlet weak var visualEffectView: UIVisualEffectView! {
+        didSet {
+            visualEffectView.layer.masksToBounds = true
+            visualEffectView.layer.cornerRadius = visualEffectView.bounds.width / 2
+        }
+    }
     @IBOutlet weak var snapButton: UIButton! {
         didSet {
             snapButton.layer.masksToBounds = true
             snapButton.layer.cornerRadius = snapButton.bounds.width / 2
         }
     }
-    
+
     var presenter: HomeViewPresenter!
     var takenPhotos: [UIImage] = []
     var isPushing = false //連写中
     var captureCounter = 0
+    var circle: CAShapeLayer = CAShapeLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = HomeViewPresenter(view: self)
         initVideo()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        initBlurEffect()
     }
     
     @IBAction func touchDownSnapButton(_ sender: UIButton) {//連写中
@@ -45,16 +47,32 @@ class HomeViewController: UIViewController {
         print(takenPhotos.count)
     }
     
-    func initBlurEffect() {
-        let blurEffect = UIBlurEffect(style: .light)
-        let visualEffectView = UIVisualEffectView(effect: blurEffect)
-        let size = self.view.bounds.width * 0.22
-        visualEffectView.frame.size = CGSize(width: size, height: size)
-        visualEffectView.center = self.snapButton.center
-        visualEffectView.layer.masksToBounds = true
-        visualEffectView.layer.cornerRadius = visualEffectView.bounds.width / 2
-        self.view.addSubview(visualEffectView)
-        self.view.bringSubviewToFront(self.snapButton)
+    //撮影中に表示されるprogressCircle
+    func drawCircle(targetView: UIView) {
+        let lineWidth: CGFloat = 10// ゲージ幅
+        let viewScale: CGFloat = targetView.frame.size.width// 描画領域のwidth
+        let radius: CGFloat = viewScale - lineWidth//円のサイズ
+        circle.path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: radius, height: radius), cornerRadius: radius / 2).cgPath
+        circle.position = CGPoint(x: lineWidth / 2, y: lineWidth / 2)
+        circle.fillColor = UIColor.clear.cgColor
+        circle.strokeColor = UIColor.red.cgColor
+        circle.lineWidth = lineWidth//線の幅
+        targetView.layer.addSublayer(circle)
+        // duration0.0のアニメーションにて初期描画(線が書かれていない状態)にしておく
+        //drawCircleAnimation(fromValue: 0.0, toValue: 1.0, duration: 2.0, repeatCount: 1.0, flag: false)
+    }
+    
+    func drawCircleAnimation(fromValue: CGFloat, toValue: CGFloat, duration: TimeInterval, repeatCount: Float, flag: Bool) {
+        let drawAnimation = CABasicAnimation(keyPath: "strokeEnd")
+        drawAnimation.duration = duration// アニメーション間隔
+        drawAnimation.repeatCount = repeatCount
+        drawAnimation.fromValue = fromValue// 起点と目標点の変化比率を設定 (0.0 〜 1.0)
+        drawAnimation.toValue = toValue
+        drawAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)// イージングを決定
+        drawAnimation.isRemovedOnCompletion = false// アニメ完了時の描画を保持
+        drawAnimation.fillMode = CAMediaTimingFillMode.forwards
+        drawAnimation.autoreverses = flag// 逆再生の指定
+        circle.add(drawAnimation, forKey: "updateGageAnimation")
     }
     
 }
