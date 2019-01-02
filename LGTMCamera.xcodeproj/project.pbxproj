@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15267D8521DC78470023F206 /* CustomAVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15267D8421DC78470023F206 /* CustomAVFoundation.swift */; };
 		15CE430F21D8BAA50086C36F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CE430E21D8BAA50086C36F /* UIColor.swift */; };
 		15E8FBBE21D61B3500B18C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */; };
 		15E8FBC021D61B3500B18C32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBBF21D61B3500B18C32 /* HomeViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15267D8421DC78470023F206 /* CustomAVFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVFoundation.swift; sourceTree = "<group>"; };
 		15CE430E21D8BAA50086C36F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		15E8FBBA21D61B3500B18C32 /* LGTMCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGTMCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */,
 				15CE430D21D8BA950086C36F /* Extensions */,
 				15E8FBEF21D64B0500B18C32 /* Home */,
+				15267D8421DC78470023F206 /* CustomAVFoundation.swift */,
 				15E8FBED21D6249100B18C32 /* R.generated.swift */,
 				15E8FBC421D61B3600B18C32 /* Assets.xcassets */,
 				15E8FBC621D61B3600B18C32 /* LaunchScreen.storyboard */,
@@ -333,12 +336,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LGTMCamera/Pods-LGTMCamera-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -456,6 +461,7 @@
 			files = (
 				15E8FBC021D61B3500B18C32 /* HomeViewController.swift in Sources */,
 				15E8FBBE21D61B3500B18C32 /* AppDelegate.swift in Sources */,
+				15267D8521DC78470023F206 /* CustomAVFoundation.swift in Sources */,
 				15E8FBF121D64BB400B18C32 /* HomeViewPresenter.swift in Sources */,
 				15E8FBEE21D6249100B18C32 /* R.generated.swift in Sources */,
 				15CE430F21D8BAA50086C36F /* UIColor.swift in Sources */,

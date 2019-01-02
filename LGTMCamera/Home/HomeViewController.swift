@@ -8,10 +8,13 @@
 
 import UIKit
 import AVFoundation
+import ImageIO
+import MobileCoreServices
+import SwiftyGif
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var previewImageView: UIImageView!
+    @IBOutlet weak var previewView: UIView!
     @IBOutlet weak var snapBackView: UIVisualEffectView! {
         didSet {
             snapBackView.layer.masksToBounds = true
@@ -26,26 +29,29 @@ class HomeViewController: UIViewController {
     }
 
     var presenter: HomeViewPresenter!
-    var takenPhotos: [UIImage] = []
-    var isPushing = false //連写中
-    var captureCounter = 0
+    var customAVFoundation: CustomAVFoundation!
     var circle: CAShapeLayer = CAShapeLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = HomeViewPresenter(view: self)
-        initVideo()
+        //customAVFoundation = CustomAVFoundation(view: self.previewView)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        customAVFoundation = CustomAVFoundation(view: self.previewView)
     }
     
     @IBAction func touchDownSnapButton(_ sender: UIButton) {//連写中
-        isPushing = true
-        takenPhotos = []
+        customAVFoundation.isPushing = true
+        customAVFoundation.takenPhotos = []
         expandingCircleAnimation()
     }
     
     @IBAction func touchUpSnapButton(_ sender: UIButton) {//連写終了
-        isPushing = false
-        print(takenPhotos.count)
+        customAVFoundation.isPushing = false
+        makeGifImage()
         //アニメーションを止める
         let layer = snapBackView.layer
         let pauseTime = layer.convertTime(CACurrentMediaTime(), from: nil)
@@ -98,36 +104,41 @@ class HomeViewController: UIViewController {
         drawAnimation.autoreverses = flag// 逆再生の指定
         circle.add(drawAnimation, forKey: "updateGageAnimation")
     }
-}
-
-extension HomeViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
-    func initVideo() {
-        let captureSession = AVCaptureSession() //セッションのインスタンス生成
-        let videoDevice = AVCaptureDevice.default(for: AVMediaType.video)//入力(背面カメラ)
-        videoDevice?.activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: 30)
-        guard let videoInput = try? AVCaptureDeviceInput.init(device: videoDevice!) else { return }
-        captureSession.addInput(videoInput)
-        let videoDataOutput = AVCaptureVideoDataOutput()//出力(ビデオデータ)
-        videoDataOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as AnyHashable: Int(kCVPixelFormatType_32BGRA)] as? [String: Any]//ピクセルフォーマット(32bit BGRA)
-        videoDataOutput.alwaysDiscardsLateVideoFrames = true//キューのブロック中に新しいフレームが来たら削除する
-        videoDataOutput.setSampleBufferDelegate(self, queue: DispatchQueue.main)//フレームをキャプチャするためのキューを指定
-        captureSession.addOutput(videoDataOutput)
-        captureSession.sessionPreset = AVCaptureSession.Preset.hd1920x1080//クオリティ(1920*1080ピクセル)
-        let videoLayer = AVCaptureVideoPreviewLayer.init(session: captureSession)//プレビュー
-        videoLayer.frame = self.view.bounds
-        videoLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-        previewImageView.layer.addSublayer(videoLayer)
-        DispatchQueue.global(qos: .userInitiated).async {
-            captureSession.startRunning()//セッションの開始
+    
+    func makeGifImage() {
+        let frameRate = CMTimeMake(value: 1, timescale: 60)//gifの速さ(timescaleが高いほど早い)
+        let fileProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: 0]]//ループカウント
+        let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: CMTimeGetSeconds(frameRate)]]//フレームレート
+        let url = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(NSUUID().uuidString).gif")
+        guard let destination = CGImageDestinationCreateWithURL(url! as CFURL, kUTTypeGIF, customAVFoundation.takenPhotos.count, nil) else { //保存先
+            print("CGImageDestinationの作成に失敗")
+            return
+        }
+        CGImageDestinationSetProperties(destination, fileProperties as CFDictionary?)
+        DispatchQueue.global(qos: .default).async {
+            for image in self.customAVFoundation.takenPhotos {
+                guard let translatedImage = self.translate(image) else { return }
+                CGImageDestinationAddImage(destination, translatedImage, frameProperties as CFDictionary)
+            }
+            if CGImageDestinationFinalize(destination) {//GIF生成後の処理
+                DispatchQueue.main.async {
+                    let imageView = UIImageView(gifURL: url, loopCount: -1)
+                    imageView.frame = self.view.bounds
+                    self.view.addSubview(imageView)
+                }
+            } else {
+                print("GIF生成に失敗")
+            }
         }
     }
     
-    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        if captureCounter % 3 == 0, isPushing { // 1/10秒だけ処理する
-            guard let image = presenter.imageFromSampleBuffer(sampleBuffer: sampleBuffer) else { return }
-            takenPhotos.append(image)
-        }
-        captureCounter += 1
+    //UIImageからCGImageにそのまま変換すると画像の向きが保持されないから
+    func translate(_ image: UIImage) -> CGImage? {
+        guard let cgImage = image.cgImage else { return nil }
+        let ciImage = CIImage(cgImage: cgImage).oriented(CGImagePropertyOrientation.right)//元画像から右に90度回転
+        let ciContext = CIContext(options: nil)
+        guard let cgImageFromCIImage: CGImage = ciContext.createCGImage(ciImage, from: ciImage.extent) else { return nil}
+        return cgImageFromCIImage
     }
 }
 
