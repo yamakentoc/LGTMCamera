@@ -73,9 +73,6 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
             self.videoDevice?.activeVideoMinFrameDuration = CMTime(value: 1, timescale: Int32(minFPS))
             self.videoDevice?.activeVideoMaxFrameDuration = CMTime(value: 1, timescale: Int32(maxFPS))
             self.videoDevice?.unlockForConfiguration()
-            print(selectedFormat)
-            print(minFPS)
-            print(maxFPS)
         } catch let error {
             print(error)
         }

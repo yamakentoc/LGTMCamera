@@ -106,7 +106,7 @@ class HomeViewController: UIViewController {
     }
     
     func makeGifImage() {
-        let frameRate = CMTimeMake(value: 1, timescale: 5)
+        let frameRate = CMTimeMake(value: 1, timescale: 60)//gifの速さ(timescaleが高いほど早い)
         let fileProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: 0]]//ループカウント
         let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: CMTimeGetSeconds(frameRate)]]//フレームレート
         let url = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(NSUUID().uuidString).gif")
