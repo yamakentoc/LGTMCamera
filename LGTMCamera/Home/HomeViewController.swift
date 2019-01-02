@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 import ImageIO
 import MobileCoreServices
+import SwiftyGif
 
 class HomeViewController: UIViewController {
     
@@ -113,13 +114,26 @@ class HomeViewController: UIViewController {
         }
         CGImageDestinationSetProperties(destination, fileProperties as CFDictionary?)
         for image in takenPhotos {
-            CGImageDestinationAddImage(destination, image.cgImage!, frameProperties as CFDictionary)
+            guard let translatedImage = translate(image) else { return }
+            CGImageDestinationAddImage(destination, translatedImage, frameProperties as CFDictionary)
         }
         if CGImageDestinationFinalize(destination) {//GIF生成後の処理
             
+            let imageView = UIImageView(gifURL: url, loopCount: -1)
+            imageView.frame = self.view.bounds
+            self.view.addSubview(imageView)
         } else {
             print("GIF生成に失敗")
         }
+    }
+    
+    //UIImageからCGImageにそのまま変換すると画像の向きが保持されないから
+    func translate(_ image: UIImage) -> CGImage? {
+        guard let cgImage = image.cgImage else { return nil }
+        let ciImage = CIImage(cgImage: cgImage).oriented(CGImagePropertyOrientation.right)
+        let ciContext = CIContext(options: nil)
+        guard let cgImageFromCIImage: CGImage = ciContext.createCGImage(ciImage, from: ciImage.extent) else { return nil}
+        return cgImageFromCIImage
     }
 }
 

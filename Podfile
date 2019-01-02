@@ -8,6 +8,7 @@ target 'LGTMCamera' do
   # Pods for LGTMCamera
   pod 'SwiftLint'
   pod 'R.swift'
+  pod 'SwiftyGif'
 
   target 'LGTMCameraTests' do
     inherit! :search_paths

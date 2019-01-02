@@ -37,7 +37,7 @@ class HomeViewPresenter: NSObject {
         guard let newContext = CGContext(data: base, width: Int(width), height: Int(height), bitsPerComponent: Int(bitsPerCompornent), bytesPerRow: Int(bytesPerRow), space: colorSpace, bitmapInfo: bitmapInfo.rawValue) else { return nil }
         //画像生成
         guard let imageRef = newContext.makeImage() else { return nil }
-        let image = UIImage(cgImage: imageRef, scale: 1.0, orientation: UIImage.Orientation.right)
+        let image = UIImage(cgImage: imageRef, scale: 1.0, orientation: UIImage.Orientation.up)
         //イメージバッファのアンロック
         CVPixelBufferUnlockBaseAddress(imageBuffer, CVPixelBufferLockFlags(rawValue: 0))
         return image
