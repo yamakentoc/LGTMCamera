@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		15267D8521DC78470023F206 /* CustomAVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15267D8421DC78470023F206 /* CustomAVFoundation.swift */; };
+		15267D8821DCE6600023F206 /* AfterShootingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15267D8721DCE6600023F206 /* AfterShootingViewController.swift */; };
+		15267D8A21DCE6820023F206 /* AfterShootingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15267D8921DCE6820023F206 /* AfterShootingViewPresenter.swift */; };
+		15267D8C21DCE6900023F206 /* AfterShootingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15267D8B21DCE6900023F206 /* AfterShootingViewController.storyboard */; };
 		15CE430F21D8BAA50086C36F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CE430E21D8BAA50086C36F /* UIColor.swift */; };
 		15E8FBBE21D61B3500B18C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */; };
 		15E8FBC021D61B3500B18C32 /* ShootingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBBF21D61B3500B18C32 /* ShootingViewController.swift */; };
@@ -42,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		15267D8421DC78470023F206 /* CustomAVFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVFoundation.swift; sourceTree = "<group>"; };
+		15267D8721DCE6600023F206 /* AfterShootingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterShootingViewController.swift; sourceTree = "<group>"; };
+		15267D8921DCE6820023F206 /* AfterShootingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterShootingViewPresenter.swift; sourceTree = "<group>"; };
+		15267D8B21DCE6900023F206 /* AfterShootingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AfterShootingViewController.storyboard; sourceTree = "<group>"; };
 		15CE430E21D8BAA50086C36F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		15E8FBBA21D61B3500B18C32 /* LGTMCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGTMCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +116,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		15267D8621DCD8F50023F206 /* AfterShooting */ = {
+			isa = PBXGroup;
+			children = (
+				15267D8721DCE6600023F206 /* AfterShootingViewController.swift */,
+				15267D8921DCE6820023F206 /* AfterShootingViewPresenter.swift */,
+				15267D8B21DCE6900023F206 /* AfterShootingViewController.storyboard */,
+			);
+			path = AfterShooting;
+			sourceTree = "<group>";
+		};
 		15CE430D21D8BA950086C36F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +162,7 @@
 				15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */,
 				15CE430D21D8BA950086C36F /* Extensions */,
 				15E8FBEF21D64B0500B18C32 /* Shooting */,
+				15267D8621DCD8F50023F206 /* AfterShooting */,
 				15267D8421DC78470023F206 /* CustomAVFoundation.swift */,
 				15E8FBED21D6249100B18C32 /* R.generated.swift */,
 				15E8FBC421D61B3600B18C32 /* Assets.xcassets */,
@@ -304,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15E8FBC821D61B3600B18C32 /* LaunchScreen.storyboard in Resources */,
+				15267D8C21DCE6900023F206 /* AfterShootingViewController.storyboard in Resources */,
 				15E8FBC521D61B3600B18C32 /* Assets.xcassets in Resources */,
 				15E8FBC321D61B3500B18C32 /* ShootingViewController.storyboard in Resources */,
 			);
@@ -460,10 +478,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				15E8FBC021D61B3500B18C32 /* ShootingViewController.swift in Sources */,
+				15267D8821DCE6600023F206 /* AfterShootingViewController.swift in Sources */,
 				15E8FBBE21D61B3500B18C32 /* AppDelegate.swift in Sources */,
 				15267D8521DC78470023F206 /* CustomAVFoundation.swift in Sources */,
 				15E8FBF121D64BB400B18C32 /* ShootingViewPresenter.swift in Sources */,
 				15E8FBEE21D6249100B18C32 /* R.generated.swift in Sources */,
+				15267D8A21DCE6820023F206 /* AfterShootingViewPresenter.swift in Sources */,
 				15CE430F21D8BAA50086C36F /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
