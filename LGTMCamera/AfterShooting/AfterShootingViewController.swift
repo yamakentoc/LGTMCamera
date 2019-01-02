@@ -28,10 +28,7 @@ class AfterShootingViewController: UIViewController {
         let fileProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: 0]]//ループカウント
         let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: CMTimeGetSeconds(frameRate)]]//フレームレート
         let url = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(NSUUID().uuidString).gif")
-        guard let destination = CGImageDestinationCreateWithURL(url! as CFURL, kUTTypeGIF, self.takenPhotos.count, nil) else { //保存先
-            print("CGImageDestinationの作成に失敗")
-            return
-        }
+        guard let destination = CGImageDestinationCreateWithURL(url! as CFURL, kUTTypeGIF, self.takenPhotos.count, nil) else { return } //保存先
         CGImageDestinationSetProperties(destination, fileProperties as CFDictionary?)
         DispatchQueue.global(qos: .default).async {
             for image in self.takenPhotos {
