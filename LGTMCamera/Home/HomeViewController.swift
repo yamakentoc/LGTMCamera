@@ -115,17 +115,20 @@ class HomeViewController: UIViewController {
             return
         }
         CGImageDestinationSetProperties(destination, fileProperties as CFDictionary?)
-        for image in customAVFoundation.takenPhotos {
-            guard let translatedImage = translate(image) else { return }
-            CGImageDestinationAddImage(destination, translatedImage, frameProperties as CFDictionary)
-        }
-        if CGImageDestinationFinalize(destination) {//GIF生成後の処理
-            
-            let imageView = UIImageView(gifURL: url, loopCount: -1)
-            imageView.frame = self.view.bounds
-            self.view.addSubview(imageView)
-        } else {
-            print("GIF生成に失敗")
+        DispatchQueue.global(qos: .default).async {
+            for image in self.customAVFoundation.takenPhotos {
+                guard let translatedImage = self.translate(image) else { return }
+                CGImageDestinationAddImage(destination, translatedImage, frameProperties as CFDictionary)
+            }
+            if CGImageDestinationFinalize(destination) {//GIF生成後の処理
+                DispatchQueue.main.async {
+                    let imageView = UIImageView(gifURL: url, loopCount: -1)
+                    imageView.frame = self.view.bounds
+                    self.view.addSubview(imageView)
+                }
+            } else {
+                print("GIF生成に失敗")
+            }
         }
     }
     
