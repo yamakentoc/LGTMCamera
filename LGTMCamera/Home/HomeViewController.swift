@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import ImageIO
+import MobileCoreServices
 
 class HomeViewController: UIViewController {
     
@@ -51,6 +53,7 @@ class HomeViewController: UIViewController {
         let pauseTime = layer.convertTime(CACurrentMediaTime(), from: nil)
         layer.speed = 0.0
         layer.timeOffset = pauseTime
+        makeGifImage()
     }
     
     func expandingCircleAnimation() {
@@ -97,6 +100,26 @@ class HomeViewController: UIViewController {
         drawAnimation.fillMode = CAMediaTimingFillMode.forwards
         drawAnimation.autoreverses = flag// 逆再生の指定
         circle.add(drawAnimation, forKey: "updateGageAnimation")
+    }
+    
+    func makeGifImage() {
+        let frameRate = CMTimeMake(value: 1, timescale: 5)
+        let fileProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: 0]]//ループカウント
+        let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: CMTimeGetSeconds(frameRate)]]//フレームレート
+        let url = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(NSUUID().uuidString).gif")
+        guard let destination = CGImageDestinationCreateWithURL(url! as CFURL, kUTTypeGIF, takenPhotos.count, nil) else { //保存先
+            print("CGImageDestinationの作成に失敗")
+            return
+        }
+        CGImageDestinationSetProperties(destination, fileProperties as CFDictionary?)
+        for image in takenPhotos {
+            CGImageDestinationAddImage(destination, image.cgImage!, frameProperties as CFDictionary)
+        }
+        if CGImageDestinationFinalize(destination) {//GIF生成後の処理
+            
+        } else {
+            print("GIF生成に失敗")
+        }
     }
 }
 
