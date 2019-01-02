@@ -17,6 +17,9 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
     var isPushing = false//連写中
     var captureCounter = 0
     
+    let captureSession = AVCaptureSession()//セッションのインスタンス生成
+    let videoDevice = AVCaptureDevice.default(for: AVMediaType.video)//入力(背面カメラ)
+    
     init(view: UIView) {
         super.init()
         self.view = view
@@ -24,10 +27,7 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
     }
     
     func initialize() {
-        let captureSession = AVCaptureSession()//セッションのインスタンス生成
-        //入力(背面カメラ)
-        let videoDevice = AVCaptureDevice.default(for: AVMediaType.video)
-        videoDevice?.activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: 30)
+        //videoDevice?.activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: 30)
         guard let videoInput = try? AVCaptureDeviceInput.init(device: videoDevice!) else { return }
         captureSession.addInput(videoInput)
         //出力(ビデオデータ)
@@ -44,12 +44,41 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
         videoLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         self.view!.layer.addSublayer(videoLayer)
         DispatchQueue.global(qos: .userInitiated).async {
-            captureSession.startRunning()//セッションの開始
+            self.captureSession.startRunning()//セッションの開始
         }
     }
     
     func setMaxFps() {
-        
+        var minFPS = 0.0
+        var maxFPS = 0.0
+        var maxWidth: Int32 = 0
+        var selectedFormat: AVCaptureDevice.Format?
+        //デバイスから取得できるフォーマットを全探索
+        guard let videoDeviceFormat = self.videoDevice?.formats else { return }
+        for format in videoDeviceFormat {
+            for range in format.videoSupportedFrameRateRanges {
+                let desc = format.formatDescription
+                let dimentions = CMVideoFormatDescriptionGetDimensions(desc)
+                if minFPS <= range.minFrameRate && maxFPS <= range.maxFrameRate && maxWidth <= dimentions.width {
+                    minFPS = range.minFrameRate
+                    maxFPS = range.maxFrameRate
+                    maxWidth = dimentions.width
+                    selectedFormat = format
+                }
+            }
+        }
+        do {
+            try self.videoDevice?.lockForConfiguration()
+            self.videoDevice?.activeFormat = selectedFormat!
+            self.videoDevice?.activeVideoMinFrameDuration = CMTime(value: 1, timescale: Int32(minFPS))
+            self.videoDevice?.activeVideoMaxFrameDuration = CMTime(value: 1, timescale: Int32(maxFPS))
+            self.videoDevice?.unlockForConfiguration()
+            print(selectedFormat)
+            print(minFPS)
+            print(maxFPS)
+        } catch let error {
+            print(error)
+        }
     }
     
     func imageFromSampleBuffer(sampleBuffer: CMSampleBuffer) -> UIImage? {
