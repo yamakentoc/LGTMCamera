@@ -53,19 +53,19 @@ struct R: Rswift.Validatable {
   
   /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
   struct storyboard {
-    /// Storyboard `HomeViewController`.
-    static let homeViewController = _R.storyboard.homeViewController()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
-    
-    /// `UIStoryboard(name: "HomeViewController", bundle: ...)`
-    static func homeViewController(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.homeViewController)
-    }
+    /// Storyboard `ShootingViewController`.
+    static let shootingViewController = _R.storyboard.shootingViewController()
     
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
+    }
+    
+    /// `UIStoryboard(name: "ShootingViewController", bundle: ...)`
+    static func shootingViewController(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.shootingViewController)
     }
     
     fileprivate init() {}
@@ -95,20 +95,20 @@ struct _R {
   }
   
   struct storyboard {
-    struct homeViewController: Rswift.StoryboardResourceWithInitialControllerType {
-      typealias InitialController = HomeViewController
-      
-      let bundle = R.hostingBundle
-      let name = "HomeViewController"
-      
-      fileprivate init() {}
-    }
-    
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType {
       typealias InitialController = UIKit.UIViewController
       
       let bundle = R.hostingBundle
       let name = "LaunchScreen"
+      
+      fileprivate init() {}
+    }
+    
+    struct shootingViewController: Rswift.StoryboardResourceWithInitialControllerType {
+      typealias InitialController = ShootingViewController
+      
+      let bundle = R.hostingBundle
+      let name = "ShootingViewController"
       
       fileprivate init() {}
     }

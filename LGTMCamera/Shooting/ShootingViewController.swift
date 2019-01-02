@@ -12,7 +12,7 @@ import ImageIO
 import MobileCoreServices
 import SwiftyGif
 
-class HomeViewController: UIViewController {
+class ShootingViewController: UIViewController {
     
     @IBOutlet weak var previewView: UIView!
     @IBOutlet weak var snapBackView: UIVisualEffectView! {
@@ -28,13 +28,13 @@ class HomeViewController: UIViewController {
         }
     }
 
-    var presenter: HomeViewPresenter!
+    var presenter: ShootingViewPresenter!
     var customAVFoundation: CustomAVFoundation!
     var circle: CAShapeLayer = CAShapeLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = HomeViewPresenter(view: self)
+        presenter = ShootingViewPresenter(view: self)
         //customAVFoundation = CustomAVFoundation(view: self.previewView)
     }
     
@@ -142,6 +142,6 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController: HomeViewPresenterProtocol {
+extension ShootingViewController: ShootingViewPresenterProtocol {
     
 }
