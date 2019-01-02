@@ -44,13 +44,13 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func touchDownSnapButton(_ sender: UIButton) {//連写中
-        customAVFoundation.isPushing = true
+        customAVFoundation.isShooting = true
         customAVFoundation.takenPhotos = []
         expandingCircleAnimation()
     }
     
     @IBAction func touchUpSnapButton(_ sender: UIButton) {//連写終了
-        customAVFoundation.isPushing = false
+        customAVFoundation.isShooting = false
         makeGifImage()
         //アニメーションを止める
         let layer = snapBackView.layer

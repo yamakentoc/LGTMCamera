@@ -14,7 +14,7 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
     
     var view: UIView?
     var takenPhotos: [UIImage] = []
-    var isPushing = false//連写中
+    var isShooting = false//連写中
     var captureCounter = 0
     
     let captureSession = AVCaptureSession()//セッションのインスタンス生成
@@ -101,7 +101,7 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-         if captureCounter % 2 == 0, isPushing { // %3の場合 1/10秒だけ処理する
+         if captureCounter % 2 == 0, isShooting { // %3の場合 1/10秒だけ処理する
         //if isPushing {
             guard let image = imageFromSampleBuffer(sampleBuffer: sampleBuffer) else { return }
             takenPhotos.append(image)
