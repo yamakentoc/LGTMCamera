@@ -34,8 +34,8 @@ class ShootingViewController: UIViewController {
         presenter = ShootingViewPresenter(view: self)
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         customAVFoundation = CustomAVFoundation(view: self.previewView)
     }
     
@@ -51,6 +51,7 @@ class ShootingViewController: UIViewController {
         }
         customAVFoundation.captureSession = nil
         customAVFoundation.videoDevice = nil
+        customAVFoundation = nil
     }
     
     @IBAction func touchDownSnapButton(_ sender: UIButton) {//連写中

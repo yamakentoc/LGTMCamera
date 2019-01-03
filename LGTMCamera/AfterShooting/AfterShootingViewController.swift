@@ -16,6 +16,7 @@ import SVProgressHUD
 class AfterShootingViewController: UIViewController {
 
     @IBOutlet weak var gifImageView: UIImageView!
+    
     var presenter: AfterShootingViewPresenter!
     var takenPhotos: [UIImage] = []
     
@@ -26,6 +27,11 @@ class AfterShootingViewController: UIViewController {
         makeGifImage()
     }
 
+    @IBAction func tapBackButton(_ sender: UIButton) {
+        self.gifImageView.stopAnimating()
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     func makeGifImage() {
         let frameRate = CMTimeMake(value: 1, timescale: 30)//gifの速さ(timescaleが高いほど早い)
         let fileProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: 0]]//ループカウント
