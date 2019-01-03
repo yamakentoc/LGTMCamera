@@ -15,6 +15,7 @@ import SVProgressHUD
 
 class AfterShootingViewController: UIViewController {
 
+    @IBOutlet weak var gifImageView: UIImageView!
     var presenter: AfterShootingViewPresenter!
     var takenPhotos: [UIImage] = []
     
@@ -39,9 +40,7 @@ class AfterShootingViewController: UIViewController {
             }
             if CGImageDestinationFinalize(destination) {//GIF生成後の処理
                 DispatchQueue.main.async {
-                    let imageView = UIImageView(gifURL: url, loopCount: -1)
-                    imageView.frame = self.view.bounds
-                    self.view.addSubview(imageView)
+                    self.gifImageView.setGifFromURL(url, loopCount: -1, showLoader: false)
                     SVProgressHUD.dismiss()
                 }
             } else {
