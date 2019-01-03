@@ -21,6 +21,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zls-JE-nQe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="batu" translatesAutoresizingMaskIntoConstraints="NO" id="n1x-Cv-PSd">
+                                <rect key="frame" x="16" y="36" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="K1n-yh-CGr"/>
+                                    <constraint firstAttribute="height" constant="30" id="vuI-9d-FD5"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -28,6 +35,8 @@
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="bottom" secondItem="76z-5T-RJS" secondAttribute="bottom" id="ToH-TK-jrn"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="top" secondItem="76z-5T-RJS" secondAttribute="top" id="UdF-2f-1mz"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="trailing" secondItem="8cN-Ca-dNB" secondAttribute="trailing" id="XdP-c5-c0Y"/>
+                            <constraint firstItem="n1x-Cv-PSd" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" constant="16" id="taO-Gc-cpU"/>
+                            <constraint firstItem="n1x-Cv-PSd" firstAttribute="top" secondItem="8cN-Ca-dNB" secondAttribute="top" constant="16" id="wzR-dH-yMg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8cN-Ca-dNB"/>
                     </view>
@@ -40,4 +49,7 @@
             <point key="canvasLocation" x="485.60000000000002" y="-186.65667166416793"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="batu" width="195.36000061035156" height="196.32000732421875"/>
+    </resources>
 </document>
