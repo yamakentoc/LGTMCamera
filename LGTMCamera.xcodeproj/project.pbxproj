@@ -8,16 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		15267D8521DC78470023F206 /* CustomAVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15267D8421DC78470023F206 /* CustomAVFoundation.swift */; };
+		15267D8821DCE6600023F206 /* AfterShootingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15267D8721DCE6600023F206 /* AfterShootingViewController.swift */; };
+		15267D8A21DCE6820023F206 /* AfterShootingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15267D8921DCE6820023F206 /* AfterShootingViewPresenter.swift */; };
+		15267D8C21DCE6900023F206 /* AfterShootingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15267D8B21DCE6900023F206 /* AfterShootingViewController.storyboard */; };
 		15CE430F21D8BAA50086C36F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CE430E21D8BAA50086C36F /* UIColor.swift */; };
 		15E8FBBE21D61B3500B18C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */; };
-		15E8FBC021D61B3500B18C32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBBF21D61B3500B18C32 /* HomeViewController.swift */; };
-		15E8FBC321D61B3500B18C32 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E8FBC121D61B3500B18C32 /* HomeViewController.storyboard */; };
+		15E8FBC021D61B3500B18C32 /* ShootingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBBF21D61B3500B18C32 /* ShootingViewController.swift */; };
+		15E8FBC321D61B3500B18C32 /* ShootingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E8FBC121D61B3500B18C32 /* ShootingViewController.storyboard */; };
 		15E8FBC521D61B3600B18C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15E8FBC421D61B3600B18C32 /* Assets.xcassets */; };
 		15E8FBC821D61B3600B18C32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E8FBC621D61B3600B18C32 /* LaunchScreen.storyboard */; };
 		15E8FBD321D61B3600B18C32 /* LGTMCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBD221D61B3600B18C32 /* LGTMCameraTests.swift */; };
 		15E8FBDE21D61B3600B18C32 /* LGTMCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBDD21D61B3600B18C32 /* LGTMCameraUITests.swift */; };
 		15E8FBEE21D6249100B18C32 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBED21D6249100B18C32 /* R.generated.swift */; };
-		15E8FBF121D64BB400B18C32 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBF021D64BB400B18C32 /* HomeViewPresenter.swift */; };
+		15E8FBF121D64BB400B18C32 /* ShootingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBF021D64BB400B18C32 /* ShootingViewPresenter.swift */; };
 		87BD8C7577D9C8EF53A5C938 /* Pods_LGTMCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBAA0F97265FDD4389AD2C7 /* Pods_LGTMCamera.framework */; };
 		87C0EFAA4BDE234B550F01FD /* Pods_LGTMCameraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70417C67F989AEBB18736F8E /* Pods_LGTMCameraTests.framework */; };
 		D7E6FAE39A02FF20B09CC253 /* Pods_LGTMCameraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F6A3A2C0689023B650EDBC /* Pods_LGTMCameraUITests.framework */; };
@@ -42,11 +45,14 @@
 
 /* Begin PBXFileReference section */
 		15267D8421DC78470023F206 /* CustomAVFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVFoundation.swift; sourceTree = "<group>"; };
+		15267D8721DCE6600023F206 /* AfterShootingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterShootingViewController.swift; sourceTree = "<group>"; };
+		15267D8921DCE6820023F206 /* AfterShootingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterShootingViewPresenter.swift; sourceTree = "<group>"; };
+		15267D8B21DCE6900023F206 /* AfterShootingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AfterShootingViewController.storyboard; sourceTree = "<group>"; };
 		15CE430E21D8BAA50086C36F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		15E8FBBA21D61B3500B18C32 /* LGTMCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGTMCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		15E8FBBF21D61B3500B18C32 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		15E8FBC221D61B3500B18C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeViewController.storyboard; sourceTree = "<group>"; };
+		15E8FBBF21D61B3500B18C32 /* ShootingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShootingViewController.swift; sourceTree = "<group>"; };
+		15E8FBC221D61B3500B18C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ShootingViewController.storyboard; sourceTree = "<group>"; };
 		15E8FBC421D61B3600B18C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15E8FBC721D61B3600B18C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15E8FBC921D61B3600B18C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,7 +63,7 @@
 		15E8FBDD21D61B3600B18C32 /* LGTMCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGTMCameraUITests.swift; sourceTree = "<group>"; };
 		15E8FBDF21D61B3600B18C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15E8FBED21D6249100B18C32 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
-		15E8FBF021D64BB400B18C32 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		15E8FBF021D64BB400B18C32 /* ShootingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShootingViewPresenter.swift; sourceTree = "<group>"; };
 		2BBAA0F97265FDD4389AD2C7 /* Pods_LGTMCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGTMCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5572E4C401E019D0685531 /* Pods-LGTMCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGTMCameraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGTMCameraUITests/Pods-LGTMCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		65270CE2F77D358A26116F87 /* Pods-LGTMCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGTMCameraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGTMCameraTests/Pods-LGTMCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +116,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		15267D8621DCD8F50023F206 /* AfterShooting */ = {
+			isa = PBXGroup;
+			children = (
+				15267D8721DCE6600023F206 /* AfterShootingViewController.swift */,
+				15267D8921DCE6820023F206 /* AfterShootingViewPresenter.swift */,
+				15267D8B21DCE6900023F206 /* AfterShootingViewController.storyboard */,
+			);
+			path = AfterShooting;
+			sourceTree = "<group>";
+		};
 		15CE430D21D8BA950086C36F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,7 +161,8 @@
 			children = (
 				15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */,
 				15CE430D21D8BA950086C36F /* Extensions */,
-				15E8FBEF21D64B0500B18C32 /* Home */,
+				15E8FBEF21D64B0500B18C32 /* Shooting */,
+				15267D8621DCD8F50023F206 /* AfterShooting */,
 				15267D8421DC78470023F206 /* CustomAVFoundation.swift */,
 				15E8FBED21D6249100B18C32 /* R.generated.swift */,
 				15E8FBC421D61B3600B18C32 /* Assets.xcassets */,
@@ -173,14 +190,14 @@
 			path = LGTMCameraUITests;
 			sourceTree = "<group>";
 		};
-		15E8FBEF21D64B0500B18C32 /* Home */ = {
+		15E8FBEF21D64B0500B18C32 /* Shooting */ = {
 			isa = PBXGroup;
 			children = (
-				15E8FBBF21D61B3500B18C32 /* HomeViewController.swift */,
-				15E8FBF021D64BB400B18C32 /* HomeViewPresenter.swift */,
-				15E8FBC121D61B3500B18C32 /* HomeViewController.storyboard */,
+				15E8FBBF21D61B3500B18C32 /* ShootingViewController.swift */,
+				15E8FBF021D64BB400B18C32 /* ShootingViewPresenter.swift */,
+				15E8FBC121D61B3500B18C32 /* ShootingViewController.storyboard */,
 			);
-			path = Home;
+			path = Shooting;
 			sourceTree = "<group>";
 		};
 		4B375F13F72712F1418A71A4 /* Frameworks */ = {
@@ -304,8 +321,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				15E8FBC821D61B3600B18C32 /* LaunchScreen.storyboard in Resources */,
+				15267D8C21DCE6900023F206 /* AfterShootingViewController.storyboard in Resources */,
 				15E8FBC521D61B3600B18C32 /* Assets.xcassets in Resources */,
-				15E8FBC321D61B3500B18C32 /* HomeViewController.storyboard in Resources */,
+				15E8FBC321D61B3500B18C32 /* ShootingViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +354,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LGTMCamera/Pods-LGTMCamera-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -343,6 +362,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,11 +479,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15E8FBC021D61B3500B18C32 /* HomeViewController.swift in Sources */,
+				15E8FBC021D61B3500B18C32 /* ShootingViewController.swift in Sources */,
+				15267D8821DCE6600023F206 /* AfterShootingViewController.swift in Sources */,
 				15E8FBBE21D61B3500B18C32 /* AppDelegate.swift in Sources */,
 				15267D8521DC78470023F206 /* CustomAVFoundation.swift in Sources */,
-				15E8FBF121D64BB400B18C32 /* HomeViewPresenter.swift in Sources */,
+				15E8FBF121D64BB400B18C32 /* ShootingViewPresenter.swift in Sources */,
 				15E8FBEE21D6249100B18C32 /* R.generated.swift in Sources */,
+				15267D8A21DCE6820023F206 /* AfterShootingViewPresenter.swift in Sources */,
 				15CE430F21D8BAA50086C36F /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,12 +522,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		15E8FBC121D61B3500B18C32 /* HomeViewController.storyboard */ = {
+		15E8FBC121D61B3500B18C32 /* ShootingViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				15E8FBC221D61B3500B18C32 /* Base */,
 			);
-			name = HomeViewController.storyboard;
+			name = ShootingViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		15E8FBC621D61B3600B18C32 /* LaunchScreen.storyboard */ = {

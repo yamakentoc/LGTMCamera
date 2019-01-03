@@ -51,21 +51,28 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
   struct storyboard {
-    /// Storyboard `HomeViewController`.
-    static let homeViewController = _R.storyboard.homeViewController()
+    /// Storyboard `AfterShootingViewController`.
+    static let afterShootingViewController = _R.storyboard.afterShootingViewController()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
+    /// Storyboard `ShootingViewController`.
+    static let shootingViewController = _R.storyboard.shootingViewController()
     
-    /// `UIStoryboard(name: "HomeViewController", bundle: ...)`
-    static func homeViewController(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.homeViewController)
+    /// `UIStoryboard(name: "AfterShootingViewController", bundle: ...)`
+    static func afterShootingViewController(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.afterShootingViewController)
     }
     
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
+    }
+    
+    /// `UIStoryboard(name: "ShootingViewController", bundle: ...)`
+    static func shootingViewController(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.shootingViewController)
     }
     
     fileprivate init() {}
@@ -95,11 +102,11 @@ struct _R {
   }
   
   struct storyboard {
-    struct homeViewController: Rswift.StoryboardResourceWithInitialControllerType {
-      typealias InitialController = HomeViewController
+    struct afterShootingViewController: Rswift.StoryboardResourceWithInitialControllerType {
+      typealias InitialController = AfterShootingViewController
       
       let bundle = R.hostingBundle
-      let name = "HomeViewController"
+      let name = "AfterShootingViewController"
       
       fileprivate init() {}
     }
@@ -109,6 +116,15 @@ struct _R {
       
       let bundle = R.hostingBundle
       let name = "LaunchScreen"
+      
+      fileprivate init() {}
+    }
+    
+    struct shootingViewController: Rswift.StoryboardResourceWithInitialControllerType {
+      typealias InitialController = ShootingViewController
+      
+      let bundle = R.hostingBundle
+      let name = "ShootingViewController"
       
       fileprivate init() {}
     }

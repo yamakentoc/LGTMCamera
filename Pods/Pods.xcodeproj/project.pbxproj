@@ -7,178 +7,231 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		039B76624394D6C178EBC51CD97A9920 /* NibResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF500991A9EE44CDBE234432195B0CC /* NibResource+UIKit.swift */; };
-		075D1602041EF26C2B06F2FDBB815C99 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C56C3413C2CA9EC3DF28E4D136350B /* UIViewController+StoryboardSegueIdentifierProtocol.swift */; };
-		0FE88FF78F423FFD3730C88D7BE5D648 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB028A3D1581F2A21DCDA4FB03041C /* ImageResource.swift */; };
-		109A613199060C3455D4C2194FBFC92E /* SwiftyGif-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91D90B1037D33A140C1D7978B2D3835B /* SwiftyGif-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12E816E6FBD1F1BBF1E2C7860291CD2A /* StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD4FD96363B55867D5096DF4FB241A0 /* StoryboardSegueIdentifierProtocol.swift */; };
+		002B91BBA089873E82CC8013A7D8EE18 /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5EA684068A4CD7771426AD125FCF55 /* StringResource.swift */; };
+		01A8F00F8554EBC49D4B246A699F0506 /* UITableView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BA0A1E6B43E3C29C9D6D2D15CAB24 /* UITableView+ReuseIdentifierProtocol.swift */; };
+		086D139B40B60018E854EE270584A537 /* StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76A75C94991E9FA6DF9CE4FB0687914 /* StoryboardViewControllerResource.swift */; };
+		0DAF5181B85EC9E9A337A734C7AAC174 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 630AA02DEACE4B864CDFE4B087896831 /* SVProgressHUD-dummy.m */; };
+		11A2C8EC5372AE9A095B08C49B513AC6 /* UIFont+FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032F2BB62387B44D846211D1B67DF38 /* UIFont+FontResource.swift */; };
+		1EE388AF456801872F39FE67BDD159E9 /* Pods-LGTMCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F736241A549D4B1813D70A0A9E5FFB6F /* Pods-LGTMCamera-dummy.m */; };
 		1EE866BCD0475B7875091965D169869C /* Pods-LGTMCameraUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2319B74A6D80E3F37E60C5051092504E /* Pods-LGTMCameraUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2626D8E30692B261C95ECD62E8F55786 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB093F58A7307DDC782986F12F130E2 /* Validatable.swift */; };
+		257CC2251A08468700273E9E61DE26D1 /* UIStoryboard+StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C82C10F6A3FF0CD2DBFF7DE74422A6 /* UIStoryboard+StoryboardResource.swift */; };
+		28C7D23B5D0205FE4DCA96C21132B536 /* ColorPaletteItemResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B6B418318089DBDA13ED0D504BAD96 /* ColorPaletteItemResource+UIKit.swift */; };
 		2A552B39ECDE47AB962EB12BCBFBE9EB /* Pods-LGTMCameraTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB7CA502B0E7E79D51A1EE6ABB7ECF5 /* Pods-LGTMCameraTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B792150AC49C5A080B60DD56D9D39BF /* R.swift.Library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC612A1AC833E41BE12C1E27F194F7BF /* R.swift.Library-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BE431AB1B63A57A7D7A31BDB33AAE93 /* Pods-LGTMCameraUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F39BC7D9E32638CDA948F47641F981 /* Pods-LGTMCameraUITests-dummy.m */; };
-		3036EE2298CA95057DD9C4F93A840B32 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2265931B370134AA85BE042EC5F7C8B /* UICollectionView+ReuseIdentifierProtocol.swift */; };
-		3391C8A2CE86AF78141000A552A14513 /* R.swift.Library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76BF84BA2A5CC4B1A768129094D1DD50 /* R.swift.Library-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33D0161A0674A9A23E1E67E397F47B12 /* UIViewController+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B437C5C44DE4082AB9960850A30CB6 /* UIViewController+NibResource.swift */; };
-		34930748FE3389DE49E01D71DE03C942 /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CAE5407DE0351F48F5C550ACEBF65C /* StringResource.swift */; };
-		3580C3ADF2BF9EF32CD2FE7E162302CF /* UIImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F66FEE2BC487DC2E94F2A949FB2D1E /* UIImage+SwiftyGif.swift */; };
-		3911F642A4DDBCA7FB1AACFE1092852A /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A6B52A6B5A2F55F82743F50D0252 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */; };
-		403B5CDD16837F0E4B4C744280951098 /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B12BCA53E2AFA211A640B44F3F2B2D /* StoryboardResource.swift */; };
-		469E6590C1EAB308B1A971F2850EB8EE /* ColorPaletteItemResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0567BDBD22BDD4120ABFA87BD4F7F0D /* ColorPaletteItemResource.swift */; };
-		47554EC32AF19AD8ACFB5CDE97863E2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		4923A724931843898159DAD34900FFB0 /* StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554967872E56C73D38A4BC51BCD4A38 /* StoryboardViewControllerResource.swift */; };
-		50F9BE3D20075D4AAF180EDFF0E5B79B /* StoryboardResourceWithInitialController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4703BE2BB7EB7E333CB6C2CF87147DF3 /* StoryboardResourceWithInitialController+UIKit.swift */; };
-		56B282ACFE54D0C634232BC5F42C5FAE /* SwiftyGifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CCCEE6727351398EE6D9D3FE0102 /* SwiftyGifManager.swift */; };
-		5C009FDA1F6AAAE5A3FAEA01B58AEB3C /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BD4DEAAF6DC289723CFF2185D7DC7 /* FontResource.swift */; };
-		5CDFA6F8FB0EF9AAC155AABC44503D51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		5E199ECE841CA2C60B8D4C4338E012F1 /* UITableView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A392AA1A9A4AC1468AE794167EABB7 /* UITableView+ReuseIdentifierProtocol.swift */; };
-		5E6F1F1198DEE3DD7659E39FA70642D6 /* UIFont+FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE069762AD777E02E5733032FD8FCF54 /* UIFont+FontResource.swift */; };
-		698399936B4429DF20FD78B1F401D9E6 /* R.swift.Library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4098D59EF59CE5984F0EC5F727074 /* R.swift.Library-dummy.m */; };
-		698B4B058556A2BC2D3AF353BB43BC7C /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C377DE1088302384628F4D8E9E881788 /* ColorResource.swift */; };
-		6CDD7507747376B8E52A8A07DADB0229 /* UIImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DCF38C2380A5850D1282367C97248 /* UIImageView+SwiftyGif.swift */; };
-		6CF48C364B8ADD361699406D0A12BB0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		6ED641B8481EFE78AA90A6633502173C /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEDA1A42D4362D4A32EBE2DC7A05191 /* FileResource.swift */; };
-		7F3EFEA8C253F6E38C0E499897FA3B3A /* UIStoryboard+StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD1F844BBA478277DDEC7876AF7F34 /* UIStoryboard+StoryboardResource.swift */; };
-		816E0E519F98C355A37A7E3DAF0BEF82 /* UINib+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BED24106D2C99982D8AF1F2F7BF052 /* UINib+NibResource.swift */; };
-		84D6737B6FF5164DE58465596B5079EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		8C54538089ED0BBDE8D39B792FDF7C40 /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787A4E636D364EBE273D0B0EE0B039 /* NibResource.swift */; };
-		93C9CB74E25DA9DDBAB92162C0A551B8 /* Pods-LGTMCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F736241A549D4B1813D70A0A9E5FFB6F /* Pods-LGTMCamera-dummy.m */; };
-		9F7F75B31A21B508D67004B83F538AD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		A083056832975BADB55B7E9F39A3C300 /* ColorPaletteItemResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F63C5C4A11DD747E9787A1E346EB87 /* ColorPaletteItemResource+UIKit.swift */; };
-		A3BB82B0FA0C2733949FAFFE4358CEEE /* UIColor+ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666BC3FFDD274C568AAB729BF459DD9 /* UIColor+ColorResource.swift */; };
+		33CECC9218B69C19452A2441B5CB7BEE /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105248C6590D5D5D647875EF3FD0614 /* ColorResource.swift */; };
+		36A3F2CE60395C807B3186695517C82F /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288139107D6A7FF1832ECFE1B67351E /* Validatable.swift */; };
+		47554EC32AF19AD8ACFB5CDE97863E2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9310556BBE996AE628441592FB1181 /* Foundation.framework */; };
+		4C4078B9FCF63FCBF165176591464B5A /* R.swift.Library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 759DA716A8EAB17B567CF5398C3200EC /* R.swift.Library-dummy.m */; };
+		4C9E3D718B22385D7AAEB80ADD3338DF /* NibResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8EC0F2B42603E7C41848D499855B5 /* NibResource+UIKit.swift */; };
+		4E9E1642014D002308620C3B1A2839BF /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0A9A81EF05CD448599B576D4092967 /* SVProgressAnimatedView.m */; };
+		52A4B3D6B283C7B689223D3ECF0FFA26 /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C7BBCF765BAA500712D47C84AA1CBD /* UIStoryboard+StoryboardViewControllerResource.swift */; };
+		569F5CE72B223C557B8C9F16D6A33839 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = BB010AC3F0EE6F527370132BDE290975 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58268A0E4DF6D7EB6F32309D0FBD6264 /* UIImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E579C3EEA894FCF46FB9FA1AD08405 /* UIImageView+SwiftyGif.swift */; };
+		58283FED7EF952FB268BBDA5BF2941F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9310556BBE996AE628441592FB1181 /* Foundation.framework */; };
+		5DEE53A90213DE4435FD61637EF350BE /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F462C2E7FEB871760971FFEF72130B /* ReuseIdentifierProtocol.swift */; };
+		5ED5402F093E1A8B64E1205B77A3CDCD /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763608A0E49F98C79A8D93FD243CD40A /* ImageResource.swift */; };
+		6126D59226D4D3760EB875DD932BC98F /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554C087D2A57FD03E012785759F650F /* Identifier.swift */; };
+		68B46EF41EEC531F1242127F0869EEF4 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A441977A1D24978555E00D1AEAE781D /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */; };
+		6B8E641BC7A30A504F057BFD23790634 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE92641FD1C87A81ACCDB8968FA17186 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70110DAD28B000085AB9F3A7BCA81540 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4CA24DA7E5DD8D4FA0E0AB5C3DB40 /* UICollectionView+ReuseIdentifierProtocol.swift */; };
+		74496FBFF9C3F07CCD8509E738F81C57 /* UIImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341D7268D6CED41E3F447360882664B /* UIImage+SwiftyGif.swift */; };
+		749EF056A5DB4517708DAC756C3F37FC /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B75297522EE172D68EB0069B2203775 /* FileResource.swift */; };
+		7E0102076B780A4BEA4E3218F36CD8F9 /* UIImage+ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC305FE418B1FC2C26670B508495EDF /* UIImage+ImageResource.swift */; };
+		7F8C12B315CC1554B1B5A703BB473459 /* UINib+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B9FC6B27E6ED86DF9823F875C75B1 /* UINib+NibResource.swift */; };
+		8123BB3822F78918E7DF818CD44FCE7D /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818065250B0249527ABF0B54EF4A7F0D /* UIViewController+StoryboardSegueIdentifierProtocol.swift */; };
+		814754CBAC62E3E0EF621D7459EBF519 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A555EE820E84C27846A47ACCA9973DA /* SVIndefiniteAnimatedView.m */; };
+		87616A1ABA580C67BC4D7CC36D020F6A /* SwiftyGif.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7C778DE927D6BCC92240305C0D18D9 /* SwiftyGif.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CC7162EEBFCABB04D67339442DEF728 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 739724946CD14F977A56771E447ECFE4 /* SVProgressHUD.bundle */; };
+		913388825D90C7BA653C2FB10661A5C1 /* StoryboardResourceWithInitialController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424A2B90BF869FAC5A5701CA6062BA7 /* StoryboardResourceWithInitialController+UIKit.swift */; };
+		9F7F75B31A21B508D67004B83F538AD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9310556BBE996AE628441592FB1181 /* Foundation.framework */; };
+		9F9EAF524889CBF649A580FAE85B5347 /* UIColor+ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723464F71FB2465CE4C999D84F3F6918 /* UIColor+ColorResource.swift */; };
+		A6DAA736D59C03460DD248277DABEC8E /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6650B12F1570E9971707167009C8A5 /* SVProgressHUD.m */; };
+		A846DA89E6B29B18694D34E9C4DF0C71 /* Bundle+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41A1D2173937043CA484D9ECD90E30 /* Bundle+FileResource.swift */; };
 		AA40F74A44B3418EC36E5792FFB20114 /* Pods-LGTMCameraTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AD2951ED3406F3F3FD39ADC30E35EA /* Pods-LGTMCameraTests-dummy.m */; };
-		AC9040B7D78B61E301A4BBF3C2C44E41 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A9703BC0DD2BF3118C0688EC94E55 /* ReuseIdentifierProtocol.swift */; };
-		B7380A9164A915593385592060803C1A /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8E2EB3AF8D73AEDFB43F3FA03F76B1 /* UIStoryboard+StoryboardViewControllerResource.swift */; };
-		C064E2E92414D230E7405C8934C67025 /* Data+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54415999DF40143EF4C3B43723FAAD /* Data+FileResource.swift */; };
-		C392C4842319BC8B988083BC6B1D64DC /* UIImage+ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A89A91A4520F2F19B4B28755D7885 /* UIImage+ImageResource.swift */; };
-		C97EC766FC652C18B87DC0844C50E996 /* Bundle+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD8CA84A4534B66E52107C001CC0DC /* Bundle+FileResource.swift */; };
-		D0528B98A6437A34B5970A19F01FCB68 /* Pods-LGTMCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F905C241EB562DC5B007DAFC0F991BF /* Pods-LGTMCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D41198B2352D6E3FD242CBE46AC732FD /* SwiftyGif-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B6A85CBCCC9EAE26FE567FD53AAD1A /* SwiftyGif-dummy.m */; };
-		D9CD90FDBB01BDDEA1673D24EB145A35 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B1ED9A1EBEFB0D3F3481DB7E8877F9 /* Identifier.swift */; };
-		DD884F92B656E63EBB8D2154187F6626 /* SwiftyGif.h in Headers */ = {isa = PBXBuildFile; fileRef = 4449941931B10C1838ADD3F2C1468C1D /* SwiftyGif.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABD4E6D64376824C667523CAEC625901 /* UIViewController+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF3BAEFA5FE18D5E035025A6F6A6EBC /* UIViewController+NibResource.swift */; };
+		ABF2CF3DA5B19C530786279A0B7CAD82 /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC2AE787AC5D7F2ABC50DE3E4D7DCC6 /* FontResource.swift */; };
+		AD4F6D7099BF5D1CCBAB7ABD6B4DEAC0 /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D202BD22999F0EDFC3E1A87A2A49C /* StoryboardResource.swift */; };
+		B36F95FA8D04C2F1F480DE6A5427F134 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A9D829C048E5C4A0333D00F6272C784 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5CBC8A351D17D741E33976B03FF5FC2 /* Data+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3DB7AE14437EAD08D4AEB8C81937D /* Data+FileResource.swift */; };
+		BC8B04035A7A1DD17859F53CB4C7FAB3 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = CE37E510A18CD1A50997A6DC9BD1EB73 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFB764B018DCB7E3B808A20D4BB805E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9310556BBE996AE628441592FB1181 /* Foundation.framework */; };
+		C4027AE8E3DA9F2D3C0680626E042285 /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E04FCA3DD7BCA1E8443B36541778F /* NibResource.swift */; };
+		C681C839F80E64C512762D7E2AA45ED1 /* StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9829741A713C01E2A629357B2AA7E4F /* StoryboardSegueIdentifierProtocol.swift */; };
+		C7616A332835DC294CCF6FD64125F047 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7824BF02D5ABF8EABF36D49F20DF43 /* SVRadialGradientLayer.m */; };
+		CD0D8AE60BEFD1711DEDCC6C571F40EF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF13BCB9D36F1319E01CAB18FE2FBA7 /* QuartzCore.framework */; };
+		D3EFC562748F3119989EA90FCC071A8A /* SwiftyGif-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BCB8FE79B8E8C2F95329D53F3B53D0 /* SwiftyGif-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDE7A2E2965A00A5DA33D47AB5A89EB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9310556BBE996AE628441592FB1181 /* Foundation.framework */; };
+		E3BA5B136356F1032C06A81E0E54F2FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9310556BBE996AE628441592FB1181 /* Foundation.framework */; };
+		E91D8DB6EB6021B8F696A369E2A67481 /* Pods-LGTMCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F905C241EB562DC5B007DAFC0F991BF /* Pods-LGTMCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9C8C39E741835117FA64E123C54C8F9 /* SwiftyGifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E0801B565C149A9CC3DECECE613CF /* SwiftyGifManager.swift */; };
+		EE6B1945185A3E7FCDB9A818218740EA /* SwiftyGif-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB56623F0203736CFBF8FA93CE81B75C /* SwiftyGif-dummy.m */; };
+		F8E6B26BFCBA0E5A6C0CB768DCC44991 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 060B7D191B98B9C8C6899FB20D8421C2 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFBEFE9B869AEE097040E865C93437CE /* ColorPaletteItemResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A64719B2C1F9E972C39BFF74BED7885 /* ColorPaletteItemResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2C39F49CC647592E016B96D4E088CC7B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 829DF5C081CE68F0C4A7E93EE794DE66;
-			remoteInfo = R.swift.Library;
-		};
-		42A4C5CA5FEAFF7D50765FFF71FB48A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3FB424426644E261A2A47B4D70CB55C9;
-			remoteInfo = SwiftyGif;
-		};
 		A06F66E043163C93225E8A988353A890 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BBB0448D2B3B0A1E6FDA33C8C740B224;
+			remoteGlobalIDString = 6562FA3F81B1D3ECA95C21FAEC11DE9A;
 			remoteInfo = "Pods-LGTMCamera";
 		};
 		AD4A1E55171A602D7D2229AC70D66747 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BBB0448D2B3B0A1E6FDA33C8C740B224;
+			remoteGlobalIDString = 6562FA3F81B1D3ECA95C21FAEC11DE9A;
 			remoteInfo = "Pods-LGTMCamera";
+		};
+		C289E0EDB929AD1F13000B696F06CFC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7AE8CAC97CDDF4B068017972AF2808A;
+			remoteInfo = SVProgressHUD;
+		};
+		D50DB23FA3652895D4C22C0DFFD8D9EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0505732B7B336210F705C64AFA1B123;
+			remoteInfo = SwiftyGif;
+		};
+		EF054A36444FC424A6CA8F82157BF9A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66C48CBFB92D0ADA14D997B9FB391DA8;
+			remoteInfo = R.swift.Library;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06F66FEE2BC487DC2E94F2A949FB2D1E /* UIImage+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+SwiftyGif.swift"; path = "SwiftyGif/UIImage+SwiftyGif.swift"; sourceTree = "<group>"; };
-		0EFAAC6A05BEF81A25C2DB44217A05F7 /* R.swift.Library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-prefix.pch"; sourceTree = "<group>"; };
-		10808AF668E6488ACB9FB3DDCE892D14 /* Rswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Rswift.framework; path = R.swift.Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F462C2E7FEB871760971FFEF72130B /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifierProtocol.swift; path = Library/Core/ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
+		0554C087D2A57FD03E012785759F650F /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Library/Core/Identifier.swift; sourceTree = "<group>"; };
+		060B7D191B98B9C8C6899FB20D8421C2 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		0D41A1D2173937043CA484D9ECD90E30 /* Bundle+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+FileResource.swift"; path = "Library/Foundation/Bundle+FileResource.swift"; sourceTree = "<group>"; };
+		0F9310556BBE996AE628441592FB1181 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		116AF55981BBA260245AFC2BEC3D9804 /* Pods-LGTMCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGTMCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		13CAE5407DE0351F48F5C550ACEBF65C /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Library/Core/StringResource.swift; sourceTree = "<group>"; };
-		1554967872E56C73D38A4BC51BCD4A38 /* StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardViewControllerResource.swift; path = Library/Core/StoryboardViewControllerResource.swift; sourceTree = "<group>"; };
-		196C090DDE6CB127354150E876CE8A57 /* SwiftyGif-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-prefix.pch"; sourceTree = "<group>"; };
-		1AA4098D59EF59CE5984F0EC5F727074 /* R.swift.Library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift.Library-dummy.m"; sourceTree = "<group>"; };
-		209A9703BC0DD2BF3118C0688EC94E55 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifierProtocol.swift; path = Library/Core/ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
-		2123A1524B366C111C154A714F31837A /* SwiftyGif.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyGif.xcconfig; sourceTree = "<group>"; };
+		1424A2B90BF869FAC5A5701CA6062BA7 /* StoryboardResourceWithInitialController+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardResourceWithInitialController+UIKit.swift"; path = "Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift"; sourceTree = "<group>"; };
+		1FC305FE418B1FC2C26670B508495EDF /* UIImage+ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageResource.swift"; path = "Library/UIKit/UIImage+ImageResource.swift"; sourceTree = "<group>"; };
 		2319B74A6D80E3F37E60C5051092504E /* Pods-LGTMCameraUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LGTMCameraUITests-umbrella.h"; sourceTree = "<group>"; };
-		29B6A85CBCCC9EAE26FE567FD53AAD1A /* SwiftyGif-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyGif-dummy.m"; sourceTree = "<group>"; };
-		2A787A4E636D364EBE273D0B0EE0B039 /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Library/Core/NibResource.swift; sourceTree = "<group>"; };
+		28C82C10F6A3FF0CD2DBFF7DE74422A6 /* UIStoryboard+StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardResource.swift"; sourceTree = "<group>"; };
+		2A555EE820E84C27846A47ACCA9973DA /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		2ABABE9088713F81337BDC879A664EF1 /* Pods-LGTMCamera-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LGTMCamera-acknowledgements.plist"; sourceTree = "<group>"; };
 		2B19BC32A9D9450D5483D2EBA38E4FB2 /* Pods-LGTMCameraTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGTMCameraTests-frameworks.sh"; sourceTree = "<group>"; };
+		2C0BA0A1E6B43E3C29C9D6D2D15CAB24 /* UITableView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UITableView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		2CF8EC0F2B42603E7C41848D499855B5 /* NibResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibResource+UIKit.swift"; path = "Library/UIKit/NibResource+UIKit.swift"; sourceTree = "<group>"; };
 		3151BA6A08D64349375E204BE3A3215C /* Pods-LGTMCameraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGTMCameraTests.release.xcconfig"; sourceTree = "<group>"; };
-		38F63C5C4A11DD747E9787A1E346EB87 /* ColorPaletteItemResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ColorPaletteItemResource+UIKit.swift"; path = "Library/UIKit/ColorPaletteItemResource+UIKit.swift"; sourceTree = "<group>"; };
-		3DC098EB50954D3C3D92D66CE890E221 /* SwiftyGif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyGif.framework; path = SwiftyGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4449941931B10C1838ADD3F2C1468C1D /* SwiftyGif.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyGif.h; path = SwiftyGif/SwiftyGif.h; sourceTree = "<group>"; };
-		4703BE2BB7EB7E333CB6C2CF87147DF3 /* StoryboardResourceWithInitialController+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardResourceWithInitialController+UIKit.swift"; path = "Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift"; sourceTree = "<group>"; };
+		34A263904A7DF5B454DBF7C12E30BB4C /* Rswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Rswift.framework; path = R.swift.Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B6B418318089DBDA13ED0D504BAD96 /* ColorPaletteItemResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ColorPaletteItemResource+UIKit.swift"; path = "Library/UIKit/ColorPaletteItemResource+UIKit.swift"; sourceTree = "<group>"; };
+		3A64719B2C1F9E972C39BFF74BED7885 /* ColorPaletteItemResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPaletteItemResource.swift; path = Library/Core/ColorPaletteItemResource.swift; sourceTree = "<group>"; };
+		3DCDCBF0097D26DE3B0DC5C701886CB3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4032F2BB62387B44D846211D1B67DF38 /* UIFont+FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+FontResource.swift"; path = "Library/UIKit/UIFont+FontResource.swift"; sourceTree = "<group>"; };
+		44E36AEABB41EFB18C86720E84E7AEB4 /* R.swift.Library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.xcconfig; sourceTree = "<group>"; };
+		459E0801B565C149A9CC3DECECE613CF /* SwiftyGifManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyGifManager.swift; path = SwiftyGif/SwiftyGifManager.swift; sourceTree = "<group>"; };
+		4B1E04FCA3DD7BCA1E8443B36541778F /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Library/Core/NibResource.swift; sourceTree = "<group>"; };
+		4C45F76F94406008E821E3DC31A6700B /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		4CB7CA502B0E7E79D51A1EE6ABB7ECF5 /* Pods-LGTMCameraTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LGTMCameraTests-umbrella.h"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4F6528D8EC8766A60F609EE1A434870D /* R.swift.Library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.Library.modulemap; sourceTree = "<group>"; };
 		5B36C58350E23E0AB17AAFAA5C5112EC /* Pods-LGTMCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGTMCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		5B75297522EE172D68EB0069B2203775 /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Library/Core/FileResource.swift; sourceTree = "<group>"; };
 		5F905C241EB562DC5B007DAFC0F991BF /* Pods-LGTMCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LGTMCamera-umbrella.h"; sourceTree = "<group>"; };
 		61AD2951ED3406F3F3FD39ADC30E35EA /* Pods-LGTMCameraTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LGTMCameraTests-dummy.m"; sourceTree = "<group>"; };
-		65CB028A3D1581F2A21DCDA4FB03041C /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Library/Core/ImageResource.swift; sourceTree = "<group>"; };
-		66884368494563E7FC3D7E3129D43CE3 /* Pods_LGTMCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LGTMCamera.framework; path = "Pods-LGTMCamera.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6288139107D6A7FF1832ECFE1B67351E /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Library/Core/Validatable.swift; sourceTree = "<group>"; };
+		630AA02DEACE4B864CDFE4B087896831 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		69AEF8382A69AB10ABD74E8AD74AC4CF /* Pods-LGTMCameraUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LGTMCameraUITests.modulemap"; sourceTree = "<group>"; };
-		6C8006447EE2FE6328A7DC9F0C12DF6A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FD4FD96363B55867D5096DF4FB241A0 /* StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSegueIdentifierProtocol.swift; path = Library/Core/StoryboardSegueIdentifierProtocol.swift; sourceTree = "<group>"; };
-		7666BC3FFDD274C568AAB729BF459DD9 /* UIColor+ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorResource.swift"; path = "Library/UIKit/UIColor+ColorResource.swift"; sourceTree = "<group>"; };
-		76BF84BA2A5CC4B1A768129094D1DD50 /* R.swift.Library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-umbrella.h"; sourceTree = "<group>"; };
+		723464F71FB2465CE4C999D84F3F6918 /* UIColor+ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorResource.swift"; path = "Library/UIKit/UIColor+ColorResource.swift"; sourceTree = "<group>"; };
+		739724946CD14F977A56771E447ECFE4 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		759DA716A8EAB17B567CF5398C3200EC /* R.swift.Library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift.Library-dummy.m"; sourceTree = "<group>"; };
+		75C7BBCF765BAA500712D47C84AA1CBD /* UIStoryboard+StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardViewControllerResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardViewControllerResource.swift"; sourceTree = "<group>"; };
+		763608A0E49F98C79A8D93FD243CD40A /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Library/Core/ImageResource.swift; sourceTree = "<group>"; };
 		7CBEBF2B3073853E686E7D5B8606F64A /* Pods-LGTMCameraTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LGTMCameraTests.modulemap"; sourceTree = "<group>"; };
-		830A89A91A4520F2F19B4B28755D7885 /* UIImage+ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageResource.swift"; path = "Library/UIKit/UIImage+ImageResource.swift"; sourceTree = "<group>"; };
-		843FCC9BC338A25A474F6211FCC5CFEA /* Pods_LGTMCameraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LGTMCameraTests.framework; path = "Pods-LGTMCameraTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		91D90B1037D33A140C1D7978B2D3835B /* SwiftyGif-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-umbrella.h"; sourceTree = "<group>"; };
+		818065250B0249527ABF0B54EF4A7F0D /* UIViewController+StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StoryboardSegueIdentifierProtocol.swift"; path = "Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		8341D7268D6CED41E3F447360882664B /* UIImage+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+SwiftyGif.swift"; path = "SwiftyGif/UIImage+SwiftyGif.swift"; sourceTree = "<group>"; };
+		84787638CFCFF008C82F93BC1DC167FF /* SwiftyGif.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyGif.xcconfig; sourceTree = "<group>"; };
+		8A441977A1D24978555E00D1AEAE781D /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; path = "Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; sourceTree = "<group>"; };
+		8ACC70B3FD8A532B29556C5834F32CF5 /* Pods_LGTMCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LGTMCamera.framework; path = "Pods-LGTMCamera.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7824BF02D5ABF8EABF36D49F20DF43 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		8B7D202BD22999F0EDFC3E1A87A2A49C /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Library/Core/StoryboardResource.swift; sourceTree = "<group>"; };
 		92D4D62FFE9A772F09BAE54E96CFB9FA /* Pods-LGTMCamera-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGTMCamera-resources.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94B1ED9A1EBEFB0D3F3481DB7E8877F9 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Library/Core/Identifier.swift; sourceTree = "<group>"; };
-		9BEDA1A42D4362D4A32EBE2DC7A05191 /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Library/Core/FileResource.swift; sourceTree = "<group>"; };
-		9DF500991A9EE44CDBE234432195B0CC /* NibResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibResource+UIKit.swift"; path = "Library/UIKit/NibResource+UIKit.swift"; sourceTree = "<group>"; };
-		A2265931B370134AA85BE042EC5F7C8B /* UICollectionView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
-		A4190FA7167572EE4B9E3A9AF373EAD4 /* Pods_LGTMCameraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LGTMCameraUITests.framework; path = "Pods-LGTMCameraUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC15533AAF631167FF7D20154EF824A4 /* R.swift.Library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.Library.modulemap; sourceTree = "<group>"; };
+		979278062F64204D39BE5E33614353D7 /* Pods_LGTMCameraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LGTMCameraTests.framework; path = "Pods-LGTMCameraTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9D829C048E5C4A0333D00F6272C784 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		9CC2AE787AC5D7F2ABC50DE3E4D7DCC6 /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Library/Core/FontResource.swift; sourceTree = "<group>"; };
+		9CF13BCB9D36F1319E01CAB18FE2FBA7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A399365726C6F82F753E3DBE5614D8A1 /* SwiftyGif.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyGif.modulemap; sourceTree = "<group>"; };
+		A413DA4D3B57A298B907C124111DAF5C /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		A80B3AA80440D218740E9808A7C2628D /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		AB8B9FC6B27E6ED86DF9823F875C75B1 /* UINib+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINib+NibResource.swift"; path = "Library/UIKit/UINib+NibResource.swift"; sourceTree = "<group>"; };
+		ACB085120CBE623DC118472861490F24 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEA0B325ADE3BB9C29DB03AC201CAC1 /* Pods-LGTMCameraUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGTMCameraUITests-resources.sh"; sourceTree = "<group>"; };
-		B0567BDBD22BDD4120ABFA87BD4F7F0D /* ColorPaletteItemResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPaletteItemResource.swift; path = Library/Core/ColorPaletteItemResource.swift; sourceTree = "<group>"; };
-		B0BED24106D2C99982D8AF1F2F7BF052 /* UINib+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINib+NibResource.swift"; path = "Library/UIKit/UINib+NibResource.swift"; sourceTree = "<group>"; };
+		AD0A9A81EF05CD448599B576D4092967 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		AD5EA684068A4CD7771426AD125FCF55 /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Library/Core/StringResource.swift; sourceTree = "<group>"; };
+		AD85CE0B6674DA372D888F9A3263E8EA /* R.swift.Library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-prefix.pch"; sourceTree = "<group>"; };
+		AE92641FD1C87A81ACCDB8968FA17186 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		B0F4CA24DA7E5DD8D4FA0E0AB5C3DB40 /* UICollectionView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		B1916154228FB76BAE131F30CE3ED8BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3DD3A8FEE0A79D0D16ECF26A75E3AE0 /* Pods-LGTMCameraTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGTMCameraTests-resources.sh"; sourceTree = "<group>"; };
-		B60DCF38C2380A5850D1282367C97248 /* UIImageView+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+SwiftyGif.swift"; path = "SwiftyGif/UIImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
+		B9829741A713C01E2A629357B2AA7E4F /* StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSegueIdentifierProtocol.swift; path = Library/Core/StoryboardSegueIdentifierProtocol.swift; sourceTree = "<group>"; };
+		BB010AC3F0EE6F527370132BDE290975 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		BB6A6CE171B3405DF515334049D90BFC /* Pods-LGTMCamera-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LGTMCamera-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BC4C783E3683A5466D69E6F9F71A2C5A /* Pods-LGTMCameraUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LGTMCameraUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BC7C778DE927D6BCC92240305C0D18D9 /* SwiftyGif.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyGif.h; path = SwiftyGif/SwiftyGif.h; sourceTree = "<group>"; };
 		BCAC39C24C9AD5B883298622623885A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCCD8CA84A4534B66E52107C001CC0DC /* Bundle+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+FileResource.swift"; path = "Library/Foundation/Bundle+FileResource.swift"; sourceTree = "<group>"; };
-		BE069762AD777E02E5733032FD8FCF54 /* UIFont+FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+FontResource.swift"; path = "Library/UIKit/UIFont+FontResource.swift"; sourceTree = "<group>"; };
+		BEB3DB7AE14437EAD08D4AEB8C81937D /* Data+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+FileResource.swift"; path = "Library/Foundation/Data+FileResource.swift"; sourceTree = "<group>"; };
+		BEFBFF28E8784B61B34A8817A3EA7BFB /* Pods_LGTMCameraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LGTMCameraUITests.framework; path = "Pods-LGTMCameraUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F39BC7D9E32638CDA948F47641F981 /* Pods-LGTMCameraUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LGTMCameraUITests-dummy.m"; sourceTree = "<group>"; };
 		C2473749D373E8286259122380E4C8BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C377DE1088302384628F4D8E9E881788 /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Library/Core/ColorResource.swift; sourceTree = "<group>"; };
-		C4F4C68AD277E04817739FE8C82F6974 /* R.swift.Library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.xcconfig; sourceTree = "<group>"; };
-		C6A392AA1A9A4AC1468AE794167EABB7 /* UITableView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UITableView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
-		CA2118EF221570F624F0BBBC2163A93A /* SwiftyGif.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyGif.modulemap; sourceTree = "<group>"; };
+		C76A75C94991E9FA6DF9CE4FB0687914 /* StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardViewControllerResource.swift; path = Library/Core/StoryboardViewControllerResource.swift; sourceTree = "<group>"; };
+		C8E579C3EEA894FCF46FB9FA1AD08405 /* UIImageView+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+SwiftyGif.swift"; path = "SwiftyGif/UIImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
+		CE37E510A18CD1A50997A6DC9BD1EB73 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 		CE4F7B009781DBCCD487B939655091FB /* Pods-LGTMCameraUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LGTMCameraUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D05D7E4DC2D65A44C09E31A360E445FA /* SwiftyGif-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-prefix.pch"; sourceTree = "<group>"; };
+		D105248C6590D5D5D647875EF3FD0614 /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Library/Core/ColorResource.swift; sourceTree = "<group>"; };
 		DA0E9A43EFAE7FE1847D091D17EB80E8 /* Pods-LGTMCameraUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGTMCameraUITests-frameworks.sh"; sourceTree = "<group>"; };
-		DCB093F58A7307DDC782986F12F130E2 /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Library/Core/Validatable.swift; sourceTree = "<group>"; };
-		DCCD1F844BBA478277DDEC7876AF7F34 /* UIStoryboard+StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardResource.swift"; sourceTree = "<group>"; };
-		DD54415999DF40143EF4C3B43723FAAD /* Data+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+FileResource.swift"; path = "Library/Foundation/Data+FileResource.swift"; sourceTree = "<group>"; };
-		DD72CCCEE6727351398EE6D9D3FE0102 /* SwiftyGifManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyGifManager.swift; path = SwiftyGif/SwiftyGifManager.swift; sourceTree = "<group>"; };
+		DA6650B12F1570E9971707167009C8A5 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		DB56623F0203736CFBF8FA93CE81B75C /* SwiftyGif-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyGif-dummy.m"; sourceTree = "<group>"; };
 		E198DF5DCDE26DCDBF4755217BE0ECFF /* Pods-LGTMCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGTMCamera.release.xcconfig"; sourceTree = "<group>"; };
 		E29BD69C2DEFBB8F1BCF9E97D8B254F2 /* Pods-LGTMCameraTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LGTMCameraTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E8B12BCA53E2AFA211A640B44F3F2B2D /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Library/Core/StoryboardResource.swift; sourceTree = "<group>"; };
-		E8B437C5C44DE4082AB9960850A30CB6 /* UIViewController+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+NibResource.swift"; path = "Library/UIKit/UIViewController+NibResource.swift"; sourceTree = "<group>"; };
-		EBCDA066098260C709C7C307BB86CBA3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF8E2EB3AF8D73AEDFB43F3FA03F76B1 /* UIStoryboard+StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardViewControllerResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardViewControllerResource.swift"; sourceTree = "<group>"; };
-		F52BD4DEAAF6DC289723CFF2185D7DC7 /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Library/Core/FontResource.swift; sourceTree = "<group>"; };
-		F6C56C3413C2CA9EC3DF28E4D136350B /* UIViewController+StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StoryboardSegueIdentifierProtocol.swift"; path = "Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		E7BF60D38313C686877AC027EFBAB7BD /* SwiftyGif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyGif.framework; path = SwiftyGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9BCB8FE79B8E8C2F95329D53F3B53D0 /* SwiftyGif-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-umbrella.h"; sourceTree = "<group>"; };
+		EC612A1AC833E41BE12C1E27F194F7BF /* R.swift.Library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-umbrella.h"; sourceTree = "<group>"; };
 		F736241A549D4B1813D70A0A9E5FFB6F /* Pods-LGTMCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LGTMCamera-dummy.m"; sourceTree = "<group>"; };
 		F76AD99F541B6828F4B853BF1F6D2B94 /* Pods-LGTMCamera-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGTMCamera-frameworks.sh"; sourceTree = "<group>"; };
 		F85982B939FC1AB87EAAD825C051F145 /* Pods-LGTMCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LGTMCamera.modulemap"; sourceTree = "<group>"; };
 		F98B8964F21E6ECA9A402B45D44EB3FF /* Pods-LGTMCameraTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LGTMCameraTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F9D6ED1F7F576C7640DBE935977CDDC1 /* Pods-LGTMCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGTMCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
-		FA23A6B52A6B5A2F55F82743F50D0252 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; path = "Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; sourceTree = "<group>"; };
 		FAA5E95AB799640E1DE7E8CAC06FCD35 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC076F32348B030CC8153F9A25B94497 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF3BAEFA5FE18D5E035025A6F6A6EBC /* UIViewController+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+NibResource.swift"; path = "Library/UIKit/UIViewController+NibResource.swift"; sourceTree = "<group>"; };
 		FE4238F7F673364E7BFE64E43C781EE9 /* Pods-LGTMCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGTMCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		851C7E3F13E175C2D69BE222C178334A /* Frameworks */ = {
+		25194D2EB4118CAF3B8D3E1BD3960B7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CDFA6F8FB0EF9AAC155AABC44503D51 /* Foundation.framework in Frameworks */,
+				BFB764B018DCB7E3B808A20D4BB805E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B083C8104DF6E78BF0DCDE5E4E00AA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BA5B136356F1032C06A81E0E54F2FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E6405A9BA87E2483D97E50B641851EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58283FED7EF952FB268BBDA5BF2941F0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,14 +243,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1A4CC0C63A4B8F9F36FF447FE924D46 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CF48C364B8ADD361699406D0A12BB0C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C5BF08D3F6125D278ED62D0610849DA9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,70 +251,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E61480C05A11CCA4A6DDCE4C6EBC2029 /* Frameworks */ = {
+		D0D695FD02D49BEFB709B180F2C31E5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D6737B6FF5164DE58465596B5079EC /* Foundation.framework in Frameworks */,
+				DDE7A2E2965A00A5DA33D47AB5A89EB4 /* Foundation.framework in Frameworks */,
+				CD0D8AE60BEFD1711DEDCC6C571F40EF /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0742202418536AC360EB1A088AE44DB9 /* R.swift.Library */ = {
+		1BCE1065CA384A84467F1AF8F381C038 /* SwiftyGif */ = {
 			isa = PBXGroup;
 			children = (
-				BCCD8CA84A4534B66E52107C001CC0DC /* Bundle+FileResource.swift */,
-				B0567BDBD22BDD4120ABFA87BD4F7F0D /* ColorPaletteItemResource.swift */,
-				38F63C5C4A11DD747E9787A1E346EB87 /* ColorPaletteItemResource+UIKit.swift */,
-				C377DE1088302384628F4D8E9E881788 /* ColorResource.swift */,
-				DD54415999DF40143EF4C3B43723FAAD /* Data+FileResource.swift */,
-				9BEDA1A42D4362D4A32EBE2DC7A05191 /* FileResource.swift */,
-				F52BD4DEAAF6DC289723CFF2185D7DC7 /* FontResource.swift */,
-				94B1ED9A1EBEFB0D3F3481DB7E8877F9 /* Identifier.swift */,
-				65CB028A3D1581F2A21DCDA4FB03041C /* ImageResource.swift */,
-				2A787A4E636D364EBE273D0B0EE0B039 /* NibResource.swift */,
-				9DF500991A9EE44CDBE234432195B0CC /* NibResource+UIKit.swift */,
-				209A9703BC0DD2BF3118C0688EC94E55 /* ReuseIdentifierProtocol.swift */,
-				E8B12BCA53E2AFA211A640B44F3F2B2D /* StoryboardResource.swift */,
-				4703BE2BB7EB7E333CB6C2CF87147DF3 /* StoryboardResourceWithInitialController+UIKit.swift */,
-				6FD4FD96363B55867D5096DF4FB241A0 /* StoryboardSegueIdentifierProtocol.swift */,
-				1554967872E56C73D38A4BC51BCD4A38 /* StoryboardViewControllerResource.swift */,
-				13CAE5407DE0351F48F5C550ACEBF65C /* StringResource.swift */,
-				FA23A6B52A6B5A2F55F82743F50D0252 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */,
-				A2265931B370134AA85BE042EC5F7C8B /* UICollectionView+ReuseIdentifierProtocol.swift */,
-				7666BC3FFDD274C568AAB729BF459DD9 /* UIColor+ColorResource.swift */,
-				BE069762AD777E02E5733032FD8FCF54 /* UIFont+FontResource.swift */,
-				830A89A91A4520F2F19B4B28755D7885 /* UIImage+ImageResource.swift */,
-				B0BED24106D2C99982D8AF1F2F7BF052 /* UINib+NibResource.swift */,
-				DCCD1F844BBA478277DDEC7876AF7F34 /* UIStoryboard+StoryboardResource.swift */,
-				EF8E2EB3AF8D73AEDFB43F3FA03F76B1 /* UIStoryboard+StoryboardViewControllerResource.swift */,
-				C6A392AA1A9A4AC1468AE794167EABB7 /* UITableView+ReuseIdentifierProtocol.swift */,
-				E8B437C5C44DE4082AB9960850A30CB6 /* UIViewController+NibResource.swift */,
-				F6C56C3413C2CA9EC3DF28E4D136350B /* UIViewController+StoryboardSegueIdentifierProtocol.swift */,
-				DCB093F58A7307DDC782986F12F130E2 /* Validatable.swift */,
-				118AA4D1453A5CE67FA26C274153DCF0 /* Support Files */,
+				BC7C778DE927D6BCC92240305C0D18D9 /* SwiftyGif.h */,
+				459E0801B565C149A9CC3DECECE613CF /* SwiftyGifManager.swift */,
+				8341D7268D6CED41E3F447360882664B /* UIImage+SwiftyGif.swift */,
+				C8E579C3EEA894FCF46FB9FA1AD08405 /* UIImageView+SwiftyGif.swift */,
+				A9BEB52E5C4BBC8CE4067CE9356C3EDA /* Support Files */,
 			);
-			name = R.swift.Library;
-			path = R.swift.Library;
+			name = SwiftyGif;
+			path = SwiftyGif;
 			sourceTree = "<group>";
 		};
-		118AA4D1453A5CE67FA26C274153DCF0 /* Support Files */ = {
+		1BCF60BB3B92B9C3A0ACAF0A0D254B78 /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				EBCDA066098260C709C7C307BB86CBA3 /* Info.plist */,
-				AC15533AAF631167FF7D20154EF824A4 /* R.swift.Library.modulemap */,
-				C4F4C68AD277E04817739FE8C82F6974 /* R.swift.Library.xcconfig */,
-				1AA4098D59EF59CE5984F0EC5F727074 /* R.swift.Library-dummy.m */,
-				0EFAAC6A05BEF81A25C2DB44217A05F7 /* R.swift.Library-prefix.pch */,
-				76BF84BA2A5CC4B1A768129094D1DD50 /* R.swift.Library-umbrella.h */,
+				060B7D191B98B9C8C6899FB20D8421C2 /* SVIndefiniteAnimatedView.h */,
+				2A555EE820E84C27846A47ACCA9973DA /* SVIndefiniteAnimatedView.m */,
+				9A9D829C048E5C4A0333D00F6272C784 /* SVProgressAnimatedView.h */,
+				AD0A9A81EF05CD448599B576D4092967 /* SVProgressAnimatedView.m */,
+				CE37E510A18CD1A50997A6DC9BD1EB73 /* SVProgressHUD.h */,
+				DA6650B12F1570E9971707167009C8A5 /* SVProgressHUD.m */,
+				BB010AC3F0EE6F527370132BDE290975 /* SVRadialGradientLayer.h */,
+				8B7824BF02D5ABF8EABF36D49F20DF43 /* SVRadialGradientLayer.m */,
+				D3F19681256D05767C522FBCB7CA75B0 /* Resources */,
+				CF406BAEE56E1DBB24D6CE1F5EEF15D5 /* Support Files */,
+			);
+			name = SVProgressHUD;
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56933BB70C933E0BF63210DD87D76AD0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56933BB70C933E0BF63210DD87D76AD0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0F9310556BBE996AE628441592FB1181 /* Foundation.framework */,
+				9CF13BCB9D36F1319E01CAB18FE2FBA7 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5FB83ADE56A575767CD6919B9E71C412 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DCDCBF0097D26DE3B0DC5C701886CB3 /* Info.plist */,
+				4F6528D8EC8766A60F609EE1A434870D /* R.swift.Library.modulemap */,
+				44E36AEABB41EFB18C86720E84E7AEB4 /* R.swift.Library.xcconfig */,
+				759DA716A8EAB17B567CF5398C3200EC /* R.swift.Library-dummy.m */,
+				AD85CE0B6674DA372D888F9A3263E8EA /* R.swift.Library-prefix.pch */,
+				EC612A1AC833E41BE12C1E27F194F7BF /* R.swift.Library-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/R.swift.Library";
 			sourceTree = "<group>";
 		};
-		3CE260034E930570047AB91AE48A089F /* R.swift */ = {
+		681721EFB2D89BBEEBC7BEBAF470D79D /* R.swift */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -277,56 +333,40 @@
 			path = R.swift;
 			sourceTree = "<group>";
 		};
-		42672D482F7E6B5BE1371DBE1079F6A0 /* Support Files */ = {
+		7409EBACAA3A660AC980DF2499D83AEF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6C8006447EE2FE6328A7DC9F0C12DF6A /* Info.plist */,
-				CA2118EF221570F624F0BBBC2163A93A /* SwiftyGif.modulemap */,
-				2123A1524B366C111C154A714F31837A /* SwiftyGif.xcconfig */,
-				29B6A85CBCCC9EAE26FE567FD53AAD1A /* SwiftyGif-dummy.m */,
-				196C090DDE6CB127354150E876CE8A57 /* SwiftyGif-prefix.pch */,
-				91D90B1037D33A140C1D7978B2D3835B /* SwiftyGif-umbrella.h */,
+				8ACC70B3FD8A532B29556C5834F32CF5 /* Pods_LGTMCamera.framework */,
+				979278062F64204D39BE5E33614353D7 /* Pods_LGTMCameraTests.framework */,
+				BEFBFF28E8784B61B34A8817A3EA7BFB /* Pods_LGTMCameraUITests.framework */,
+				34A263904A7DF5B454DBF7C12E30BB4C /* Rswift.framework */,
+				ACB085120CBE623DC118472861490F24 /* SVProgressHUD.framework */,
+				E7BF60D38313C686877AC027EFBAB7BD /* SwiftyGif.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyGif";
-			sourceTree = "<group>";
-		};
-		49330E3EE75828CAB6AF1CE51459ECE0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3CE260034E930570047AB91AE48A089F /* R.swift */,
-				0742202418536AC360EB1A088AE44DB9 /* R.swift.Library */,
-				4BE093F994BE359E736688DA115AF7DD /* SwiftLint */,
-				FA8763B2DCE1894B9DBA0DB9D77ABC61 /* SwiftyGif */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		4BE093F994BE359E736688DA115AF7DD /* SwiftLint */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = SwiftLint;
-			path = SwiftLint;
-			sourceTree = "<group>";
-		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
-			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				49330E3EE75828CAB6AF1CE51459ECE0 /* Pods */,
-				F4E98005D708ECC11C7055D54667A588 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				89601395372A73C75D6FC3F7346522ED /* Pods */,
+				7409EBACAA3A660AC980DF2499D83AEF /* Products */,
 				A5C013E747F73010FAD2E100EDEE30EC /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		89601395372A73C75D6FC3F7346522ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				681721EFB2D89BBEEBC7BEBAF470D79D /* R.swift */,
+				EFC017B3CE668CBB34BBE025EBDEB70E /* R.swift.Library */,
+				1BCF60BB3B92B9C3A0ACAF0A0D254B78 /* SVProgressHUD */,
+				BDA953C19E2CFD594514AFB70359C68C /* SwiftLint */,
+				1BCE1065CA384A84467F1AF8F381C038 /* SwiftyGif */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A5C013E747F73010FAD2E100EDEE30EC /* Targets Support Files */ = {
@@ -339,12 +379,26 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		A9BEB52E5C4BBC8CE4067CE9356C3EDA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				FC076F32348B030CC8153F9A25B94497 /* Info.plist */,
+				A399365726C6F82F753E3DBE5614D8A1 /* SwiftyGif.modulemap */,
+				84787638CFCFF008C82F93BC1DC167FF /* SwiftyGif.xcconfig */,
+				DB56623F0203736CFBF8FA93CE81B75C /* SwiftyGif-dummy.m */,
+				D05D7E4DC2D65A44C09E31A360E445FA /* SwiftyGif-prefix.pch */,
+				E9BCB8FE79B8E8C2F95329D53F3B53D0 /* SwiftyGif-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyGif";
+			sourceTree = "<group>";
+		};
+		BDA953C19E2CFD594514AFB70359C68C /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
 		C27D7F0D91D5DA3CE7C0C0A77B2B40DD /* Pods-LGTMCameraUITests */ = {
@@ -365,6 +419,28 @@
 			path = "Target Support Files/Pods-LGTMCameraUITests";
 			sourceTree = "<group>";
 		};
+		CF406BAEE56E1DBB24D6CE1F5EEF15D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1916154228FB76BAE131F30CE3ED8BA /* Info.plist */,
+				A80B3AA80440D218740E9808A7C2628D /* SVProgressHUD.modulemap */,
+				A413DA4D3B57A298B907C124111DAF5C /* SVProgressHUD.xcconfig */,
+				630AA02DEACE4B864CDFE4B087896831 /* SVProgressHUD-dummy.m */,
+				4C45F76F94406008E821E3DC31A6700B /* SVProgressHUD-prefix.pch */,
+				AE92641FD1C87A81ACCDB8968FA17186 /* SVProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		D3F19681256D05767C522FBCB7CA75B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				739724946CD14F977A56771E447ECFE4 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		E0414F347EFE587CEECDD9534E021257 /* Pods-LGTMCamera */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,16 +459,42 @@
 			path = "Target Support Files/Pods-LGTMCamera";
 			sourceTree = "<group>";
 		};
-		F4E98005D708ECC11C7055D54667A588 /* Products */ = {
+		EFC017B3CE668CBB34BBE025EBDEB70E /* R.swift.Library */ = {
 			isa = PBXGroup;
 			children = (
-				66884368494563E7FC3D7E3129D43CE3 /* Pods_LGTMCamera.framework */,
-				843FCC9BC338A25A474F6211FCC5CFEA /* Pods_LGTMCameraTests.framework */,
-				A4190FA7167572EE4B9E3A9AF373EAD4 /* Pods_LGTMCameraUITests.framework */,
-				10808AF668E6488ACB9FB3DDCE892D14 /* Rswift.framework */,
-				3DC098EB50954D3C3D92D66CE890E221 /* SwiftyGif.framework */,
+				0D41A1D2173937043CA484D9ECD90E30 /* Bundle+FileResource.swift */,
+				3A64719B2C1F9E972C39BFF74BED7885 /* ColorPaletteItemResource.swift */,
+				36B6B418318089DBDA13ED0D504BAD96 /* ColorPaletteItemResource+UIKit.swift */,
+				D105248C6590D5D5D647875EF3FD0614 /* ColorResource.swift */,
+				BEB3DB7AE14437EAD08D4AEB8C81937D /* Data+FileResource.swift */,
+				5B75297522EE172D68EB0069B2203775 /* FileResource.swift */,
+				9CC2AE787AC5D7F2ABC50DE3E4D7DCC6 /* FontResource.swift */,
+				0554C087D2A57FD03E012785759F650F /* Identifier.swift */,
+				763608A0E49F98C79A8D93FD243CD40A /* ImageResource.swift */,
+				4B1E04FCA3DD7BCA1E8443B36541778F /* NibResource.swift */,
+				2CF8EC0F2B42603E7C41848D499855B5 /* NibResource+UIKit.swift */,
+				04F462C2E7FEB871760971FFEF72130B /* ReuseIdentifierProtocol.swift */,
+				8B7D202BD22999F0EDFC3E1A87A2A49C /* StoryboardResource.swift */,
+				1424A2B90BF869FAC5A5701CA6062BA7 /* StoryboardResourceWithInitialController+UIKit.swift */,
+				B9829741A713C01E2A629357B2AA7E4F /* StoryboardSegueIdentifierProtocol.swift */,
+				C76A75C94991E9FA6DF9CE4FB0687914 /* StoryboardViewControllerResource.swift */,
+				AD5EA684068A4CD7771426AD125FCF55 /* StringResource.swift */,
+				8A441977A1D24978555E00D1AEAE781D /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */,
+				B0F4CA24DA7E5DD8D4FA0E0AB5C3DB40 /* UICollectionView+ReuseIdentifierProtocol.swift */,
+				723464F71FB2465CE4C999D84F3F6918 /* UIColor+ColorResource.swift */,
+				4032F2BB62387B44D846211D1B67DF38 /* UIFont+FontResource.swift */,
+				1FC305FE418B1FC2C26670B508495EDF /* UIImage+ImageResource.swift */,
+				AB8B9FC6B27E6ED86DF9823F875C75B1 /* UINib+NibResource.swift */,
+				28C82C10F6A3FF0CD2DBFF7DE74422A6 /* UIStoryboard+StoryboardResource.swift */,
+				75C7BBCF765BAA500712D47C84AA1CBD /* UIStoryboard+StoryboardViewControllerResource.swift */,
+				2C0BA0A1E6B43E3C29C9D6D2D15CAB24 /* UITableView+ReuseIdentifierProtocol.swift */,
+				FDF3BAEFA5FE18D5E035025A6F6A6EBC /* UIViewController+NibResource.swift */,
+				818065250B0249527ABF0B54EF4A7F0D /* UIViewController+StoryboardSegueIdentifierProtocol.swift */,
+				6288139107D6A7FF1832ECFE1B67351E /* Validatable.swift */,
+				5FB83ADE56A575767CD6919B9E71C412 /* Support Files */,
 			);
-			name = Products;
+			name = R.swift.Library;
+			path = R.swift.Library;
 			sourceTree = "<group>";
 		};
 		F8C9AAC83237B1D937CB468BBF08F032 /* Pods-LGTMCameraTests */ = {
@@ -413,27 +515,15 @@
 			path = "Target Support Files/Pods-LGTMCameraTests";
 			sourceTree = "<group>";
 		};
-		FA8763B2DCE1894B9DBA0DB9D77ABC61 /* SwiftyGif */ = {
-			isa = PBXGroup;
-			children = (
-				4449941931B10C1838ADD3F2C1468C1D /* SwiftyGif.h */,
-				DD72CCCEE6727351398EE6D9D3FE0102 /* SwiftyGifManager.swift */,
-				06F66FEE2BC487DC2E94F2A949FB2D1E /* UIImage+SwiftyGif.swift */,
-				B60DCF38C2380A5850D1282367C97248 /* UIImageView+SwiftyGif.swift */,
-				42672D482F7E6B5BE1371DBE1079F6A0 /* Support Files */,
-			);
-			name = SwiftyGif;
-			path = SwiftyGif;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0A1FE7861554025223FBD58A357846F4 /* Headers */ = {
+		0DACEC028338459E615EA7E220051199 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3391C8A2CE86AF78141000A552A14513 /* R.swift.Library-umbrella.h in Headers */,
+				D3EFC562748F3119989EA90FCC071A8A /* SwiftyGif-umbrella.h in Headers */,
+				87616A1ABA580C67BC4D7CC36D020F6A /* SwiftyGif.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,11 +535,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		653FD9D789640B9DF086B1772A40393A /* Headers */ = {
+		7929CEFC7476871833F2A7281EBE65AC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0528B98A6437A34B5970A19F01FCB68 /* Pods-LGTMCamera-umbrella.h in Headers */,
+				E91D8DB6EB6021B8F696A369E2A67481 /* Pods-LGTMCamera-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBB4C6D32B2302871B9B630665A3A53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E6B26BFCBA0E5A6C0CB768DCC44991 /* SVIndefiniteAnimatedView.h in Headers */,
+				B36F95FA8D04C2F1F480DE6A5427F134 /* SVProgressAnimatedView.h in Headers */,
+				6B8E641BC7A30A504F057BFD23790634 /* SVProgressHUD-umbrella.h in Headers */,
+				BC8B04035A7A1DD17859F53CB4C7FAB3 /* SVProgressHUD.h in Headers */,
+				569F5CE72B223C557B8C9F16D6A33839 /* SVRadialGradientLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,44 +563,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2DAC9FB7368390AAADED7CBF0ECDFBC /* Headers */ = {
+		FA3C5D049E2A56C392503D7F09CA9CC0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				109A613199060C3455D4C2194FBFC92E /* SwiftyGif-umbrella.h in Headers */,
-				DD884F92B656E63EBB8D2154187F6626 /* SwiftyGif.h in Headers */,
+				2B792150AC49C5A080B60DD56D9D39BF /* R.swift.Library-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3FB424426644E261A2A47B4D70CB55C9 /* SwiftyGif */ = {
+		6562FA3F81B1D3ECA95C21FAEC11DE9A /* Pods-LGTMCamera */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92AA842AF7AAC95FA34F3AD6945AFF70 /* Build configuration list for PBXNativeTarget "SwiftyGif" */;
+			buildConfigurationList = A18866714ADB04E6B50F82C465A679D7 /* Build configuration list for PBXNativeTarget "Pods-LGTMCamera" */;
 			buildPhases = (
-				E2DAC9FB7368390AAADED7CBF0ECDFBC /* Headers */,
-				FF2066F2523A41AAE6FC0ED16FDBF1DB /* Sources */,
-				C1A4CC0C63A4B8F9F36FF447FE924D46 /* Frameworks */,
-				203D7F26988E8B14B642DEC5913AB24B /* Resources */,
+				7929CEFC7476871833F2A7281EBE65AC /* Headers */,
+				437BCFAA61941A6FCE0114DE5A240E6D /* Sources */,
+				25194D2EB4118CAF3B8D3E1BD3960B7C /* Frameworks */,
+				DFB742D785AFC1E73FE57E2E7D7597CF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2A6CC0C6503885CB2C8039FB190A5923 /* PBXTargetDependency */,
+				A20360C90F767B1D7E6C8A4A08A1D543 /* PBXTargetDependency */,
+				188BDD668D3A77D31DB957426BADAFA6 /* PBXTargetDependency */,
 			);
-			name = SwiftyGif;
-			productName = SwiftyGif;
-			productReference = 3DC098EB50954D3C3D92D66CE890E221 /* SwiftyGif.framework */;
+			name = "Pods-LGTMCamera";
+			productName = "Pods-LGTMCamera";
+			productReference = 8ACC70B3FD8A532B29556C5834F32CF5 /* Pods_LGTMCamera.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		829DF5C081CE68F0C4A7E93EE794DE66 /* R.swift.Library */ = {
+		66C48CBFB92D0ADA14D997B9FB391DA8 /* R.swift.Library */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09777E684E25CFC5EA4B6DC57E87D60B /* Build configuration list for PBXNativeTarget "R.swift.Library" */;
+			buildConfigurationList = 9693B4C9F12209FECF50D356DF4FDBEF /* Build configuration list for PBXNativeTarget "R.swift.Library" */;
 			buildPhases = (
-				0A1FE7861554025223FBD58A357846F4 /* Headers */,
-				0DC508590C62BCAC69B4173B602AF811 /* Sources */,
-				E61480C05A11CCA4A6DDCE4C6EBC2029 /* Frameworks */,
-				8D04C1179F09FFC2F90390E633FEB715 /* Resources */,
+				FA3C5D049E2A56C392503D7F09CA9CC0 /* Headers */,
+				DA2DE07F1962F2298BA363EB0D5CE879 /* Sources */,
+				8E6405A9BA87E2483D97E50B641851EA /* Frameworks */,
+				21C58F6DD4161487647B3F2A6E95078B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -506,7 +610,7 @@
 			);
 			name = R.swift.Library;
 			productName = R.swift.Library;
-			productReference = 10808AF668E6488ACB9FB3DDCE892D14 /* Rswift.framework */;
+			productReference = 34A263904A7DF5B454DBF7C12E30BB4C /* Rswift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AB29646D5094E64915F45D104B21CAFF /* Pods-LGTMCameraUITests */ = {
@@ -525,27 +629,43 @@
 			);
 			name = "Pods-LGTMCameraUITests";
 			productName = "Pods-LGTMCameraUITests";
-			productReference = A4190FA7167572EE4B9E3A9AF373EAD4 /* Pods_LGTMCameraUITests.framework */;
+			productReference = BEFBFF28E8784B61B34A8817A3EA7BFB /* Pods_LGTMCameraUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BBB0448D2B3B0A1E6FDA33C8C740B224 /* Pods-LGTMCamera */ = {
+		B7AE8CAC97CDDF4B068017972AF2808A /* SVProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 347ED81D0F44D4CC4FB4D7111B614343 /* Build configuration list for PBXNativeTarget "Pods-LGTMCamera" */;
+			buildConfigurationList = 554A6F36EFEAB0E5CCE6CDFB7EAE2C88 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
 			buildPhases = (
-				653FD9D789640B9DF086B1772A40393A /* Headers */,
-				A982E3AD983F47E71459DF2E025B449C /* Sources */,
-				851C7E3F13E175C2D69BE222C178334A /* Frameworks */,
-				ABA7E62C263CFBF1B599595FC4B11031 /* Resources */,
+				CFBB4C6D32B2302871B9B630665A3A53 /* Headers */,
+				E9B45C4B98F0683CD71E8BCC2EDF86CC /* Sources */,
+				D0D695FD02D49BEFB709B180F2C31E5C /* Frameworks */,
+				EB10AF33E1C6DB18739E4057B1F6F430 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				55E461ECD2D70601EB3184896F1A50F5 /* PBXTargetDependency */,
-				7EC56CDF1528C0E19513346CC3381404 /* PBXTargetDependency */,
 			);
-			name = "Pods-LGTMCamera";
-			productName = "Pods-LGTMCamera";
-			productReference = 66884368494563E7FC3D7E3129D43CE3 /* Pods_LGTMCamera.framework */;
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = ACB085120CBE623DC118472861490F24 /* SVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C0505732B7B336210F705C64AFA1B123 /* SwiftyGif */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 980D93266ADF1F975B51D1295677949C /* Build configuration list for PBXNativeTarget "SwiftyGif" */;
+			buildPhases = (
+				0DACEC028338459E615EA7E220051199 /* Headers */,
+				DD761758ADF17EA69F51AB8AFBA3494C /* Sources */,
+				6B083C8104DF6E78BF0DCDE5E4E00AA3 /* Frameworks */,
+				C4BE240C094B26D2031268A048B8153F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyGif;
+			productName = SwiftyGif;
+			productReference = E7BF60D38313C686877AC027EFBAB7BD /* SwiftyGif.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DE1B183A61D5C748634DA60F5AD75E2F /* Pods-LGTMCameraTests */ = {
@@ -564,7 +684,7 @@
 			);
 			name = "Pods-LGTMCameraTests";
 			productName = "Pods-LGTMCameraTests";
-			productReference = 843FCC9BC338A25A474F6211FCC5CFEA /* Pods_LGTMCameraTests.framework */;
+			productReference = 979278062F64204D39BE5E33614353D7 /* Pods_LGTMCameraTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -584,21 +704,22 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F4E98005D708ECC11C7055D54667A588 /* Products */;
+			productRefGroup = 7409EBACAA3A660AC980DF2499D83AEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BBB0448D2B3B0A1E6FDA33C8C740B224 /* Pods-LGTMCamera */,
+				6562FA3F81B1D3ECA95C21FAEC11DE9A /* Pods-LGTMCamera */,
 				DE1B183A61D5C748634DA60F5AD75E2F /* Pods-LGTMCameraTests */,
 				AB29646D5094E64915F45D104B21CAFF /* Pods-LGTMCameraUITests */,
-				829DF5C081CE68F0C4A7E93EE794DE66 /* R.swift.Library */,
-				3FB424426644E261A2A47B4D70CB55C9 /* SwiftyGif */,
+				66C48CBFB92D0ADA14D997B9FB391DA8 /* R.swift.Library */,
+				B7AE8CAC97CDDF4B068017972AF2808A /* SVProgressHUD */,
+				C0505732B7B336210F705C64AFA1B123 /* SwiftyGif */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		203D7F26988E8B14B642DEC5913AB24B /* Resources */ = {
+		21C58F6DD4161487647B3F2A6E95078B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -612,13 +733,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D04C1179F09FFC2F90390E633FEB715 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A34A60C7B18ED0B00829AEA4A832FA37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -626,58 +740,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ABA7E62C263CFBF1B599595FC4B11031 /* Resources */ = {
+		C4BE240C094B26D2031268A048B8153F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		0DC508590C62BCAC69B4173B602AF811 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		DFB742D785AFC1E73FE57E2E7D7597CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C97EC766FC652C18B87DC0844C50E996 /* Bundle+FileResource.swift in Sources */,
-				A083056832975BADB55B7E9F39A3C300 /* ColorPaletteItemResource+UIKit.swift in Sources */,
-				469E6590C1EAB308B1A971F2850EB8EE /* ColorPaletteItemResource.swift in Sources */,
-				698B4B058556A2BC2D3AF353BB43BC7C /* ColorResource.swift in Sources */,
-				C064E2E92414D230E7405C8934C67025 /* Data+FileResource.swift in Sources */,
-				6ED641B8481EFE78AA90A6633502173C /* FileResource.swift in Sources */,
-				5C009FDA1F6AAAE5A3FAEA01B58AEB3C /* FontResource.swift in Sources */,
-				D9CD90FDBB01BDDEA1673D24EB145A35 /* Identifier.swift in Sources */,
-				0FE88FF78F423FFD3730C88D7BE5D648 /* ImageResource.swift in Sources */,
-				039B76624394D6C178EBC51CD97A9920 /* NibResource+UIKit.swift in Sources */,
-				8C54538089ED0BBDE8D39B792FDF7C40 /* NibResource.swift in Sources */,
-				698399936B4429DF20FD78B1F401D9E6 /* R.swift.Library-dummy.m in Sources */,
-				AC9040B7D78B61E301A4BBF3C2C44E41 /* ReuseIdentifierProtocol.swift in Sources */,
-				403B5CDD16837F0E4B4C744280951098 /* StoryboardResource.swift in Sources */,
-				50F9BE3D20075D4AAF180EDFF0E5B79B /* StoryboardResourceWithInitialController+UIKit.swift in Sources */,
-				12E816E6FBD1F1BBF1E2C7860291CD2A /* StoryboardSegueIdentifierProtocol.swift in Sources */,
-				4923A724931843898159DAD34900FFB0 /* StoryboardViewControllerResource.swift in Sources */,
-				34930748FE3389DE49E01D71DE03C942 /* StringResource.swift in Sources */,
-				3911F642A4DDBCA7FB1AACFE1092852A /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */,
-				3036EE2298CA95057DD9C4F93A840B32 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */,
-				A3BB82B0FA0C2733949FAFFE4358CEEE /* UIColor+ColorResource.swift in Sources */,
-				5E6F1F1198DEE3DD7659E39FA70642D6 /* UIFont+FontResource.swift in Sources */,
-				C392C4842319BC8B988083BC6B1D64DC /* UIImage+ImageResource.swift in Sources */,
-				816E0E519F98C355A37A7E3DAF0BEF82 /* UINib+NibResource.swift in Sources */,
-				7F3EFEA8C253F6E38C0E499897FA3B3A /* UIStoryboard+StoryboardResource.swift in Sources */,
-				B7380A9164A915593385592060803C1A /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */,
-				5E199ECE841CA2C60B8D4C4338E012F1 /* UITableView+ReuseIdentifierProtocol.swift in Sources */,
-				33D0161A0674A9A23E1E67E397F47B12 /* UIViewController+NibResource.swift in Sources */,
-				075D1602041EF26C2B06F2FDBB815C99 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */,
-				2626D8E30692B261C95ECD62E8F55786 /* Validatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB10AF33E1C6DB18739E4057B1F6F430 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC7162EEBFCABB04D67339442DEF728 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		1AA5B546CEE12A0474258B297DD7FBD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2BE431AB1B63A57A7D7A31BDB33AAE93 /* Pods-LGTMCameraUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437BCFAA61941A6FCE0114DE5A240E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE388AF456801872F39FE67BDD159E9 /* Pods-LGTMCamera-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,22 +789,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A982E3AD983F47E71459DF2E025B449C /* Sources */ = {
+		DA2DE07F1962F2298BA363EB0D5CE879 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93C9CB74E25DA9DDBAB92162C0A551B8 /* Pods-LGTMCamera-dummy.m in Sources */,
+				A846DA89E6B29B18694D34E9C4DF0C71 /* Bundle+FileResource.swift in Sources */,
+				28C7D23B5D0205FE4DCA96C21132B536 /* ColorPaletteItemResource+UIKit.swift in Sources */,
+				FFBEFE9B869AEE097040E865C93437CE /* ColorPaletteItemResource.swift in Sources */,
+				33CECC9218B69C19452A2441B5CB7BEE /* ColorResource.swift in Sources */,
+				B5CBC8A351D17D741E33976B03FF5FC2 /* Data+FileResource.swift in Sources */,
+				749EF056A5DB4517708DAC756C3F37FC /* FileResource.swift in Sources */,
+				ABF2CF3DA5B19C530786279A0B7CAD82 /* FontResource.swift in Sources */,
+				6126D59226D4D3760EB875DD932BC98F /* Identifier.swift in Sources */,
+				5ED5402F093E1A8B64E1205B77A3CDCD /* ImageResource.swift in Sources */,
+				4C9E3D718B22385D7AAEB80ADD3338DF /* NibResource+UIKit.swift in Sources */,
+				C4027AE8E3DA9F2D3C0680626E042285 /* NibResource.swift in Sources */,
+				4C4078B9FCF63FCBF165176591464B5A /* R.swift.Library-dummy.m in Sources */,
+				5DEE53A90213DE4435FD61637EF350BE /* ReuseIdentifierProtocol.swift in Sources */,
+				AD4F6D7099BF5D1CCBAB7ABD6B4DEAC0 /* StoryboardResource.swift in Sources */,
+				913388825D90C7BA653C2FB10661A5C1 /* StoryboardResourceWithInitialController+UIKit.swift in Sources */,
+				C681C839F80E64C512762D7E2AA45ED1 /* StoryboardSegueIdentifierProtocol.swift in Sources */,
+				086D139B40B60018E854EE270584A537 /* StoryboardViewControllerResource.swift in Sources */,
+				002B91BBA089873E82CC8013A7D8EE18 /* StringResource.swift in Sources */,
+				68B46EF41EEC531F1242127F0869EEF4 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */,
+				70110DAD28B000085AB9F3A7BCA81540 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */,
+				9F9EAF524889CBF649A580FAE85B5347 /* UIColor+ColorResource.swift in Sources */,
+				11A2C8EC5372AE9A095B08C49B513AC6 /* UIFont+FontResource.swift in Sources */,
+				7E0102076B780A4BEA4E3218F36CD8F9 /* UIImage+ImageResource.swift in Sources */,
+				7F8C12B315CC1554B1B5A703BB473459 /* UINib+NibResource.swift in Sources */,
+				257CC2251A08468700273E9E61DE26D1 /* UIStoryboard+StoryboardResource.swift in Sources */,
+				52A4B3D6B283C7B689223D3ECF0FFA26 /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */,
+				01A8F00F8554EBC49D4B246A699F0506 /* UITableView+ReuseIdentifierProtocol.swift in Sources */,
+				ABD4E6D64376824C667523CAEC625901 /* UIViewController+NibResource.swift in Sources */,
+				8123BB3822F78918E7DF818CD44FCE7D /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */,
+				36A3F2CE60395C807B3186695517C82F /* Validatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF2066F2523A41AAE6FC0ED16FDBF1DB /* Sources */ = {
+		DD761758ADF17EA69F51AB8AFBA3494C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D41198B2352D6E3FD242CBE46AC732FD /* SwiftyGif-dummy.m in Sources */,
-				56B282ACFE54D0C634232BC5F42C5FAE /* SwiftyGifManager.swift in Sources */,
-				3580C3ADF2BF9EF32CD2FE7E162302CF /* UIImage+SwiftyGif.swift in Sources */,
-				6CDD7507747376B8E52A8A07DADB0229 /* UIImageView+SwiftyGif.swift in Sources */,
+				EE6B1945185A3E7FCDB9A818218740EA /* SwiftyGif-dummy.m in Sources */,
+				E9C8C39E741835117FA64E123C54C8F9 /* SwiftyGifManager.swift in Sources */,
+				74496FBFF9C3F07CCD8509E738F81C57 /* UIImage+SwiftyGif.swift in Sources */,
+				58268A0E4DF6D7EB6F32309D0FBD6264 /* UIImageView+SwiftyGif.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B45C4B98F0683CD71E8BCC2EDF86CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814754CBAC62E3E0EF621D7459EBF519 /* SVIndefiniteAnimatedView.m in Sources */,
+				4E9E1642014D002308620C3B1A2839BF /* SVProgressAnimatedView.m in Sources */,
+				0DAF5181B85EC9E9A337A734C7AAC174 /* SVProgressHUD-dummy.m in Sources */,
+				A6DAA736D59C03460DD248277DABEC8E /* SVProgressHUD.m in Sources */,
+				C7616A332835DC294CCF6FD64125F047 /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,33 +855,79 @@
 		0C56330D31550BCF6EB4B84AC920A33F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-LGTMCamera";
-			target = BBB0448D2B3B0A1E6FDA33C8C740B224 /* Pods-LGTMCamera */;
+			target = 6562FA3F81B1D3ECA95C21FAEC11DE9A /* Pods-LGTMCamera */;
 			targetProxy = A06F66E043163C93225E8A988353A890 /* PBXContainerItemProxy */;
 		};
-		55E461ECD2D70601EB3184896F1A50F5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = R.swift.Library;
-			target = 829DF5C081CE68F0C4A7E93EE794DE66 /* R.swift.Library */;
-			targetProxy = 2C39F49CC647592E016B96D4E088CC7B /* PBXContainerItemProxy */;
-		};
-		7EC56CDF1528C0E19513346CC3381404 /* PBXTargetDependency */ = {
+		188BDD668D3A77D31DB957426BADAFA6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyGif;
-			target = 3FB424426644E261A2A47B4D70CB55C9 /* SwiftyGif */;
-			targetProxy = 42A4C5CA5FEAFF7D50765FFF71FB48A0 /* PBXContainerItemProxy */;
+			target = C0505732B7B336210F705C64AFA1B123 /* SwiftyGif */;
+			targetProxy = D50DB23FA3652895D4C22C0DFFD8D9EA /* PBXContainerItemProxy */;
+		};
+		2A6CC0C6503885CB2C8039FB190A5923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift.Library;
+			target = 66C48CBFB92D0ADA14D997B9FB391DA8 /* R.swift.Library */;
+			targetProxy = EF054A36444FC424A6CA8F82157BF9A5 /* PBXContainerItemProxy */;
+		};
+		A20360C90F767B1D7E6C8A4A08A1D543 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = B7AE8CAC97CDDF4B068017972AF2808A /* SVProgressHUD */;
+			targetProxy = C289E0EDB929AD1F13000B696F06CFC9 /* PBXContainerItemProxy */;
 		};
 		DFB1F07FE014D15BAF7288142F796C21 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-LGTMCamera";
-			target = BBB0448D2B3B0A1E6FDA33C8C740B224 /* Pods-LGTMCamera */;
+			target = 6562FA3F81B1D3ECA95C21FAEC11DE9A /* Pods-LGTMCamera */;
 			targetProxy = AD4A1E55171A602D7D2229AC70D66747 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		193BA1A1C8707616A34ABBC2E1A35F6C /* Debug */ = {
+		03434F9C7640337C916222E3A01027FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4F4C68AD277E04817739FE8C82F6974 /* R.swift.Library.xcconfig */;
+			baseConfigurationReference = 5B36C58350E23E0AB17AAFAA5C5112EC /* Pods-LGTMCamera.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LGTMCamera/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LGTMCamera/Pods-LGTMCamera.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18F8431C63890C795E4F0A99D7B46196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44E36AEABB41EFB18C86720E84E7AEB4 /* R.swift.Library.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -774,44 +961,6 @@
 			};
 			name = Debug;
 		};
-		31A21435E15D9CB5CC4F35014657B877 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4F4C68AD277E04817739FE8C82F6974 /* R.swift.Library.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/R.swift.Library/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
-				PRODUCT_MODULE_NAME = Rswift;
-				PRODUCT_NAME = Rswift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		52906BFD62D0706AF3A3D8777EA04AB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 116AF55981BBA260245AFC2BEC3D9804 /* Pods-LGTMCameraUITests.debug.xcconfig */;
@@ -844,6 +993,83 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		55256CCE9DFC7580FF1E1D3D7834F2CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E198DF5DCDE26DCDBF4755217BE0ECFF /* Pods-LGTMCamera.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LGTMCamera/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LGTMCamera/Pods-LGTMCamera.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		55367E307F697F5A0A7E46F509E3EC99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84787638CFCFF008C82F93BC1DC167FF /* SwiftyGif.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyGif/SwiftyGif-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyGif/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyGif/SwiftyGif.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyGif;
+				PRODUCT_NAME = SwiftyGif;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -928,6 +1154,42 @@
 			};
 			name = Release;
 		};
+		75367920C31E47EA326C4C3CCFBDCBDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A413DA4D3B57A298B907C124111DAF5C /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -992,120 +1254,6 @@
 			};
 			name = Debug;
 		};
-		915C4359857809895448F72E7D76693A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B36C58350E23E0AB17AAFAA5C5112EC /* Pods-LGTMCamera.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LGTMCamera/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LGTMCamera/Pods-LGTMCamera.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		945656641CCE1D5C4D8D198EC0409636 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2123A1524B366C111C154A714F31837A /* SwiftyGif.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyGif/SwiftyGif-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyGif/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyGif/SwiftyGif.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyGif;
-				PRODUCT_NAME = SwiftyGif;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		94FF07BC00B56572521D8C8EA9244235 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2123A1524B366C111C154A714F31837A /* SwiftyGif.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyGif/SwiftyGif-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyGif/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyGif/SwiftyGif.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyGif;
-				PRODUCT_NAME = SwiftyGif;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1165,12 +1313,10 @@
 			};
 			name = Release;
 		};
-		EB94B81FF3EA25F7A460A824C5FEA6BD /* Release */ = {
+		C7F2D424DFEB9C74CD9A09343CC5CC91 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E198DF5DCDE26DCDBF4755217BE0ECFF /* Pods-LGTMCamera.release.xcconfig */;
+			baseConfigurationReference = A413DA4D3B57A298B907C124111DAF5C /* SVProgressHUD.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1180,25 +1326,59 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LGTMCamera/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LGTMCamera/Pods-LGTMCamera.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C83209ED5956E980A5196AF41221E0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84787638CFCFF008C82F93BC1DC167FF /* SwiftyGif.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyGif/SwiftyGif-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyGif/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyGif/SwiftyGif.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyGif;
+				PRODUCT_NAME = SwiftyGif;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1244,18 +1424,47 @@
 			};
 			name = Debug;
 		};
+		F81367C19E14D036BDF1F77843F2810C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44E36AEABB41EFB18C86720E84E7AEB4 /* R.swift.Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/R.swift.Library/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
+				PRODUCT_MODULE_NAME = Rswift;
+				PRODUCT_NAME = Rswift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09777E684E25CFC5EA4B6DC57E87D60B /* Build configuration list for PBXNativeTarget "R.swift.Library" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				193BA1A1C8707616A34ABBC2E1A35F6C /* Debug */,
-				31A21435E15D9CB5CC4F35014657B877 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1265,11 +1474,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		347ED81D0F44D4CC4FB4D7111B614343 /* Build configuration list for PBXNativeTarget "Pods-LGTMCamera" */ = {
+		554A6F36EFEAB0E5CCE6CDFB7EAE2C88 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				915C4359857809895448F72E7D76693A /* Debug */,
-				EB94B81FF3EA25F7A460A824C5FEA6BD /* Release */,
+				C7F2D424DFEB9C74CD9A09343CC5CC91 /* Debug */,
+				75367920C31E47EA326C4C3CCFBDCBDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1283,11 +1492,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92AA842AF7AAC95FA34F3AD6945AFF70 /* Build configuration list for PBXNativeTarget "SwiftyGif" */ = {
+		9693B4C9F12209FECF50D356DF4FDBEF /* Build configuration list for PBXNativeTarget "R.swift.Library" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				94FF07BC00B56572521D8C8EA9244235 /* Debug */,
-				945656641CCE1D5C4D8D198EC0409636 /* Release */,
+				18F8431C63890C795E4F0A99D7B46196 /* Debug */,
+				F81367C19E14D036BDF1F77843F2810C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		980D93266ADF1F975B51D1295677949C /* Build configuration list for PBXNativeTarget "SwiftyGif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55367E307F697F5A0A7E46F509E3EC99 /* Debug */,
+				C83209ED5956E980A5196AF41221E0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A18866714ADB04E6B50F82C465A679D7 /* Build configuration list for PBXNativeTarget "Pods-LGTMCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03434F9C7640337C916222E3A01027FF /* Debug */,
+				55256CCE9DFC7580FF1E1D3D7834F2CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
