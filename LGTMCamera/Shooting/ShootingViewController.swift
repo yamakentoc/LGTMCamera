@@ -39,8 +39,8 @@ class ShootingViewController: UIViewController {
         customAVFoundation = CustomAVFoundation(view: self.previewView)
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         //メモリ解放
         customAVFoundation.captureSession.stopRunning()
         customAVFoundation.captureSession.outputs.forEach {
