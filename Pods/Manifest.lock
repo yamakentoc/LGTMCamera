@@ -2,11 +2,13 @@ PODS:
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
+  - SVProgressHUD (2.2.5)
   - SwiftLint (0.27.0)
   - SwiftyGif (4.2.0)
 
 DEPENDENCIES:
   - R.swift
+  - SVProgressHUD
   - SwiftLint
   - SwiftyGif
 
@@ -14,15 +16,17 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - R.swift
     - R.swift.Library
+    - SVProgressHUD
     - SwiftLint
     - SwiftyGif
 
 SPEC CHECKSUMS:
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftyGif: a149bf84df23370592f3f075561ae02c8632a314
 
-PODFILE CHECKSUM: d0a51b8b18acfaae34972f992d8f9c334ea661d8
+PODFILE CHECKSUM: f10deb54c36f07e4472b85a5b5020c8a7446b768
 
 COCOAPODS: 1.5.3

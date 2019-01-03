@@ -11,6 +11,7 @@ import AVFoundation
 import ImageIO
 import MobileCoreServices
 import SwiftyGif
+import SVProgressHUD
 
 class AfterShootingViewController: UIViewController {
 
@@ -20,6 +21,7 @@ class AfterShootingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = AfterShootingViewPresenter(view: self)
+        SVProgressHUD.show()
         makeGifImage()
     }
 
@@ -40,6 +42,7 @@ class AfterShootingViewController: UIViewController {
                     let imageView = UIImageView(gifURL: url, loopCount: -1)
                     imageView.frame = self.view.bounds
                     self.view.addSubview(imageView)
+                    SVProgressHUD.dismiss()
                 }
             } else {
                 print("GIF生成に失敗")

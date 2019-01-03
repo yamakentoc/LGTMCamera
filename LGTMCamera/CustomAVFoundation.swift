@@ -101,7 +101,7 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-         if captureCounter % 5 == 0, isShooting { // %3の場合 1/10秒だけ処理する
+         if captureCounter % 6 == 0, isShooting { // %3の場合 1/10秒だけ処理する
         //if isPushing {
             guard let image = imageFromSampleBuffer(sampleBuffer: sampleBuffer) else { return }
             takenPhotos.append(image)
