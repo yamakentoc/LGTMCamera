@@ -21,7 +21,7 @@ class AfterShootingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = AfterShootingViewPresenter(view: self)
-        SVProgressHUD.show()
+        SVProgressHUD.show(withStatus: "Generating gif")
         makeGifImage()
     }
 
