@@ -39,6 +39,20 @@ class ShootingViewController: UIViewController {
         customAVFoundation = CustomAVFoundation(view: self.previewView)
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        //メモリ解放
+        customAVFoundation.captureSession.stopRunning()
+        customAVFoundation.captureSession.outputs.forEach {
+            customAVFoundation.captureSession.removeOutput($0)
+        }
+        customAVFoundation.captureSession.inputs.forEach {
+            customAVFoundation.captureSession.removeInput($0)
+        }
+        customAVFoundation.captureSession = nil
+        customAVFoundation.videoDevice = nil
+    }
+    
     @IBAction func touchDownSnapButton(_ sender: UIButton) {//連写中
         customAVFoundation.isShooting = true
         customAVFoundation.takenPhotos = []
