@@ -12,6 +12,7 @@ import ImageIO
 import MobileCoreServices
 import SwiftyGif
 import SVProgressHUD
+import Photos
 
 protocol AfterShootingDelegate: class {
     func resizeButton()
@@ -39,7 +40,7 @@ class AfterShootingViewController: UIViewController {
     }
     
     func makeGifImage() {
-        let frameRate = CMTimeMake(value: 1, timescale: 30)//gifの速さ(timescaleが高いほど早い)
+        let frameRate = CMTimeMake(value: 1, timescale: 15)//gifの速さ(timescaleが高いほど早い)
         let fileProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: 0]]//ループカウント
         let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: CMTimeGetSeconds(frameRate)]]//フレームレート
         let url = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(NSUUID().uuidString).gif")
@@ -53,6 +54,9 @@ class AfterShootingViewController: UIViewController {
             if CGImageDestinationFinalize(destination) {//GIF生成後の処理
                 DispatchQueue.main.async {
                     self.gifImageView.setGifFromURL(url, loopCount: -1, showLoader: false)
+                    PHPhotoLibrary.shared().performChanges({//gifを保存
+                        PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: url!)
+                    }, completionHandler: nil)
                     SVProgressHUD.dismiss()
                 }
             } else {
