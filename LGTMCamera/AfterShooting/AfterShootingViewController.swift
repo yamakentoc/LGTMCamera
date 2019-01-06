@@ -13,11 +13,16 @@ import MobileCoreServices
 import SwiftyGif
 import SVProgressHUD
 
+protocol AfterShootingDelegate: class {
+    func resizeButton()
+}
+
 class AfterShootingViewController: UIViewController {
 
     @IBOutlet weak var gifImageView: UIImageView!
     
     var presenter: AfterShootingViewPresenter!
+    weak var delegate: AfterShootingDelegate?
     var takenPhotos: [UIImage] = []
     
     override func viewDidLoad() {
@@ -29,6 +34,7 @@ class AfterShootingViewController: UIViewController {
 
     @IBAction func tapBackButton(_ sender: UIButton) {
         self.gifImageView.stopAnimating()
+        self.delegate?.resizeButton()
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -51,6 +57,7 @@ class AfterShootingViewController: UIViewController {
                 }
             } else {
                 print("GIF生成に失敗")
+                SVProgressHUD.showError(withStatus: "error!")
             }
         }
     }

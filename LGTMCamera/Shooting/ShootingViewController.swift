@@ -52,6 +52,9 @@ class ShootingViewController: UIViewController {
         customAVFoundation.captureSession = nil
         customAVFoundation.videoDevice = nil
         customAVFoundation = nil
+        //アニメーションを取り除く
+        circle.removeAllAnimations()
+        circle.removeFromSuperlayer()
     }
     
     @IBAction func touchDownSnapButton(_ sender: UIButton) {//連写中
@@ -63,11 +66,11 @@ class ShootingViewController: UIViewController {
     @IBAction func touchUpSnapButton(_ sender: UIButton) {//連写終了
         customAVFoundation.isShooting = false
         //アニメーションを止める
-        let layer = snapBackView.layer
-        let pauseTime = layer.convertTime(CACurrentMediaTime(), from: nil)
-        layer.speed = 0.0
-        layer.timeOffset = pauseTime
+        let pauseTime = circle.convertTime(CACurrentMediaTime(), from: nil)
+        circle.speed = 0.0
+        circle.timeOffset = pauseTime
         guard let afterShootingVC = R.storyboard.afterShootingViewController().instantiateInitialViewController() as? AfterShootingViewController else { return }
+        afterShootingVC.delegate = self
         afterShootingVC.takenPhotos = customAVFoundation.takenPhotos
         self.present(afterShootingVC, animated: true, completion: nil)
     }
@@ -88,6 +91,7 @@ class ShootingViewController: UIViewController {
             self.snapBackView.layer.cornerRadius = changedSnapBackViewSize / 2
         }, completion: { _ -> Void in
             self.drawCircle(targetView: self.snapBackView)
+            print("")
         })
     }
     
@@ -116,6 +120,23 @@ class ShootingViewController: UIViewController {
         drawAnimation.fillMode = CAMediaTimingFillMode.forwards
         drawAnimation.autoreverses = flag// 逆再生の指定
         circle.add(drawAnimation, forKey: "updateGageAnimation")
+    }
+}
+
+extension ShootingViewController: AfterShootingDelegate {
+    func resizeButton() {
+        //アニメーションの状態を戻し再開可能に
+        circle.speed = 1.0
+        circle.timeOffset = 0.0
+        //ボタンのサイズを元に戻す
+        let originalSnapButtonSize = self.view.bounds.width * 0.16//snapButtonの元のサイズ
+        let originalSnapBackViewSize = self.view.bounds.width * 0.22//snapBackViewの元のサイズ
+        self.snapButton.frame.size = CGSize(width: originalSnapButtonSize, height: originalSnapButtonSize)
+        self.snapButton.center = self.snapBackView.center
+        self.snapButton.layer.cornerRadius = originalSnapButtonSize / 2
+        self.snapBackView.frame.size = CGSize(width: originalSnapBackViewSize, height: originalSnapBackViewSize)
+        self.snapBackView.center = self.snapButton.center
+        self.snapBackView.layer.cornerRadius = originalSnapBackViewSize / 2
     }
 }
 
