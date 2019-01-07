@@ -21,22 +21,40 @@ protocol AfterShootingDelegate: class {
 class AfterShootingViewController: UIViewController {
 
     @IBOutlet weak var gifImageView: UIImageView!
+    @IBOutlet weak var saveButton: UIButton!
     
     var presenter: AfterShootingViewPresenter!
     weak var delegate: AfterShootingDelegate?
     var takenPhotos: [UIImage] = []
+    var makedGifURL: URL?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = AfterShootingViewPresenter(view: self)
+        initButton()
         SVProgressHUD.show(withStatus: "Generating gif")
         makeGifImage()
     }
-
+    
+    @IBAction func tapSaveButton(_ sender: UIButton) {
+        guard let makedGifURL = self.makedGifURL else { return }
+        PHPhotoLibrary.shared().performChanges({//gifを保存
+            PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: makedGifURL)
+        }, completionHandler: { (_, _) in
+            SVProgressHUD.setMinimumDismissTimeInterval(1.0)
+            SVProgressHUD.showSuccess(withStatus: "saved!")
+        })
+    }
+    
     @IBAction func tapBackButton(_ sender: UIButton) {
         self.gifImageView.stopAnimating()
         self.delegate?.resizeButton()
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func initButton() {
+        self.saveButton.layer.masksToBounds = true
+        self.saveButton.layer.cornerRadius = self.saveButton.bounds.width / 2
     }
     
     func makeGifImage() {
@@ -54,9 +72,7 @@ class AfterShootingViewController: UIViewController {
             if CGImageDestinationFinalize(destination) {//GIF生成後の処理
                 DispatchQueue.main.async {
                     self.gifImageView.setGifFromURL(url, loopCount: -1, showLoader: false)
-                    PHPhotoLibrary.shared().performChanges({//gifを保存
-                        PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: url!)
-                    }, completionHandler: nil)
+                    self.makedGifURL = url
                     SVProgressHUD.dismiss()
                 }
             } else {
