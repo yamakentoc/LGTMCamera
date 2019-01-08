@@ -26,23 +26,14 @@ class AfterShootingViewController: UIViewController {
     var presenter: AfterShootingViewPresenter!
     weak var delegate: AfterShootingDelegate?
     var takenPhotos: [UIImage] = []
-    var makedGifURL: URL?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = AfterShootingViewPresenter(view: self)
-        SVProgressHUD.show(withStatus: "Generating gif")
-        makeGifImage()
     }
     
     @IBAction func tapSaveButton(_ sender: UIButton) {
-        guard let makedGifURL = self.makedGifURL else { return }
-        PHPhotoLibrary.shared().performChanges({//gifを保存
-            PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: makedGifURL)
-        }, completionHandler: { (_, _) in
-            SVProgressHUD.setMinimumDismissTimeInterval(1.0)
-            SVProgressHUD.showSuccess(withStatus: "saved!")
-        })
+        makeGifImage()
     }
     
     @IBAction func tapBackButton(_ sender: UIButton) {
@@ -52,6 +43,7 @@ class AfterShootingViewController: UIViewController {
     }
     
     func makeGifImage() {
+        SVProgressHUD.show(withStatus: "saving gif")
         let frameRate = CMTimeMake(value: 1, timescale: 15)//gifの速さ(timescaleが高いほど早い)
         let fileProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: 0]]//ループカウント
         let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: CMTimeGetSeconds(frameRate)]]//フレームレート
@@ -65,9 +57,13 @@ class AfterShootingViewController: UIViewController {
             }
             if CGImageDestinationFinalize(destination) {//GIF生成後の処理
                 DispatchQueue.main.async {
-                    self.gifImageView.setGifFromURL(url, loopCount: -1, showLoader: false)
-                    self.makedGifURL = url
-                    SVProgressHUD.dismiss()
+                    //self.gifImageView.setGifFromURL(url, loopCount: -1, showLoader: false)
+                    PHPhotoLibrary.shared().performChanges({//gifを保存
+                        PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: url!)
+                    }, completionHandler: { (_, _) in
+                        SVProgressHUD.setMinimumDismissTimeInterval(1.0)
+                        SVProgressHUD.showSuccess(withStatus: "saved!")
+                    })
                 }
             } else {
                 print("GIF生成に失敗")
