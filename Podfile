@@ -8,7 +8,7 @@ target 'LGTMCamera' do
   # Pods for LGTMCamera
   pod 'SwiftLint'
   pod 'R.swift'
-  pod 'SwiftyGif'
+  pod 'Gifu'
   pod 'SVProgressHUD'
 
   target 'LGTMCameraTests' do

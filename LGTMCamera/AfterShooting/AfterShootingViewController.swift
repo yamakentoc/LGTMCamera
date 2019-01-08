@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import ImageIO
 import MobileCoreServices
-import SwiftyGif
+import Gifu
 import SVProgressHUD
 import Photos
 
@@ -26,7 +26,7 @@ class AfterShootingViewController: UIViewController {
     var presenter: AfterShootingViewPresenter!
     weak var delegate: AfterShootingDelegate?
     var takenPhotos: [UIImage] = []
-    var frameRate = CMTimeMake(value: 1, timescale: 15)//gifの速さ(timescaleが高いほど早い)
+    var frameRate = CMTimeMake(value: 1, timescale: 12)//gifの速さ(timescaleが高いほど早い)
     var timer: Timer?
     var switchCount = 0
     
@@ -78,7 +78,6 @@ class AfterShootingViewController: UIViewController {
             }
             if CGImageDestinationFinalize(destination) {//GIF生成後の処理
                 DispatchQueue.main.async {
-                    //self.gifImageView.setGifFromURL(url, loopCount: -1, showLoader: false)
                     PHPhotoLibrary.shared().performChanges({//gifを保存
                         PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: url!)
                     }, completionHandler: { (_, _) in
@@ -87,7 +86,6 @@ class AfterShootingViewController: UIViewController {
                     })
                 }
             } else {
-                print("GIF生成に失敗")
                 SVProgressHUD.showError(withStatus: "error!")
             }
         }
