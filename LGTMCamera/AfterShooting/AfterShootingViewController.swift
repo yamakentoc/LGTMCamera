@@ -26,10 +26,15 @@ class AfterShootingViewController: UIViewController {
     var presenter: AfterShootingViewPresenter!
     weak var delegate: AfterShootingDelegate?
     var takenPhotos: [UIImage] = []
+    var frameRate = CMTimeMake(value: 1, timescale: 15)//gifの速さ(timescaleが高いほど早い)
+    var timer: Timer?
+    var switchCount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = AfterShootingViewPresenter(view: self)
+        self.gifImageView.image = takenPhotos.first
+        activeTimer()
     }
     
     @IBAction func tapSaveButton(_ sender: UIButton) {
@@ -37,16 +42,32 @@ class AfterShootingViewController: UIViewController {
     }
     
     @IBAction func tapBackButton(_ sender: UIButton) {
-        self.gifImageView.stopAnimating()
+        timer?.invalidate()
         self.delegate?.resizeButton()
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func adjustGifSpeed(_ sender: UISlider) {//画像の切り替えspeedを調整
+        timer?.invalidate()
+        frameRate = CMTimeMake(value: 1, timescale: Int32(sender.value))
+        activeTimer()
+    }
+    
+    func activeTimer() {//timerの生成
+        let cmTime = CMTimeGetSeconds(frameRate)
+        timer = Timer.scheduledTimer(timeInterval: cmTime, target: self, selector: #selector(switchImage), userInfo: nil, repeats: true)
+    }
+    
+    @objc func switchImage() {//画像を切り替える
+        switchCount = switchCount >= takenPhotos.count ? 0 : switchCount
+        self.gifImageView.image = takenPhotos[switchCount]
+        switchCount += 1
+    }
+    
     func makeGifImage() {
         SVProgressHUD.show(withStatus: "saving gif")
-        let frameRate = CMTimeMake(value: 1, timescale: 15)//gifの速さ(timescaleが高いほど早い)
         let fileProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: 0]]//ループカウント
-        let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: CMTimeGetSeconds(frameRate)]]//フレームレート
+        let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: CMTimeGetSeconds(self.frameRate)]]//フレームレート
         let url = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(NSUUID().uuidString).gif")
         guard let destination = CGImageDestinationCreateWithURL(url! as CFURL, kUTTypeGIF, self.takenPhotos.count, nil) else { return } //保存先
         CGImageDestinationSetProperties(destination, fileProperties as CFDictionary?)
