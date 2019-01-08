@@ -31,8 +31,23 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 0 images.
+  /// This `R.image` struct is generated, and contains static references to 2 images.
   struct image {
+    /// Image `batu`.
+    static let batu = Rswift.ImageResource(bundle: R.hostingBundle, name: "batu")
+    /// Image `save`.
+    static let save = Rswift.ImageResource(bundle: R.hostingBundle, name: "save")
+    
+    /// `UIImage(named: "batu", bundle: ..., traitCollection: ...)`
+    static func batu(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.batu, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "save", bundle: ..., traitCollection: ...)`
+    static func save(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.save, compatibleWith: traitCollection)
+    }
+    
     fileprivate init() {}
   }
   
@@ -85,7 +100,7 @@ struct R: Rswift.Validatable {
   
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
-      // There are no resources to validate
+      try _R.validate()
     }
     
     fileprivate init() {}
@@ -96,17 +111,30 @@ struct R: Rswift.Validatable {
   fileprivate init() {}
 }
 
-struct _R {
+struct _R: Rswift.Validatable {
+  static func validate() throws {
+    try storyboard.validate()
+  }
+  
   struct nib {
     fileprivate init() {}
   }
   
-  struct storyboard {
-    struct afterShootingViewController: Rswift.StoryboardResourceWithInitialControllerType {
+  struct storyboard: Rswift.Validatable {
+    static func validate() throws {
+      try afterShootingViewController.validate()
+    }
+    
+    struct afterShootingViewController: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
       typealias InitialController = AfterShootingViewController
       
       let bundle = R.hostingBundle
       let name = "AfterShootingViewController"
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "batu") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'batu' is used in storyboard 'AfterShootingViewController', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "save") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'save' is used in storyboard 'AfterShootingViewController', but couldn't be loaded.") }
+      }
       
       fileprivate init() {}
     }

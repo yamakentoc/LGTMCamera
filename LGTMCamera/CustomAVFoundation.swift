@@ -17,8 +17,8 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
     var isShooting = false//連写中
     var captureCounter = 0
     
-    let captureSession = AVCaptureSession()//セッションのインスタンス生成
-    let videoDevice = AVCaptureDevice.default(for: AVMediaType.video)//入力(背面カメラ)
+    var captureSession: AVCaptureSession!
+    var videoDevice: AVCaptureDevice!
     
     init(view: UIView) {
         super.init()
@@ -27,7 +27,8 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
     }
     
     func initialize() {
-        //videoDevice?.activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: 30)
+        captureSession = AVCaptureSession()//セッションのインスタンス生成
+        videoDevice = AVCaptureDevice.default(for: AVMediaType.video)//入力(背面カメラ)
         guard let videoInput = try? AVCaptureDeviceInput.init(device: videoDevice!) else { return }
         captureSession.addInput(videoInput)
         //出力(ビデオデータ)
@@ -102,7 +103,6 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
          if captureCounter % 6 == 0, isShooting { // %3の場合 1/10秒だけ処理する
-        //if isPushing {
             guard let image = imageFromSampleBuffer(sampleBuffer: sampleBuffer) else { return }
             takenPhotos.append(image)
         }

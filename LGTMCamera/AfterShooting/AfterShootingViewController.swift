@@ -12,11 +12,21 @@ import ImageIO
 import MobileCoreServices
 import SwiftyGif
 import SVProgressHUD
+import Photos
+
+protocol AfterShootingDelegate: class {
+    func resizeButton()
+}
 
 class AfterShootingViewController: UIViewController {
 
+    @IBOutlet weak var gifImageView: UIImageView!
+    @IBOutlet weak var saveButton: UIButton!
+    
     var presenter: AfterShootingViewPresenter!
+    weak var delegate: AfterShootingDelegate?
     var takenPhotos: [UIImage] = []
+    var makedGifURL: URL?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +34,25 @@ class AfterShootingViewController: UIViewController {
         SVProgressHUD.show(withStatus: "Generating gif")
         makeGifImage()
     }
-
+    
+    @IBAction func tapSaveButton(_ sender: UIButton) {
+        guard let makedGifURL = self.makedGifURL else { return }
+        PHPhotoLibrary.shared().performChanges({//gifを保存
+            PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: makedGifURL)
+        }, completionHandler: { (_, _) in
+            SVProgressHUD.setMinimumDismissTimeInterval(1.0)
+            SVProgressHUD.showSuccess(withStatus: "saved!")
+        })
+    }
+    
+    @IBAction func tapBackButton(_ sender: UIButton) {
+        self.gifImageView.stopAnimating()
+        self.delegate?.resizeButton()
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     func makeGifImage() {
-        let frameRate = CMTimeMake(value: 1, timescale: 60)//gifの速さ(timescaleが高いほど早い)
+        let frameRate = CMTimeMake(value: 1, timescale: 15)//gifの速さ(timescaleが高いほど早い)
         let fileProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: 0]]//ループカウント
         let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: CMTimeGetSeconds(frameRate)]]//フレームレート
         let url = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(NSUUID().uuidString).gif")
@@ -39,13 +65,13 @@ class AfterShootingViewController: UIViewController {
             }
             if CGImageDestinationFinalize(destination) {//GIF生成後の処理
                 DispatchQueue.main.async {
-                    let imageView = UIImageView(gifURL: url, loopCount: -1)
-                    imageView.frame = self.view.bounds
-                    self.view.addSubview(imageView)
+                    self.gifImageView.setGifFromURL(url, loopCount: -1, showLoader: false)
+                    self.makedGifURL = url
                     SVProgressHUD.dismiss()
                 }
             } else {
                 print("GIF生成に失敗")
+                SVProgressHUD.showError(withStatus: "error!")
             }
         }
     }
