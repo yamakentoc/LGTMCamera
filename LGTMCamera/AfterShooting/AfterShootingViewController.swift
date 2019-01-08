@@ -31,7 +31,6 @@ class AfterShootingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = AfterShootingViewPresenter(view: self)
-        initButton()
         SVProgressHUD.show(withStatus: "Generating gif")
         makeGifImage()
     }
@@ -50,11 +49,6 @@ class AfterShootingViewController: UIViewController {
         self.gifImageView.stopAnimating()
         self.delegate?.resizeButton()
         self.dismiss(animated: true, completion: nil)
-    }
-    
-    func initButton() {
-        self.saveButton.layer.masksToBounds = true
-        self.saveButton.layer.cornerRadius = self.saveButton.bounds.width / 2
     }
     
     func makeGifImage() {

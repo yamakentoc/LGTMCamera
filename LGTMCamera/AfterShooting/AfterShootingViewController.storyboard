@@ -32,12 +32,12 @@
                                     <action selector="tapBackButton:" destination="7o5-I7-h63" eventType="touchUpInside" id="ZHS-Nf-SOs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9B-If-3mA">
-                                <rect key="frame" x="146.5" y="569.5" width="82.5" height="82.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9B-If-3mA">
+                                <rect key="frame" x="159.5" y="596" width="56" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="r9B-If-3mA" secondAttribute="height" multiplier="1:1" id="HOV-me-9bY"/>
                                 </constraints>
+                                <state key="normal" image="save"/>
                                 <connections>
                                     <action selector="tapSaveButton:" destination="7o5-I7-h63" eventType="touchUpInside" id="DYf-dT-jxW"/>
                                 </connections>
@@ -51,7 +51,7 @@
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="bottom" secondItem="76z-5T-RJS" secondAttribute="bottom" id="ToH-TK-jrn"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="top" secondItem="76z-5T-RJS" secondAttribute="top" id="UdF-2f-1mz"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="trailing" secondItem="8cN-Ca-dNB" secondAttribute="trailing" id="XdP-c5-c0Y"/>
-                            <constraint firstItem="r9B-If-3mA" firstAttribute="width" secondItem="76z-5T-RJS" secondAttribute="width" multiplier="0.22" id="Y0C-UY-wg9"/>
+                            <constraint firstItem="r9B-If-3mA" firstAttribute="width" secondItem="76z-5T-RJS" secondAttribute="width" multiplier="0.15" id="Y0C-UY-wg9"/>
                             <constraint firstItem="8cN-Ca-dNB" firstAttribute="bottom" secondItem="r9B-If-3mA" secondAttribute="bottom" constant="15" id="quZ-gK-Aiu"/>
                             <constraint firstItem="r9B-If-3mA" firstAttribute="centerX" secondItem="76z-5T-RJS" secondAttribute="centerX" id="u9C-Se-UA5"/>
                         </constraints>
@@ -69,5 +69,6 @@
     </scenes>
     <resources>
         <image name="batu" width="195.36000061035156" height="196.32000732421875"/>
+        <image name="save" width="200.39999389648438" height="200.16000366210938"/>
     </resources>
 </document>
