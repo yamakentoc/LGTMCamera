@@ -12,7 +12,7 @@ import AVFoundation
 class ShootingViewController: UIViewController {
     
     @IBOutlet weak var previewView: UIView!
-    @IBOutlet weak var snapBackView: UIVisualEffectView! {
+    @IBOutlet weak var snapBackView: UIView! {
         didSet {
             snapBackView.layer.masksToBounds = true
             snapBackView.layer.cornerRadius = snapBackView.bounds.width / 2
