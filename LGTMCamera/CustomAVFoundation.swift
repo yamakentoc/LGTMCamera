@@ -98,7 +98,8 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
         let image = UIImage(cgImage: imageRef, scale: 1.0, orientation: UIImage.Orientation.right)
         //イメージバッファのアンロック
         CVPixelBufferUnlockBaseAddress(imageBuffer, CVPixelBufferLockFlags(rawValue: 0))
-        return image
+        let croppedImage = image.croppingToCenterSquare()
+        return croppedImage
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
