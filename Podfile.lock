@@ -1,32 +1,32 @@
 PODS:
+  - Gifu (3.2.0)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
   - SVProgressHUD (2.2.5)
   - SwiftLint (0.27.0)
-  - SwiftyGif (4.2.0)
 
 DEPENDENCIES:
+  - Gifu
   - R.swift
   - SVProgressHUD
   - SwiftLint
-  - SwiftyGif
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Gifu
     - R.swift
     - R.swift.Library
     - SVProgressHUD
     - SwiftLint
-    - SwiftyGif
 
 SPEC CHECKSUMS:
+  Gifu: 7bcb6427457d85e0b4dff5a84ec5947ac19a93ea
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
-  SwiftyGif: a149bf84df23370592f3f075561ae02c8632a314
 
-PODFILE CHECKSUM: f10deb54c36f07e4472b85a5b5020c8a7446b768
+PODFILE CHECKSUM: 6f8f04df4231cf689ee18608c66ddab0d21f5535
 
 COCOAPODS: 1.5.3

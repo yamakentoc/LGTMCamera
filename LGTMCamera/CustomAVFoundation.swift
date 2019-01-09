@@ -95,14 +95,14 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
         guard let newContext = CGContext(data: base, width: Int(width), height: Int(height), bitsPerComponent: Int(bitsPerCompornent), bytesPerRow: Int(bytesPerRow), space: colorSpace, bitmapInfo: bitmapInfo.rawValue) else { return nil }
         //画像生成
         guard let imageRef = newContext.makeImage() else { return nil }
-        let image = UIImage(cgImage: imageRef, scale: 1.0, orientation: UIImage.Orientation.up)
+        let image = UIImage(cgImage: imageRef, scale: 1.0, orientation: UIImage.Orientation.right)
         //イメージバッファのアンロック
         CVPixelBufferUnlockBaseAddress(imageBuffer, CVPixelBufferLockFlags(rawValue: 0))
         return image
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-         if captureCounter % 6 == 0, isShooting { // %3の場合 1/10秒だけ処理する
+         if captureCounter % 8 == 0, isShooting { // %3の場合 1/10秒だけ処理する
             guard let image = imageFromSampleBuffer(sampleBuffer: sampleBuffer) else { return }
             takenPhotos.append(image)
         }

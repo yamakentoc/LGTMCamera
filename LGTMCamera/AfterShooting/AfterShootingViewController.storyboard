@@ -42,6 +42,12 @@
                                     <action selector="tapSaveButton:" destination="7o5-I7-h63" eventType="touchUpInside" id="DYf-dT-jxW"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="12" minValue="1" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="dSa-w9-8C9">
+                                <rect key="frame" x="92" y="550" width="191.5" height="31"/>
+                                <connections>
+                                    <action selector="adjustGifSpeed:" destination="7o5-I7-h63" eventType="valueChanged" id="v6S-xR-YI6"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -50,10 +56,13 @@
                             <constraint firstItem="57A-Fv-uwE" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" constant="16" id="NYb-iE-wmO"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="bottom" secondItem="76z-5T-RJS" secondAttribute="bottom" id="ToH-TK-jrn"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="top" secondItem="76z-5T-RJS" secondAttribute="top" id="UdF-2f-1mz"/>
+                            <constraint firstItem="dSa-w9-8C9" firstAttribute="width" secondItem="76z-5T-RJS" secondAttribute="width" multiplier="0.5" id="WgZ-3H-SBy"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="trailing" secondItem="8cN-Ca-dNB" secondAttribute="trailing" id="XdP-c5-c0Y"/>
                             <constraint firstItem="r9B-If-3mA" firstAttribute="width" secondItem="76z-5T-RJS" secondAttribute="width" multiplier="0.15" id="Y0C-UY-wg9"/>
                             <constraint firstItem="8cN-Ca-dNB" firstAttribute="bottom" secondItem="r9B-If-3mA" secondAttribute="bottom" constant="15" id="quZ-gK-Aiu"/>
+                            <constraint firstItem="dSa-w9-8C9" firstAttribute="centerX" secondItem="76z-5T-RJS" secondAttribute="centerX" id="tfn-h3-ee0"/>
                             <constraint firstItem="r9B-If-3mA" firstAttribute="centerX" secondItem="76z-5T-RJS" secondAttribute="centerX" id="u9C-Se-UA5"/>
+                            <constraint firstItem="r9B-If-3mA" firstAttribute="top" secondItem="dSa-w9-8C9" secondAttribute="bottom" constant="16" id="xXL-nl-BAY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8cN-Ca-dNB"/>
                     </view>
