@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20f-ui-ea6">
-                                <rect key="frame" x="0.0" y="36" width="375" height="375"/>
+                                <rect key="frame" x="0.0" y="74" width="375" height="375"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="20f-ui-ea6" secondAttribute="height" multiplier="1:1" id="UjX-9q-LLa"/>
@@ -27,7 +27,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMz-2d-rWA">
                                 <rect key="frame" x="146.5" y="576" width="82.5" height="82.5"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.89959286971830987" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DMz-2d-rWA" secondAttribute="height" multiplier="1:1" id="nJJ-x8-tjE"/>
                                 </constraints>
@@ -41,6 +41,7 @@
                                 <connections>
                                     <action selector="touchDownSnapButton:" destination="BYZ-38-t0r" eventType="touchDown" id="nFd-sj-Gcn"/>
                                     <action selector="touchUpSnapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7XI-Yj-ytp"/>
+                                    <action selector="touchUpSnapButton:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="H8Z-lP-fcz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -51,7 +52,7 @@
                             <constraint firstItem="lrk-bm-x6e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9EG-3B-HTF"/>
                             <constraint firstItem="DMz-2d-rWA" firstAttribute="centerY" secondItem="lrk-bm-x6e" secondAttribute="centerY" id="KOP-gv-g3F"/>
                             <constraint firstItem="20f-ui-ea6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hN6-6t-OC7"/>
-                            <constraint firstItem="20f-ui-ea6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="jLa-cM-Nd8"/>
+                            <constraint firstItem="20f-ui-ea6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="jLa-cM-Nd8"/>
                             <constraint firstItem="DMz-2d-rWA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.22" id="mTK-2c-Q3q"/>
                             <constraint firstItem="lrk-bm-x6e" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.16" id="rSy-K2-ZY2"/>
                             <constraint firstItem="DMz-2d-rWA" firstAttribute="centerX" secondItem="lrk-bm-x6e" secondAttribute="centerX" id="tqe-Od-FM3"/>
