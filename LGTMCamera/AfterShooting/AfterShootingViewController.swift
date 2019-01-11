@@ -57,6 +57,7 @@ class AfterShootingViewController: UIViewController {
     func activeTimer() {//timerの生成
         let cmTime = CMTimeGetSeconds(frameRate)
         timer = Timer.scheduledTimer(timeInterval: cmTime, target: self, selector: #selector(switchImage), userInfo: nil, repeats: true)
+        RunLoop.current.add(timer!, forMode: .tracking)
     }
     
     @objc func switchImage() {//画像を切り替える

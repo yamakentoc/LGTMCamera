@@ -51,27 +51,27 @@
                                     <constraint firstAttribute="width" secondItem="Zls-JE-nQe" secondAttribute="height" multiplier="1:1" id="CR6-2l-XAX"/>
                                 </constraints>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFN-3a-FMc">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ued-A0-IsL">
                                 <rect key="frame" x="0.0" y="449" width="375" height="147"/>
                                 <connections>
-                                    <segue destination="G1k-yD-rTN" kind="embed" id="SPC-Ww-bfq"/>
+                                    <segue destination="U2I-AW-vYq" kind="embed" id="P8K-Vv-LEU"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="57A-Fv-uwE" firstAttribute="top" secondItem="8cN-Ca-dNB" secondAttribute="top" constant="16" id="1AQ-IG-6Dy"/>
-                            <constraint firstItem="r9B-If-3mA" firstAttribute="top" secondItem="NFN-3a-FMc" secondAttribute="bottom" id="9TV-9a-b01"/>
-                            <constraint firstItem="NFN-3a-FMc" firstAttribute="top" secondItem="Zls-JE-nQe" secondAttribute="bottom" id="G3C-c3-cfj"/>
+                            <constraint firstItem="Ued-A0-IsL" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" id="5nx-rt-WXN"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" id="IvY-f3-EK7"/>
-                            <constraint firstItem="NFN-3a-FMc" firstAttribute="trailing" secondItem="8cN-Ca-dNB" secondAttribute="trailing" id="NGN-pc-dDW"/>
                             <constraint firstItem="57A-Fv-uwE" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" constant="16" id="NYb-iE-wmO"/>
+                            <constraint firstItem="Ued-A0-IsL" firstAttribute="top" secondItem="Zls-JE-nQe" secondAttribute="bottom" id="RG6-0r-r3k"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="top" secondItem="57A-Fv-uwE" secondAttribute="bottom" constant="8" id="RHT-Sn-6ru"/>
                             <constraint firstItem="dSa-w9-8C9" firstAttribute="width" secondItem="76z-5T-RJS" secondAttribute="width" multiplier="0.5" id="WgZ-3H-SBy"/>
+                            <constraint firstItem="r9B-If-3mA" firstAttribute="top" secondItem="Ued-A0-IsL" secondAttribute="bottom" id="Wl0-Er-Uwh"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="trailing" secondItem="8cN-Ca-dNB" secondAttribute="trailing" id="XdP-c5-c0Y"/>
                             <constraint firstItem="r9B-If-3mA" firstAttribute="width" secondItem="76z-5T-RJS" secondAttribute="width" multiplier="0.15" id="Y0C-UY-wg9"/>
-                            <constraint firstItem="NFN-3a-FMc" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" id="Yy3-9e-fly"/>
                             <constraint firstItem="8cN-Ca-dNB" firstAttribute="bottom" secondItem="r9B-If-3mA" secondAttribute="bottom" constant="15" id="quZ-gK-Aiu"/>
+                            <constraint firstItem="Ued-A0-IsL" firstAttribute="trailing" secondItem="8cN-Ca-dNB" secondAttribute="trailing" id="t0r-QF-D7Y"/>
                             <constraint firstItem="dSa-w9-8C9" firstAttribute="centerX" secondItem="76z-5T-RJS" secondAttribute="centerX" id="tfn-h3-ee0"/>
                             <constraint firstItem="r9B-If-3mA" firstAttribute="centerX" secondItem="76z-5T-RJS" secondAttribute="centerX" id="u9C-Se-UA5"/>
                             <constraint firstItem="r9B-If-3mA" firstAttribute="top" secondItem="dSa-w9-8C9" secondAttribute="bottom" constant="16" id="xXL-nl-BAY"/>
@@ -88,38 +88,37 @@
             <point key="canvasLocation" x="485.60000000000002" y="-186.65667166416793"/>
         </scene>
         <!--After Shooting Scroll View Controller-->
-        <scene sceneID="Q90-SP-YjW">
+        <scene sceneID="iTg-AB-S9L">
             <objects>
-                <viewController id="G1k-yD-rTN" customClass="AfterShootingScrollViewController" customModule="LGTMCamera" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yiz-vq-JBP">
+                <viewController id="U2I-AW-vYq" customClass="AfterShootingScrollViewController" customModule="LGTMCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="buK-c2-3OZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NCd-uI-5hj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jdt-mt-Hb0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="G1k-yD-rTN" id="O4y-A9-UDx"/>
-                                    <outlet property="delegate" destination="G1k-yD-rTN" id="b9z-KH-rm2"/>
+                                    <outlet property="dataSource" destination="U2I-AW-vYq" id="Hmi-S0-HXj"/>
+                                    <outlet property="delegate" destination="U2I-AW-vYq" id="Zb7-VF-jrQ"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="NCd-uI-5hj" firstAttribute="leading" secondItem="TG1-BZ-Yeq" secondAttribute="leading" id="196-ys-Crz"/>
-                            <constraint firstItem="NCd-uI-5hj" firstAttribute="trailing" secondItem="TG1-BZ-Yeq" secondAttribute="trailing" id="55z-8L-YUl"/>
-                            <constraint firstItem="NCd-uI-5hj" firstAttribute="top" secondItem="yiz-vq-JBP" secondAttribute="top" id="FEd-jN-Z9b"/>
-                            <constraint firstItem="NCd-uI-5hj" firstAttribute="bottom" secondItem="yiz-vq-JBP" secondAttribute="bottom" id="cgN-ma-G5r"/>
+                            <constraint firstItem="Jdt-mt-Hb0" firstAttribute="top" secondItem="buK-c2-3OZ" secondAttribute="top" id="3CN-b9-Xkc"/>
+                            <constraint firstAttribute="trailing" secondItem="Jdt-mt-Hb0" secondAttribute="trailing" id="IAc-v9-Gs7"/>
+                            <constraint firstItem="Jdt-mt-Hb0" firstAttribute="leading" secondItem="buK-c2-3OZ" secondAttribute="leading" id="mZz-W0-1jG"/>
+                            <constraint firstAttribute="bottom" secondItem="Jdt-mt-Hb0" secondAttribute="bottom" id="tdb-Qk-swK"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="TG1-BZ-Yeq"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="NCd-uI-5hj" id="5oJ-H5-kHW"/>
+                        <outlet property="tableView" destination="Jdt-mt-Hb0" id="UMH-Ji-bz3"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5hB-8D-WMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eUE-1f-8T5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="485.60000000000002" y="350.37481259370315"/>
+            <point key="canvasLocation" x="365.60000000000002" y="472.71364317841085"/>
         </scene>
     </scenes>
     <resources>
