@@ -11,6 +11,7 @@
 		15267D8821DCE6600023F206 /* AfterShootingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15267D8721DCE6600023F206 /* AfterShootingViewController.swift */; };
 		15267D8A21DCE6820023F206 /* AfterShootingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15267D8921DCE6820023F206 /* AfterShootingViewPresenter.swift */; };
 		15267D8C21DCE6900023F206 /* AfterShootingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15267D8B21DCE6900023F206 /* AfterShootingViewController.storyboard */; };
+		15318A2C21E5B14300D6CA69 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15318A2B21E5B14300D6CA69 /* UIImage.swift */; };
 		15CE430F21D8BAA50086C36F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CE430E21D8BAA50086C36F /* UIColor.swift */; };
 		15E8FBBE21D61B3500B18C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */; };
 		15E8FBC021D61B3500B18C32 /* ShootingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8FBBF21D61B3500B18C32 /* ShootingViewController.swift */; };
@@ -48,6 +49,7 @@
 		15267D8721DCE6600023F206 /* AfterShootingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterShootingViewController.swift; sourceTree = "<group>"; };
 		15267D8921DCE6820023F206 /* AfterShootingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterShootingViewPresenter.swift; sourceTree = "<group>"; };
 		15267D8B21DCE6900023F206 /* AfterShootingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AfterShootingViewController.storyboard; sourceTree = "<group>"; };
+		15318A2B21E5B14300D6CA69 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		15CE430E21D8BAA50086C36F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		15E8FBBA21D61B3500B18C32 /* LGTMCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGTMCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E8FBBD21D61B3500B18C32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				15CE430E21D8BAA50086C36F /* UIColor.swift */,
+				15318A2B21E5B14300D6CA69 /* UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				15267D8521DC78470023F206 /* CustomAVFoundation.swift in Sources */,
 				15E8FBF121D64BB400B18C32 /* ShootingViewPresenter.swift in Sources */,
 				15E8FBEE21D6249100B18C32 /* R.generated.swift in Sources */,
+				15318A2C21E5B14300D6CA69 /* UIImage.swift in Sources */,
 				15267D8A21DCE6820023F206 /* AfterShootingViewPresenter.swift in Sources */,
 				15CE430F21D8BAA50086C36F /* UIColor.swift in Sources */,
 			);
