@@ -29,6 +29,8 @@ class ShootingViewController: UIViewController {
     var customAVFoundation: CustomAVFoundation!
     var circle: CAShapeLayer = CAShapeLayer()
     
+    var isBackCamera = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = ShootingViewPresenter(view: self)
@@ -37,6 +39,7 @@ class ShootingViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         customAVFoundation = CustomAVFoundation(view: self.previewView)
+        customAVFoundation.sessionSetup(reset: false, isBackCamera: self.isBackCamera)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -73,6 +76,11 @@ class ShootingViewController: UIViewController {
         afterShootingVC.delegate = self
         afterShootingVC.takenPhotos = customAVFoundation.takenPhotos
         self.present(afterShootingVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func tapSwitchButton(_ sender: UIButton) {
+        self.isBackCamera = !self.isBackCamera
+        customAVFoundation.sessionSetup(reset: true, isBackCamera: self.isBackCamera)
     }
     
     func expandingCircleAnimation() {

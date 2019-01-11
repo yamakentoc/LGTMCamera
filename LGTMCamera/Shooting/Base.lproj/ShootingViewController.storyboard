@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20f-ui-ea6">
-                                <rect key="frame" x="0.0" y="74" width="375" height="375"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="20f-ui-ea6" secondAttribute="height" multiplier="1:1" id="UjX-9q-LLa"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKJ-WH-NLF">
                                 <rect key="frame" x="0.0" y="449" width="375" height="218"/>
                                 <subviews>
@@ -58,11 +51,27 @@
                                     <constraint firstItem="DMz-2d-rWA" firstAttribute="centerY" secondItem="lrk-bm-x6e" secondAttribute="centerY" id="wHg-ec-G0x"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mu-Ma-KdV">
+                                <rect key="frame" x="297" y="36" width="62" height="30"/>
+                                <state key="normal" title="切り替え"/>
+                                <connections>
+                                    <action selector="tapSwitchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Srl-52-9y2"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20f-ui-ea6">
+                                <rect key="frame" x="0.0" y="74" width="375" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="20f-ui-ea6" secondAttribute="height" multiplier="1:1" id="UjX-9q-LLa"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="20f-ui-ea6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2IP-hh-hDk"/>
                             <constraint firstItem="FKJ-WH-NLF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IQ4-Xc-WaP"/>
+                            <constraint firstItem="8Mu-Ma-KdV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="RH1-dS-4RF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Mu-Ma-KdV" secondAttribute="trailing" constant="16" id="WmI-IE-ghn"/>
                             <constraint firstItem="FKJ-WH-NLF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="gOB-yo-h7G"/>
                             <constraint firstItem="20f-ui-ea6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hN6-6t-OC7"/>
                             <constraint firstItem="20f-ui-ea6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="jLa-cM-Nd8"/>

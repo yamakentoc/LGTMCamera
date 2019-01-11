@@ -23,13 +23,19 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
     init(view: UIView) {
         super.init()
         self.view = view
-        initialize()
     }
     
-    func initialize() {
+    func sessionSetup(reset: Bool, isBackCamera: Bool) {
+        if reset {
+            captureSession.stopRunning()
+        }
         captureSession = AVCaptureSession()//セッションのインスタンス生成
-        videoDevice = AVCaptureDevice.default(for: AVMediaType.video)//入力(背面カメラ)
-        guard let videoInput = try? AVCaptureDeviceInput.init(device: videoDevice!) else { return }
+        let deviceDescoverySession = AVCaptureDevice.DiscoverySession.init(deviceTypes: [AVCaptureDevice.DeviceType.builtInWideAngleCamera], mediaType: AVMediaType.video, position: AVCaptureDevice.Position.unspecified)
+        let position: AVCaptureDevice.Position = isBackCamera ? .back : .front
+        for device in deviceDescoverySession.devices where device.position == position {
+            self.videoDevice = device
+        }
+        guard let videoInput = try? AVCaptureDeviceInput(device: videoDevice) else { return }
         captureSession.addInput(videoInput)
         //出力(ビデオデータ)
         let videoDataOutput = AVCaptureVideoDataOutput()
