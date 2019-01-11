@@ -29,6 +29,7 @@ class AfterShootingViewController: UIViewController {
     var frameRate = CMTimeMake(value: 1, timescale: 12)//gifの速さ(timescaleが高いほど早い)
     var timer: Timer?
     var switchCount = 0
+    var isBackCamera = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,7 +95,9 @@ class AfterShootingViewController: UIViewController {
     //UIImageからCGImageにそのまま変換すると画像の向きが保持されないから
     func translate(_ image: UIImage) -> CGImage? {
         guard let cgImage = image.cgImage else { return nil }
-        let ciImage = CIImage(cgImage: cgImage).oriented(CGImagePropertyOrientation.right)//元画像から右に90度回転
+        ////元画像から右に90度回転(内カメラの時は反転状態に)
+        let orientation: CGImagePropertyOrientation = self.isBackCamera ? .right : .leftMirrored
+        let ciImage = CIImage(cgImage: cgImage).oriented(orientation)
         let ciContext = CIContext(options: nil)
         guard let cgImageFromCIImage: CGImage = ciContext.createCGImage(ciImage, from: ciImage.extent) else { return nil}
         return cgImageFromCIImage

@@ -94,13 +94,32 @@
                     <view key="view" contentMode="scaleToFill" id="yiz-vq-JBP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NCd-uI-5hj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="G1k-yD-rTN" id="O4y-A9-UDx"/>
+                                    <outlet property="delegate" destination="G1k-yD-rTN" id="b9z-KH-rm2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NCd-uI-5hj" firstAttribute="leading" secondItem="TG1-BZ-Yeq" secondAttribute="leading" id="196-ys-Crz"/>
+                            <constraint firstItem="NCd-uI-5hj" firstAttribute="trailing" secondItem="TG1-BZ-Yeq" secondAttribute="trailing" id="55z-8L-YUl"/>
+                            <constraint firstItem="NCd-uI-5hj" firstAttribute="top" secondItem="yiz-vq-JBP" secondAttribute="top" id="FEd-jN-Z9b"/>
+                            <constraint firstItem="NCd-uI-5hj" firstAttribute="bottom" secondItem="yiz-vq-JBP" secondAttribute="bottom" id="cgN-ma-G5r"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TG1-BZ-Yeq"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="NCd-uI-5hj" id="5oJ-H5-kHW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5hB-8D-WMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486" y="351"/>
+            <point key="canvasLocation" x="485.60000000000002" y="350.37481259370315"/>
         </scene>
     </scenes>
     <resources>

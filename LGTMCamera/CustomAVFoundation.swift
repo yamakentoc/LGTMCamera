@@ -20,6 +20,8 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
     var captureSession: AVCaptureSession!
     var videoDevice: AVCaptureDevice!
     
+    var isBackCamera = true
+    
     init(view: UIView) {
         super.init()
         self.view = view
@@ -39,6 +41,12 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
         captureSession.addInput(videoInput)
         //出力(ビデオデータ)
         let videoDataOutput = AVCaptureVideoDataOutput()
+        //内カメラの時だけ反転させる(そうしないと反転状態になってしまう®)
+        if !isBackCamera {
+            let videoConnection = videoDataOutput.connection(with: AVMediaType.video)
+            videoConnection?.isVideoMirrored = true
+        }
+        self.isBackCamera = isBackCamera
         videoDataOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as AnyHashable: Int(kCVPixelFormatType_32BGRA)] as? [String: Any]//ピクセルフォーマット(32bit BGRA)
         self.setMaxFps()
         videoDataOutput.alwaysDiscardsLateVideoFrames = true//キューのブロック中に新しいフレームが来たら削除する
@@ -101,7 +109,9 @@ class CustomAVFoundation: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate
         guard let newContext = CGContext(data: base, width: Int(width), height: Int(height), bitsPerComponent: Int(bitsPerCompornent), bytesPerRow: Int(bytesPerRow), space: colorSpace, bitmapInfo: bitmapInfo.rawValue) else { return nil }
         //画像生成
         guard let imageRef = newContext.makeImage() else { return nil }
-        let image = UIImage(cgImage: imageRef, scale: 1.0, orientation: UIImage.Orientation.right)
+        //生成する画像も内カメラの時は反転させる
+        let orientation: UIImage.Orientation = self.isBackCamera ? .right : .leftMirrored
+        let image = UIImage(cgImage: imageRef, scale: 1.0, orientation: orientation)
         //イメージバッファのアンロック
         CVPixelBufferUnlockBaseAddress(imageBuffer, CVPixelBufferLockFlags(rawValue: 0))
         let croppedImage = image.croppingToCenterSquare()
