@@ -18,9 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zls-JE-nQe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57A-Fv-uwE">
                                 <rect key="frame" x="16" y="36" width="30" height="30"/>
                                 <constraints>
@@ -48,14 +45,19 @@
                                     <action selector="adjustGifSpeed:" destination="7o5-I7-h63" eventType="valueChanged" id="v6S-xR-YI6"/>
                                 </connections>
                             </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zls-JE-nQe">
+                                <rect key="frame" x="0.0" y="74" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zls-JE-nQe" secondAttribute="height" multiplier="1:1" id="CR6-2l-XAX"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="57A-Fv-uwE" firstAttribute="top" secondItem="8cN-Ca-dNB" secondAttribute="top" constant="16" id="1AQ-IG-6Dy"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" id="IvY-f3-EK7"/>
                             <constraint firstItem="57A-Fv-uwE" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" constant="16" id="NYb-iE-wmO"/>
-                            <constraint firstItem="Zls-JE-nQe" firstAttribute="bottom" secondItem="76z-5T-RJS" secondAttribute="bottom" id="ToH-TK-jrn"/>
-                            <constraint firstItem="Zls-JE-nQe" firstAttribute="top" secondItem="76z-5T-RJS" secondAttribute="top" id="UdF-2f-1mz"/>
+                            <constraint firstItem="Zls-JE-nQe" firstAttribute="top" secondItem="57A-Fv-uwE" secondAttribute="bottom" constant="8" id="RHT-Sn-6ru"/>
                             <constraint firstItem="dSa-w9-8C9" firstAttribute="width" secondItem="76z-5T-RJS" secondAttribute="width" multiplier="0.5" id="WgZ-3H-SBy"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="trailing" secondItem="8cN-Ca-dNB" secondAttribute="trailing" id="XdP-c5-c0Y"/>
                             <constraint firstItem="r9B-If-3mA" firstAttribute="width" secondItem="76z-5T-RJS" secondAttribute="width" multiplier="0.15" id="Y0C-UY-wg9"/>
