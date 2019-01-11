@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1509480B21E85013005E7CD3 /* AfterShootingScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509480A21E85013005E7CD3 /* AfterShootingScrollViewController.swift */; };
-		1509481021E8505F005E7CD3 /* AfterShootingScrollViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1509480F21E8505F005E7CD3 /* AfterShootingScrollViewController.storyboard */; };
 		1509481221E85090005E7CD3 /* AfterShootingScrollViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509481121E85090005E7CD3 /* AfterShootingScrollViewPresenter.swift */; };
 		15267D8521DC78470023F206 /* CustomAVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15267D8421DC78470023F206 /* CustomAVFoundation.swift */; };
 		15267D8821DCE6600023F206 /* AfterShootingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15267D8721DCE6600023F206 /* AfterShootingViewController.swift */; };
@@ -49,7 +48,6 @@
 
 /* Begin PBXFileReference section */
 		1509480A21E85013005E7CD3 /* AfterShootingScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterShootingScrollViewController.swift; sourceTree = "<group>"; };
-		1509480F21E8505F005E7CD3 /* AfterShootingScrollViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AfterShootingScrollViewController.storyboard; sourceTree = "<group>"; };
 		1509481121E85090005E7CD3 /* AfterShootingScrollViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterShootingScrollViewPresenter.swift; sourceTree = "<group>"; };
 		15267D8421DC78470023F206 /* CustomAVFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVFoundation.swift; sourceTree = "<group>"; };
 		15267D8721DCE6600023F206 /* AfterShootingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterShootingViewController.swift; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 			children = (
 				1509480A21E85013005E7CD3 /* AfterShootingScrollViewController.swift */,
 				1509481121E85090005E7CD3 /* AfterShootingScrollViewPresenter.swift */,
-				1509480F21E8505F005E7CD3 /* AfterShootingScrollViewController.storyboard */,
 			);
 			path = AfterShootingScroll;
 			sourceTree = "<group>";
@@ -342,7 +339,6 @@
 			files = (
 				15E8FBC821D61B3600B18C32 /* LaunchScreen.storyboard in Resources */,
 				15267D8C21DCE6900023F206 /* AfterShootingViewController.storyboard in Resources */,
-				1509481021E8505F005E7CD3 /* AfterShootingScrollViewController.storyboard in Resources */,
 				15E8FBC521D61B3600B18C32 /* Assets.xcassets in Resources */,
 				15E8FBC321D61B3500B18C32 /* ShootingViewController.storyboard in Resources */,
 			);

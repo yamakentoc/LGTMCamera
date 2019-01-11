@@ -12,7 +12,6 @@ class AfterShootingScrollViewController: UIViewController {
 
     var presenter: AfterShootingScrollViewPresenter!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = AfterShootingScrollViewPresenter(view: self)

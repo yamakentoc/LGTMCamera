@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="485.60000000000002" y="-186.65667166416793"/>
         </scene>
-        <!--View Controller-->
+        <!--After Shooting Scroll View Controller-->
         <scene sceneID="Q90-SP-YjW">
             <objects>
-                <viewController id="G1k-yD-rTN" sceneMemberID="viewController">
+                <viewController id="G1k-yD-rTN" customClass="AfterShootingScrollViewController" customModule="LGTMCamera" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yiz-vq-JBP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
