@@ -39,7 +39,7 @@
                                     <action selector="tapSaveButton:" destination="7o5-I7-h63" eventType="touchUpInside" id="DYf-dT-jxW"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="6" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="dSa-w9-8C9">
+                            <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="6" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="dSa-w9-8C9">
                                 <rect key="frame" x="92" y="550" width="191.5" height="31"/>
                                 <connections>
                                     <action selector="adjustGifSpeed:" destination="7o5-I7-h63" eventType="valueChanged" id="v6S-xR-YI6"/>
@@ -51,16 +51,26 @@
                                     <constraint firstAttribute="width" secondItem="Zls-JE-nQe" secondAttribute="height" multiplier="1:1" id="CR6-2l-XAX"/>
                                 </constraints>
                             </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFN-3a-FMc">
+                                <rect key="frame" x="0.0" y="449" width="375" height="147"/>
+                                <connections>
+                                    <segue destination="G1k-yD-rTN" kind="embed" id="SPC-Ww-bfq"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="57A-Fv-uwE" firstAttribute="top" secondItem="8cN-Ca-dNB" secondAttribute="top" constant="16" id="1AQ-IG-6Dy"/>
+                            <constraint firstItem="r9B-If-3mA" firstAttribute="top" secondItem="NFN-3a-FMc" secondAttribute="bottom" id="9TV-9a-b01"/>
+                            <constraint firstItem="NFN-3a-FMc" firstAttribute="top" secondItem="Zls-JE-nQe" secondAttribute="bottom" id="G3C-c3-cfj"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" id="IvY-f3-EK7"/>
+                            <constraint firstItem="NFN-3a-FMc" firstAttribute="trailing" secondItem="8cN-Ca-dNB" secondAttribute="trailing" id="NGN-pc-dDW"/>
                             <constraint firstItem="57A-Fv-uwE" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" constant="16" id="NYb-iE-wmO"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="top" secondItem="57A-Fv-uwE" secondAttribute="bottom" constant="8" id="RHT-Sn-6ru"/>
                             <constraint firstItem="dSa-w9-8C9" firstAttribute="width" secondItem="76z-5T-RJS" secondAttribute="width" multiplier="0.5" id="WgZ-3H-SBy"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="trailing" secondItem="8cN-Ca-dNB" secondAttribute="trailing" id="XdP-c5-c0Y"/>
                             <constraint firstItem="r9B-If-3mA" firstAttribute="width" secondItem="76z-5T-RJS" secondAttribute="width" multiplier="0.15" id="Y0C-UY-wg9"/>
+                            <constraint firstItem="NFN-3a-FMc" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" id="Yy3-9e-fly"/>
                             <constraint firstItem="8cN-Ca-dNB" firstAttribute="bottom" secondItem="r9B-If-3mA" secondAttribute="bottom" constant="15" id="quZ-gK-Aiu"/>
                             <constraint firstItem="dSa-w9-8C9" firstAttribute="centerX" secondItem="76z-5T-RJS" secondAttribute="centerX" id="tfn-h3-ee0"/>
                             <constraint firstItem="r9B-If-3mA" firstAttribute="centerX" secondItem="76z-5T-RJS" secondAttribute="centerX" id="u9C-Se-UA5"/>
@@ -76,6 +86,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vNh-YC-OIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="485.60000000000002" y="-186.65667166416793"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q90-SP-YjW">
+            <objects>
+                <viewController id="G1k-yD-rTN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yiz-vq-JBP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TG1-BZ-Yeq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5hB-8D-WMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="351"/>
         </scene>
     </scenes>
     <resources>

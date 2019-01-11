@@ -1,4 +1,5 @@
 PODS:
+  - ASHorizontalScrollView (1.5.1)
   - Gifu (3.2.0)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
@@ -7,6 +8,7 @@ PODS:
   - SwiftLint (0.27.0)
 
 DEPENDENCIES:
+  - ASHorizontalScrollView
   - Gifu
   - R.swift
   - SVProgressHUD
@@ -14,6 +16,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - ASHorizontalScrollView
     - Gifu
     - R.swift
     - R.swift.Library
@@ -21,12 +24,13 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
+  ASHorizontalScrollView: 9c98b9226509540075b6398c92f68fb474bea7e9
   Gifu: 7bcb6427457d85e0b4dff5a84ec5947ac19a93ea
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: 6f8f04df4231cf689ee18608c66ddab0d21f5535
+PODFILE CHECKSUM: c715cf88c142b3d97bc02e1a91147e4a763a56b0
 
 COCOAPODS: 1.5.3
