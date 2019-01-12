@@ -8,14 +8,14 @@
 
 import Foundation
 
-protocol AfterShootingScrollViewPresenterProtocol: class {
+protocol BottomMenuViewPresenterProtocol: class {
     
 }
 
-class AfterShootingScrollViewPresenter: NSObject {
-    private let view: AfterShootingScrollViewPresenterProtocol
+class BottomMenuViewPresenter: NSObject {
+    private let view: BottomMenuViewPresenterProtocol
     
-    init(view: AfterShootingScrollViewPresenterProtocol) {
+    init(view: BottomMenuViewPresenterProtocol) {
         self.view = view
     }
     

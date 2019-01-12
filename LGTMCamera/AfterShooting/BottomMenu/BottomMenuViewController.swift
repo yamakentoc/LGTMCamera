@@ -1,5 +1,5 @@
 //
-//  AfterShootingScrollViewController.swift
+//  BottomMenuViewController.swift
 //  LGTMCamera
 //
 //  Created by 山口賢登 on 2019/01/11.
@@ -9,19 +9,24 @@
 import UIKit
 import ASHorizontalScrollView
 
-class AfterShootingScrollViewController: UIViewController {
+class BottomMenuViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var presenter: AfterShootingScrollViewPresenter!
+    var presenter: BottomMenuViewPresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = AfterShootingScrollViewPresenter(view: self)
+        presenter = BottomMenuViewPresenter(view: self)
+    }
+    
+    @objc func selectBottomMenu(_ sender: UIButton) {
+        guard let afterShootingVC: AfterShootingViewController = self.parent as? AfterShootingViewController else { return }
+        afterShootingVC.switchBottomView(tag: sender.tag)
     }
 }
 
-extension AfterShootingScrollViewController: UITableViewDelegate, UITableViewDataSource {
+extension BottomMenuViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -39,9 +44,12 @@ extension AfterShootingScrollViewController: UITableViewDelegate, UITableViewDat
         let squareSize = self.tableView.bounds.height * 0.3
         horizontalScrollView.uniformItemSize = CGSize(width: squareSize, height: squareSize)
         horizontalScrollView.setItemsMarginOnce()
-        for _ in 1...6 {
+        for i in 0...5 {
             let button = UIButton(frame: CGRect.zero)
             button.backgroundColor = UIColor.red
+            button.setTitle("hoge", for: .normal)
+            button.tag = i
+            button.addTarget(self, action: #selector(self.selectBottomMenu(_:)), for: .touchUpInside)
             horizontalScrollView.addItem(button)
         }
         cell?.contentView.addSubview(horizontalScrollView)
@@ -66,6 +74,6 @@ extension AfterShootingScrollViewController: UITableViewDelegate, UITableViewDat
     }
 }
 
-extension AfterShootingScrollViewController: AfterShootingScrollViewPresenterProtocol {
+extension BottomMenuViewController: BottomMenuViewPresenterProtocol {
     
 }

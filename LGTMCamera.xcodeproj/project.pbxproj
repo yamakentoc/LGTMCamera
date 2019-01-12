@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1509480B21E85013005E7CD3 /* AfterShootingScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509480A21E85013005E7CD3 /* AfterShootingScrollViewController.swift */; };
-		1509481221E85090005E7CD3 /* AfterShootingScrollViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509481121E85090005E7CD3 /* AfterShootingScrollViewPresenter.swift */; };
+		1509480B21E85013005E7CD3 /* BottomMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509480A21E85013005E7CD3 /* BottomMenuViewController.swift */; };
+		1509481621E8B1E7005E7CD3 /* BottomMenuViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509481521E8B1E7005E7CD3 /* BottomMenuViewPresenter.swift */; };
 		15267D8521DC78470023F206 /* CustomAVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15267D8421DC78470023F206 /* CustomAVFoundation.swift */; };
 		15267D8821DCE6600023F206 /* AfterShootingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15267D8721DCE6600023F206 /* AfterShootingViewController.swift */; };
 		15267D8A21DCE6820023F206 /* AfterShootingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15267D8921DCE6820023F206 /* AfterShootingViewPresenter.swift */; };
@@ -47,8 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1509480A21E85013005E7CD3 /* AfterShootingScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterShootingScrollViewController.swift; sourceTree = "<group>"; };
-		1509481121E85090005E7CD3 /* AfterShootingScrollViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterShootingScrollViewPresenter.swift; sourceTree = "<group>"; };
+		1509480A21E85013005E7CD3 /* BottomMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuViewController.swift; sourceTree = "<group>"; };
+		1509481521E8B1E7005E7CD3 /* BottomMenuViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomMenuViewPresenter.swift; sourceTree = "<group>"; };
 		15267D8421DC78470023F206 /* CustomAVFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVFoundation.swift; sourceTree = "<group>"; };
 		15267D8721DCE6600023F206 /* AfterShootingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterShootingViewController.swift; sourceTree = "<group>"; };
 		15267D8921DCE6820023F206 /* AfterShootingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterShootingViewPresenter.swift; sourceTree = "<group>"; };
@@ -122,13 +122,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		1509480C21E85019005E7CD3 /* AfterShootingScroll */ = {
+		1509480C21E85019005E7CD3 /* BottomMenu */ = {
 			isa = PBXGroup;
 			children = (
-				1509480A21E85013005E7CD3 /* AfterShootingScrollViewController.swift */,
-				1509481121E85090005E7CD3 /* AfterShootingScrollViewPresenter.swift */,
+				1509480A21E85013005E7CD3 /* BottomMenuViewController.swift */,
+				1509481521E8B1E7005E7CD3 /* BottomMenuViewPresenter.swift */,
 			);
-			path = AfterShootingScroll;
+			path = BottomMenu;
 			sourceTree = "<group>";
 		};
 		15267D8621DCD8F50023F206 /* AfterShooting */ = {
@@ -137,7 +137,7 @@
 				15267D8721DCE6600023F206 /* AfterShootingViewController.swift */,
 				15267D8921DCE6820023F206 /* AfterShootingViewPresenter.swift */,
 				15267D8B21DCE6900023F206 /* AfterShootingViewController.storyboard */,
-				1509480C21E85019005E7CD3 /* AfterShootingScroll */,
+				1509480C21E85019005E7CD3 /* BottomMenu */,
 			);
 			path = AfterShooting;
 			sourceTree = "<group>";
@@ -498,14 +498,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1509481621E8B1E7005E7CD3 /* BottomMenuViewPresenter.swift in Sources */,
 				15E8FBC021D61B3500B18C32 /* ShootingViewController.swift in Sources */,
 				15267D8821DCE6600023F206 /* AfterShootingViewController.swift in Sources */,
 				15E8FBBE21D61B3500B18C32 /* AppDelegate.swift in Sources */,
-				1509480B21E85013005E7CD3 /* AfterShootingScrollViewController.swift in Sources */,
+				1509480B21E85013005E7CD3 /* BottomMenuViewController.swift in Sources */,
 				15267D8521DC78470023F206 /* CustomAVFoundation.swift in Sources */,
 				15E8FBF121D64BB400B18C32 /* ShootingViewPresenter.swift in Sources */,
 				15E8FBEE21D6249100B18C32 /* R.generated.swift in Sources */,
-				1509481221E85090005E7CD3 /* AfterShootingScrollViewPresenter.swift in Sources */,
 				15318A2C21E5B14300D6CA69 /* UIImage.swift in Sources */,
 				15267D8A21DCE6820023F206 /* AfterShootingViewPresenter.swift in Sources */,
 				15CE430F21D8BAA50086C36F /* UIColor.swift in Sources */,

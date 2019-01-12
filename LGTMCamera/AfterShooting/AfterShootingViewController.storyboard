@@ -51,8 +51,14 @@
                                     <constraint firstAttribute="width" secondItem="Zls-JE-nQe" secondAttribute="height" multiplier="1:1" id="CR6-2l-XAX"/>
                                 </constraints>
                             </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNP-nw-wqO">
+                                <rect key="frame" x="0.0" y="449" width="375" height="218"/>
+                                <connections>
+                                    <segue destination="f0G-bC-7Bf" kind="embed" id="54y-sP-sQm"/>
+                                </connections>
+                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ued-A0-IsL">
-                                <rect key="frame" x="0.0" y="449" width="375" height="147"/>
+                                <rect key="frame" x="0.0" y="449" width="375" height="218"/>
                                 <connections>
                                     <segue destination="U2I-AW-vYq" kind="embed" id="P8K-Vv-LEU"/>
                                 </connections>
@@ -61,15 +67,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="57A-Fv-uwE" firstAttribute="top" secondItem="8cN-Ca-dNB" secondAttribute="top" constant="16" id="1AQ-IG-6Dy"/>
+                            <constraint firstItem="fNP-nw-wqO" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" id="1mp-1k-v58"/>
                             <constraint firstItem="Ued-A0-IsL" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" id="5nx-rt-WXN"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" id="IvY-f3-EK7"/>
                             <constraint firstItem="57A-Fv-uwE" firstAttribute="leading" secondItem="8cN-Ca-dNB" secondAttribute="leading" constant="16" id="NYb-iE-wmO"/>
                             <constraint firstItem="Ued-A0-IsL" firstAttribute="top" secondItem="Zls-JE-nQe" secondAttribute="bottom" id="RG6-0r-r3k"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="top" secondItem="57A-Fv-uwE" secondAttribute="bottom" constant="8" id="RHT-Sn-6ru"/>
                             <constraint firstItem="dSa-w9-8C9" firstAttribute="width" secondItem="76z-5T-RJS" secondAttribute="width" multiplier="0.5" id="WgZ-3H-SBy"/>
-                            <constraint firstItem="r9B-If-3mA" firstAttribute="top" secondItem="Ued-A0-IsL" secondAttribute="bottom" id="Wl0-Er-Uwh"/>
+                            <constraint firstItem="fNP-nw-wqO" firstAttribute="bottom" secondItem="8cN-Ca-dNB" secondAttribute="bottom" id="Wxa-hK-kXc"/>
+                            <constraint firstItem="fNP-nw-wqO" firstAttribute="trailing" secondItem="8cN-Ca-dNB" secondAttribute="trailing" id="XY1-BH-W2w"/>
                             <constraint firstItem="Zls-JE-nQe" firstAttribute="trailing" secondItem="8cN-Ca-dNB" secondAttribute="trailing" id="XdP-c5-c0Y"/>
                             <constraint firstItem="r9B-If-3mA" firstAttribute="width" secondItem="76z-5T-RJS" secondAttribute="width" multiplier="0.15" id="Y0C-UY-wg9"/>
+                            <constraint firstItem="fNP-nw-wqO" firstAttribute="top" secondItem="Zls-JE-nQe" secondAttribute="bottom" id="g6O-SP-IJh"/>
+                            <constraint firstItem="Ued-A0-IsL" firstAttribute="bottom" secondItem="8cN-Ca-dNB" secondAttribute="bottom" id="gb8-O4-xlZ"/>
                             <constraint firstItem="8cN-Ca-dNB" firstAttribute="bottom" secondItem="r9B-If-3mA" secondAttribute="bottom" constant="15" id="quZ-gK-Aiu"/>
                             <constraint firstItem="Ued-A0-IsL" firstAttribute="trailing" secondItem="8cN-Ca-dNB" secondAttribute="trailing" id="t0r-QF-D7Y"/>
                             <constraint firstItem="dSa-w9-8C9" firstAttribute="centerX" secondItem="76z-5T-RJS" secondAttribute="centerX" id="tfn-h3-ee0"/>
@@ -79,6 +89,8 @@
                         <viewLayoutGuide key="safeArea" id="8cN-Ca-dNB"/>
                     </view>
                     <connections>
+                        <outlet property="adjustSpeedView" destination="fNP-nw-wqO" id="yJ0-BN-fgz"/>
+                        <outlet property="bottomMenuView" destination="Ued-A0-IsL" id="eJQ-HG-Q4n"/>
                         <outlet property="gifImageView" destination="Zls-JE-nQe" id="cLA-3w-d7F"/>
                         <outlet property="saveButton" destination="r9B-If-3mA" id="9Qq-DN-QNc"/>
                     </connections>
@@ -87,16 +99,16 @@
             </objects>
             <point key="canvasLocation" x="485.60000000000002" y="-186.65667166416793"/>
         </scene>
-        <!--After Shooting Scroll View Controller-->
+        <!--Bottom Menu View Controller-->
         <scene sceneID="iTg-AB-S9L">
             <objects>
-                <viewController id="U2I-AW-vYq" customClass="AfterShootingScrollViewController" customModule="LGTMCamera" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="U2I-AW-vYq" customClass="BottomMenuViewController" customModule="LGTMCamera" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="buK-c2-3OZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="218"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jdt-mt-Hb0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="218"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="U2I-AW-vYq" id="Hmi-S0-HXj"/>
@@ -111,6 +123,7 @@
                             <constraint firstItem="Jdt-mt-Hb0" firstAttribute="leading" secondItem="buK-c2-3OZ" secondAttribute="leading" id="mZz-W0-1jG"/>
                             <constraint firstAttribute="bottom" secondItem="Jdt-mt-Hb0" secondAttribute="bottom" id="tdb-Qk-swK"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="RPi-QX-Cp0"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Jdt-mt-Hb0" id="UMH-Ji-bz3"/>
@@ -118,7 +131,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUE-1f-8T5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486" y="460"/>
+            <point key="canvasLocation" x="450" y="469"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DWz-hY-Rqa">
+            <objects>
+                <viewController id="f0G-bC-7Bf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vve-a1-ZHF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="218"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0pK-A3-QkP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDZ-HR-cWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="469"/>
         </scene>
     </scenes>
     <resources>
