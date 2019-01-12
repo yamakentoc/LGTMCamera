@@ -72,7 +72,7 @@ class AfterShootingViewController: UIViewController {
     }
     
     func switchBottomView(tag: Int) {
-        print(tag)
+        self.view.bringSubviewToFront(containerViews[tag])
     }
     
     func makeGifImage() {
