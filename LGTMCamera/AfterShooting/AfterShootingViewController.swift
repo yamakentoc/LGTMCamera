@@ -53,11 +53,11 @@ class AfterShootingViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func adjustGifSpeed(_ sender: UISlider) {//画像の切り替えspeedを調整
-        timer?.invalidate()
-        frameRate = CMTimeMake(value: 1, timescale: Int32(sender.value))
-        activeTimer()
-    }
+//    @IBAction func adjustGifSpeed(_ sender: UISlider) {//画像の切り替えspeedを調整
+//        timer?.invalidate()
+//        frameRate = CMTimeMake(value: 1, timescale: Int32(sender.value))
+//        activeTimer()
+//    }
     
     func activeTimer() {//timerの生成
         let cmTime = CMTimeGetSeconds(frameRate)
@@ -75,6 +75,7 @@ class AfterShootingViewController: UIViewController {
         self.view.bringSubviewToFront(containerViews[tag])
     }
     
+    //gifを保存
     func makeGifImage() {
         SVProgressHUD.show(withStatus: "saving gif")
         let fileProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: 0]]//ループカウント

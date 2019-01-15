@@ -12,6 +12,8 @@ import ASHorizontalScrollView
 class BottomMenuViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var shareButton: UIButton!
     
     var presenter: BottomMenuViewPresenter!
     

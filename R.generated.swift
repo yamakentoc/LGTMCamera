@@ -133,7 +133,6 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if UIKit.UIImage(named: "batu") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'batu' is used in storyboard 'AfterShootingViewController', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "save") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'save' is used in storyboard 'AfterShootingViewController', but couldn't be loaded.") }
       }
       
       fileprivate init() {}
