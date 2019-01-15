@@ -23,7 +23,7 @@ class BottomMenuViewController: UIViewController {
     }
     
     @objc func selectBottomMenu(_ sender: UIButton) {
-        guard let afterShootingVC: AfterShootingViewController = self.parent as? AfterShootingViewController else { return }
+        guard let afterShootingVC  = self.parent as? AfterShootingViewController else { return }
         afterShootingVC.switchBottomView(tag: sender.tag)
     }
 }

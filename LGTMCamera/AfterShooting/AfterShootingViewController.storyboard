@@ -170,11 +170,41 @@
                                     <action selector="adjustGifSpeed:" destination="f0G-bC-7Bf" eventType="valueChanged" id="337-mE-p9w"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjr-go-vgh">
+                                <rect key="frame" x="269" y="172" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="St6-XJ-YUp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="完了">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapDoneButton:" destination="f0G-bC-7Bf" eventType="touchUpInside" id="lP3-3h-ZPw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu6-IZ-o1l">
+                                <rect key="frame" x="16" y="172" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="2RR-8V-DpE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="キャンセル">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapCancelButton:" destination="f0G-bC-7Bf" eventType="touchUpInside" id="zXF-WR-9DN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="0pK-A3-QkP" firstAttribute="trailing" secondItem="Qjr-go-vgh" secondAttribute="trailing" constant="16" id="43D-6K-cQW"/>
                             <constraint firstItem="dSa-w9-8C9" firstAttribute="width" secondItem="Vve-a1-ZHF" secondAttribute="width" multiplier="0.6" id="8U0-pm-Lld"/>
+                            <constraint firstItem="0pK-A3-QkP" firstAttribute="bottom" secondItem="cu6-IZ-o1l" secondAttribute="bottom" constant="16" id="HE9-YB-LpZ"/>
+                            <constraint firstItem="cu6-IZ-o1l" firstAttribute="leading" secondItem="0pK-A3-QkP" secondAttribute="leading" constant="16" id="UWc-lK-B6q"/>
                             <constraint firstItem="dSa-w9-8C9" firstAttribute="centerX" secondItem="Vve-a1-ZHF" secondAttribute="centerX" id="tsG-hr-zjI"/>
+                            <constraint firstItem="0pK-A3-QkP" firstAttribute="bottom" secondItem="Qjr-go-vgh" secondAttribute="bottom" constant="16" id="uJ2-Ao-zjA"/>
                             <constraint firstItem="dSa-w9-8C9" firstAttribute="centerY" secondItem="Vve-a1-ZHF" secondAttribute="centerY" id="uUO-xa-t6n"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0pK-A3-QkP"/>
