@@ -46,7 +46,7 @@ extension BottomMenuViewController: UITableViewDelegate, UITableViewDataSource {
         let squareSize = self.tableView.bounds.height * 0.3
         horizontalScrollView.uniformItemSize = CGSize(width: squareSize, height: squareSize)
         horizontalScrollView.setItemsMarginOnce()
-        for i in 0...5 {
+        for i in 1...6 {
             let button = UIButton(frame: CGRect.zero)
             button.backgroundColor = UIColor.red
             button.setTitle("hoge", for: .normal)

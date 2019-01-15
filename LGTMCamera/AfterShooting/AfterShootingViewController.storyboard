@@ -84,7 +84,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="218"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jdt-mt-Hb0">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jdt-mt-Hb0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -98,7 +98,7 @@
                                 <state key="normal" title="共有する"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="3"/>
@@ -120,7 +120,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
@@ -130,6 +130,7 @@
                             <constraint firstItem="MBJ-pI-avQ" firstAttribute="width" secondItem="buK-c2-3OZ" secondAttribute="width" multiplier="0.1" id="1bb-X4-9N9"/>
                             <constraint firstItem="Jdt-mt-Hb0" firstAttribute="top" secondItem="buK-c2-3OZ" secondAttribute="top" id="3CN-b9-Xkc"/>
                             <constraint firstItem="RPi-QX-Cp0" firstAttribute="bottom" secondItem="uHr-sE-lT4" secondAttribute="bottom" constant="8" id="5Ww-17-cMb"/>
+                            <constraint firstItem="uHr-sE-lT4" firstAttribute="top" secondItem="Jdt-mt-Hb0" secondAttribute="bottom" constant="4" id="9YU-oe-Psd"/>
                             <constraint firstItem="MBJ-pI-avQ" firstAttribute="height" secondItem="uHr-sE-lT4" secondAttribute="height" id="AMu-K5-0fD"/>
                             <constraint firstItem="uHr-sE-lT4" firstAttribute="width" secondItem="buK-c2-3OZ" secondAttribute="width" multiplier="0.35" id="ClR-NH-Dsy"/>
                             <constraint firstAttribute="trailing" secondItem="Jdt-mt-Hb0" secondAttribute="trailing" id="IAc-v9-Gs7"/>
@@ -163,7 +164,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="218"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="6" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="dSa-w9-8C9">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="6" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="dSa-w9-8C9">
                                 <rect key="frame" x="73" y="94" width="229" height="31"/>
                                 <connections>
                                     <action selector="adjustGifSpeed:" destination="f0G-bC-7Bf" eventType="valueChanged" id="337-mE-p9w"/>
@@ -178,10 +179,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0pK-A3-QkP"/>
                     </view>
+                    <connections>
+                        <outlet property="adjustSpeedSlider" destination="dSa-w9-8C9" id="i2k-dE-f60"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDZ-HR-cWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1217" y="469"/>
+            <point key="canvasLocation" x="1137" y="469"/>
         </scene>
     </scenes>
     <resources>

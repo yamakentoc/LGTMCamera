@@ -11,11 +11,7 @@ import Photos
 
 class AdjustSpeedViewController: UIViewController {
 
-    var afterShootingVC: AfterShootingViewController! {
-        didSet {
-            afterShootingVC = self.parent as? AfterShootingViewController
-        }
-    }
+    @IBOutlet weak var adjustSpeedSlider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +19,7 @@ class AdjustSpeedViewController: UIViewController {
     }
     
     @IBAction func adjustGifSpeed(_ sender: UISlider) {//画像の切り替えspeedを調整
+        guard let afterShootingVC = self.parent as? AfterShootingViewController else { return }
         afterShootingVC.timer?.invalidate()
         afterShootingVC.frameRate = CMTimeMake(value: 1, timescale: Int32(sender.value))
         afterShootingVC.activeTimer()
