@@ -75,6 +75,7 @@ class ShootingViewController: UIViewController {
         guard let afterShootingVC = R.storyboard.afterShootingViewController().instantiateInitialViewController() as? AfterShootingViewController else { return }
         afterShootingVC.delegate = self
         afterShootingVC.takenPhotos = customAVFoundation.takenPhotos
+        afterShootingVC.isBackCamera = self.isBackCamera
         self.present(afterShootingVC, animated: true, completion: nil)
     }
     

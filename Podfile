@@ -10,6 +10,7 @@ target 'LGTMCamera' do
   pod 'R.swift'
   pod 'Gifu'
   pod 'SVProgressHUD'
+  pod 'ASHorizontalScrollView'
 
   target 'LGTMCameraTests' do
     inherit! :search_paths
